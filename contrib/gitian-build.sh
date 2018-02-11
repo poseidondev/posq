@@ -17,7 +17,7 @@ osx=true
 SIGNER=
 VERSION=
 commit=false
-url=https://github.com/poseidonproject/poseidon
+url=https://github.com/poseidondev/posq
 proc=2
 mem=2000
 lxc=true
@@ -25,13 +25,13 @@ osslTarUrl=http://downloads.sourceforge.net/project/osslsigncode/osslsigncode/os
 osslPatchUrl=https://bitcoincore.org/cfields/osslsigncode-Backports-to-1.7.1.patch
 scriptName=$(basename -- "$0")
 signProg="gpg --detach-sign"
-commitFiles=true
+commitFiles=false
 
 # Help Message
 read -d '' usage <<- EOF
 Usage: $scriptName [-c|u|v|b|s|B|o|h|j|m|] signer version
 
-Run this script from the directory containing the poseidon, gitian-builder, gitian.sigs, and poseidon-detached-sigs.
+Run this script from the directory containing the posq, gitian-builder, gitian.sigs, and poseidon-detached-sigs.
 
 Arguments:
 signer          GPG signer to sign each build assert file
@@ -39,7 +39,7 @@ version		Version number, commit, or branch to build. If building a commit or bra
 
 Options:
 -c|--commit	Indicate that the version argument is for a commit or branch
--u|--url	Specify the URL of the repository. Default is https://github.com/poseidonproject/poseidon
+-u|--url	Specify the URL of the repository. Default is https://github.com/poseidondev/posq
 -v|--verify 	Verify the gitian build
 -b|--build	Do a gitian build
 -s|--sign	Make signed binaries for Windows and Mac OSX
@@ -237,8 +237,8 @@ echo ${COMMIT}
 if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
-    git clone https://github.com/poseidonproject/gitian.sigs.git
-    git clone https://github.com/poseidonproject/poseidon-detached-sigs.git
+    git clone https://github.com/poseidondev/gitian.sigs.git
+    git clone https://github.com/poseidondev/poseidon-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     pushd ./gitian-builder
     if [[ -n "$USE_LXC" ]]
@@ -252,7 +252,7 @@ then
 fi
 
 # Set up build
-pushd ./poseidon
+pushd ./posq
 git fetch
 git checkout ${COMMIT}
 popd
@@ -271,7 +271,7 @@ then
 	mkdir -p inputs
 	wget -N -P inputs $osslPatchUrl
 	wget -N -P inputs $osslTarUrl
-	make -C ../poseidon/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../posq/depends download SOURCES_PATH=`pwd`/cache/common
 
 	# Linux
 	if [[ $linux = true ]]
