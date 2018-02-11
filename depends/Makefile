@@ -69,9 +69,8 @@ AT:=$(AT_$(V))
 
 all: install
 
-include hosts/$(host_os).mk
+include hosts/mingw32.mk
 include hosts/default.mk
-include builders/$(build_os).mk
 include builders/default.mk
 include packages/packages.mk
 
