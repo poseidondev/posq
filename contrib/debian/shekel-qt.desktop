@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Poseidon
+Comment=Poseidon P2P Cryptocurrency
+Comment[fr]=Poseidon, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Poseidon, eşten eşe kriptografik sanal para birimi
+Exec=poseidon-qt %u
+Terminal=false
+Type=Application
+Icon=poseidon128
+MimeType=x-scheme-handler/poseidon;
+Categories=Office;Finance;
