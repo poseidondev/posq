@@ -9,12 +9,12 @@ build=false
 setupenv=false
 
 # Systems to build
-linux=true
+linux=false
 windows=true
-osx=true
+osx=false
 
 # Other Basic variables
-SIGNER=
+SIGNER=NULL
 VERSION=
 commit=false
 url=https://github.com/poseidondev/posq
