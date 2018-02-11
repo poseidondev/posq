@@ -1,5 +1,5 @@
 ---
-name: "poseidon-win-1.2"
+name: "poseidon-win-1.3"
 enable_cache: true
 suites:
 - "precise"
