@@ -11,7 +11,7 @@ Poseidon is a cutting edge cryptocurrency, with many features not available in m
   technology used to secure the network and provide the above features, each Masternode is secured
   with a collateral of 25K POSQ.
 
-More information at [Poseidon.io](http://www.poseidon.io) Visit our ANN thread at [BitcoinTalk](https://bitcointalk.org/index.php?topic=2455628.0)
+More information at [Posq.io](http://www.posq.io) Visit our ANN thread at [BitcoinTalk](https://bitcointalk.org/index.php?topic=2923976)
 
 
 
