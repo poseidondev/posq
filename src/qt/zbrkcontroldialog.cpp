@@ -11,12 +11,12 @@
 
 using namespace std;
 
-std::list<std::string> ZJewControlDialog::listSelectedMints;
-std::list<CZerocoinMint> ZJewControlDialog::listMints;
+std::list<std::string> ZPosqControlDialog::listSelectedMints;
+std::list<CZerocoinMint> ZPosqControlDialog::listMints;
 
-ZJewControlDialog::ZJewControlDialog(QWidget *parent) :
+ZPosqControlDialog::ZPosqControlDialog(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::ZJewControlDialog),
+    ui(new Ui::ZPosqControlDialog),
     model(0)
 {
     ui->setupUi(this);
@@ -30,19 +30,19 @@ ZJewControlDialog::ZJewControlDialog(QWidget *parent) :
     connect(ui->pushButtonAll, SIGNAL(clicked()), this, SLOT(ButtonAllClicked()));
 }
 
-ZJewControlDialog::~ZJewControlDialog()
+ZPosqControlDialog::~ZPosqControlDialog()
 {
     delete ui;
 }
 
-void ZJewControlDialog::setModel(WalletModel *model)
+void ZPosqControlDialog::setModel(WalletModel *model)
 {
     this->model = model;
     updateList();
 }
 
 //Update the tree widget
-void ZJewControlDialog::updateList()
+void ZPosqControlDialog::updateList()
 {
     // need to prevent the slot from being called each time something is changed
     ui->treeWidget->blockSignals(true);
@@ -134,7 +134,7 @@ void ZJewControlDialog::updateList()
 }
 
 // Update the list when a checkbox is clicked
-void ZJewControlDialog::updateSelection(QTreeWidgetItem* item, int column)
+void ZPosqControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 {
     // only want updates from non top level items that are available to spend
     if (item->parent() && column == COLUMN_CHECKBOX && !item->isDisabled()){
@@ -157,7 +157,7 @@ void ZJewControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 }
 
 // Update the Quantity and Amount display
-void ZJewControlDialog::updateLabels()
+void ZPosqControlDialog::updateLabels()
 {
     int64_t nAmount = 0;
     for (const CZerocoinMint mint : listMints) {
@@ -167,14 +167,14 @@ void ZJewControlDialog::updateLabels()
     }
 
     //update this dialog's labels
-    ui->labelZJew_int->setText(QString::number(nAmount));
+    ui->labelZPosq_int->setText(QString::number(nAmount));
     ui->labelQuantity_int->setText(QString::number(listSelectedMints.size()));
 
     //update PrivacyDialog labels
-    privacyDialog->setZJewControlLabels(nAmount, listSelectedMints.size());
+    privacyDialog->setZPosqControlLabels(nAmount, listSelectedMints.size());
 }
 
-std::vector<CZerocoinMint> ZJewControlDialog::GetSelectedMints()
+std::vector<CZerocoinMint> ZPosqControlDialog::GetSelectedMints()
 {
     std::vector<CZerocoinMint> listReturn;
     for (const CZerocoinMint mint : listMints) {
@@ -187,7 +187,7 @@ std::vector<CZerocoinMint> ZJewControlDialog::GetSelectedMints()
 }
 
 // select or deselect all of the mints
-void ZJewControlDialog::ButtonAllClicked()
+void ZPosqControlDialog::ButtonAllClicked()
 {
     ui->treeWidget->blockSignals(true);
     Qt::CheckState state = Qt::Checked;

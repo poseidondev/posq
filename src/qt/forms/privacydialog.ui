@@ -145,7 +145,7 @@
                   </size>
                  </property>
                  <property name="toolTip">
-                  <string>Enter an amount of Jew to convert (mint) to zJew</string>
+                  <string>Enter an amount of Posq to convert (mint) to zPosq</string>
                  </property>
                  <property name="text">
                   <string>Convert POSQ to zPOSQ</string>
@@ -178,7 +178,7 @@
                <item>
                 <widget class="QLabel" name="labelzPOSQAmountText">
                  <property name="toolTip">
-                  <string>Available Balance are coins (Jew) which are confirmed and not locked or Masternode collaterals.</string>
+                  <string>Available Balance are coins (Posq) which are confirmed and not locked or Masternode collaterals.</string>
                  </property>
                  <property name="text">
                   <string>Available Balance:</string>
@@ -191,7 +191,7 @@
                <item>
                 <widget class="QLabel" name="labelzPOSQAmountValue">
                  <property name="toolTip">
-                  <string>Enter an amount of Jew to convert to zJew</string>
+                  <string>Enter an amount of Posq to convert to zPosq</string>
                  </property>
                  <property name="text">
                   <string>0.000 000 00 POSQ</string>
@@ -223,7 +223,7 @@
                   </size>
                  </property>
                  <property name="toolTip">
-                  <string>Reset Zerocoin (zJew) Wallet DB. Deletes transactions that did not make it into the blockchain.</string>
+                  <string>Reset Zerocoin (zPosq) Wallet DB. Deletes transactions that did not make it into the blockchain.</string>
                  </property>
                  <property name="text">
                   <string>Reset</string>
@@ -474,21 +474,21 @@
                 <number>0</number>
                </property>
                <item>
-                <widget class="QPushButton" name="pushButtonZJewControl">
+                <widget class="QPushButton" name="pushButtonZPosqControl">
                  <property name="text">
-                  <string>zJew Control</string>
+                  <string>zPosq Control</string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelzJewSelected">
+                <widget class="QLabel" name="labelzPosqSelected">
                  <property name="text">
-                  <string>zJew Selected:</string>
+                  <string>zPosq Selected:</string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelzJewSelected_int">
+                <widget class="QLabel" name="labelzPosqSelected_int">
                  <property name="text">
                   <string>0</string>
                  </property>
@@ -607,7 +607,7 @@ zPOSQ are mature when they have more than 20 confirmations AND more than 1 mints
                <item>
                 <widget class="QLabel" name="labelSecurityLevel">
                  <property name="toolTip">
-                  <string>Security Level for Zerocoin (zJew) Transactions. More is better, but needs more time and resources.</string>
+                  <string>Security Level for Zerocoin (zPosq) Transactions. More is better, but needs more time and resources.</string>
                  </property>
                  <property name="frameShape">
                   <enum>QFrame::Box</enum>
@@ -895,7 +895,7 @@ zPOSQ are mature when they have more than 20 confirmations AND more than 1 mints
                   </font>
                  </property>
                  <property name="toolTip">
-                  <string>Information about the available zJew funds.</string>
+                  <string>Information about the available zPosq funds.</string>
                  </property>
                  <property name="text">
                   <string>zPOSQ Stats:</string>

@@ -281,16 +281,16 @@ void PrivacyDialog::on_pushButtonSpendzPOSQ_clicked()
     sendzPOSQ();
 }
 
-void PrivacyDialog::on_pushButtonZJewControl_clicked()
+void PrivacyDialog::on_pushButtonZPosqControl_clicked()
 {
-    ZJewControlDialog* zJewControl = new ZJewControlDialog(this);
-    zJewControl->setModel(walletModel);
-    zJewControl->exec();
+    ZPosqControlDialog* zPosqControl = new ZPosqControlDialog(this);
+    zPosqControl->setModel(walletModel);
+    zPosqControl->exec();
 }
 
-void PrivacyDialog::setZJewControlLabels(int64_t nAmount, int nQuantity)
+void PrivacyDialog::setZPosqControlLabels(int64_t nAmount, int nQuantity)
 {
-    ui->labelzJewSelected_int->setText(QString::number(nAmount));
+    ui->labelzPosqSelected_int->setText(QString::number(nAmount));
     ui->labelQuantitySelected_int->setText(QString::number(nQuantity));
 }
 
@@ -396,10 +396,10 @@ void PrivacyDialog::sendzPOSQ()
     ui->TEMintStatus->setPlainText(tr("Spending Zerocoin.\nComputationally expensive, might need several minutes depending on the selected Security Level and your hardware. \nPlease be patient..."));
     ui->TEMintStatus->repaint();
 
-    // use mints from zJew selector if applicable
+    // use mints from zPosq selector if applicable
     vector<CZerocoinMint> vMintsSelected;
-    if (!ZJewControlDialog::listSelectedMints.empty()) {
-        vMintsSelected = ZJewControlDialog::GetSelectedMints();
+    if (!ZPosqControlDialog::listSelectedMints.empty()) {
+        vMintsSelected = ZPosqControlDialog::GetSelectedMints();
     }
 
     // Spend zPOSQ
@@ -435,14 +435,14 @@ void PrivacyDialog::sendzPOSQ()
     }
 
     // Clear zbrk selector in case it was used
-    ZJewControlDialog::listSelectedMints.clear();
+    ZPosqControlDialog::listSelectedMints.clear();
 
     // Some statistics for entertainment
     QString strStats = "";
     CAmount nValueIn = 0;
     int nCount = 0;
     for (CZerocoinSpend spend : receipt.GetSpends()) {
-        strStats += tr("zJew Spend #: ") + QString::number(nCount) + ", ";
+        strStats += tr("zPosq Spend #: ") + QString::number(nCount) + ", ";
         strStats += tr("denomination: ") + QString::number(spend.GetDenomination()) + ", ";
         strStats += tr("serial: ") + spend.GetSerial().ToString().c_str() + "\n";
         strStats += tr("Spend is 1 of : ") + QString::number(spend.GetMintCount()) + " mints in the accumulator\n";
@@ -451,13 +451,13 @@ void PrivacyDialog::sendzPOSQ()
 
     CAmount nValueOut = 0;
     for (const CTxOut& txout: wtxNew.vout) {
-        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " Jew, ";
+        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " Posq, ";
         nValueOut += txout.nValue;
 
         strStats += tr("address: ");
         CTxDestination dest;
         if(txout.scriptPubKey.IsZerocoinMint())
-            strStats += tr("zJew Mint");
+            strStats += tr("zPosq Mint");
         else if(ExtractDestination(txout.scriptPubKey, dest))
             strStats += tr(CBitcoinAddress(dest).ToString().c_str());
         strStats += "\n";

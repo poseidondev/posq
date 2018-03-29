@@ -15,16 +15,16 @@ class CZerocoinMint;
 class WalletModel;
 
 namespace Ui {
-class ZJewControlDialog;
+class ZPosqControlDialog;
 }
 
-class ZJewControlDialog : public QDialog
+class ZPosqControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ZJewControlDialog(QWidget *parent);
-    ~ZJewControlDialog();
+    explicit ZPosqControlDialog(QWidget *parent);
+    ~ZPosqControlDialog();
 
     void setModel(WalletModel* model);
 
@@ -33,7 +33,7 @@ public:
     static std::vector<CZerocoinMint> GetSelectedMints();
 
 private:
-    Ui::ZJewControlDialog *ui;
+    Ui::ZPosqControlDialog *ui;
     WalletModel* model;
     PrivacyDialog* privacyDialog;
 

@@ -46,7 +46,7 @@ public:
 
     void setModel(WalletModel* model);
     void showOutOfSyncWarning(bool fShow);
-    void setZJewControlLabels(int64_t nAmount, int nQuantity);
+    void setZPosqControlLabels(int64_t nAmount, int nQuantity);
 
 public slots:
     void setBalance(const CAmount& balance, const CAmount& unconfirmedBalance, const CAmount& immatureBalance, 
@@ -100,7 +100,7 @@ private slots:
     void on_pushButtonMintReset_clicked();
     void on_pushButtonSpentReset_clicked();
     void on_pushButtonSpendzPOSQ_clicked();
-    void on_pushButtonZJewControl_clicked();
+    void on_pushButtonZPosqControl_clicked();
     void on_pasteButton_clicked();
     void updateDisplayUnit();
 };
