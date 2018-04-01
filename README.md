@@ -9,7 +9,7 @@ Poseidon is a cutting edge cryptocurrency, with many features not available in m
 - Fast transactions featuring guaranteed zero confirmation transactions, PIVX named it _SwiftX_.
 - Decentralized blockchain voting providing for consensus based advancement of the current Masternode
   technology used to secure the network and provide the above features, each Masternode is secured
-  with a collateral of 25K POSQ.
+  with a collateral of 10K POSQ.
 
 More information at [Posq.io](http://www.posq.io) Visit our ANN thread at [BitcoinTalk](https://bitcointalk.org/index.php?topic=2923976)
 
