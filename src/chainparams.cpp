@@ -54,11 +54,14 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x000008338e9c80f35cf2a8fc508d3ca07c9b9353b0a42214c99cf784c3eecf88"));
+    (0, uint256("0x000008338e9c80f35cf2a8fc508d3ca07c9b9353b0a42214c99cf784c3eecf88"))
+    (25290, uint256("0x757af2cc45c334897fbaef3555b61473f013a8797110430be229fd5f16bf12d9"))
+    (45650, uint256("0x0418b9b14e46d0a97bcadce1100291e8ab88ba6cf6eb8a55c072184bfc8bba93"))
+    (50600, uint256("0x0e492713c6890f92a7daab9a563116d725f5df8ed3c502e2cc1fcf132cc67dad"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1517001474, // * UNIX timestamp of last checkpoint block
-    0,    // * total number of transactions between genesis and last checkpoint
+    50600,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -190,9 +193,12 @@ printf("genesis.hashMerkleRoot = %s \n", genesis.hashMerkleRoot.ToString().c_str
 	   }
 	   */
 
-		vSeeds.push_back(CDNSSeedData("192.243.103.201", "192.243.103.201")); // Primary DNS Seeder
-		vSeeds.push_back(CDNSSeedData("192.243.103.202", "192.243.103.202")); // Secondary DNS Seeder
+		vSeeds.push_back(CDNSSeedData("posq.seeds.mn.zone", "posq.seeds.mn.zone")); // Primary DNS Seeder
+		vSeeds.push_back(CDNSSeedData("posq.mnseeds.com", "posq.mnseeds.com")); // Secondary DNS Seeder
 		vSeeds.push_back(CDNSSeedData("192.243.101.179", "192.243.101.179")); // Single node address
+		vSeeds.push_back(CDNSSeedData("192.243.103.201", "192.243.103.201")); // Single node address
+		vSeeds.push_back(CDNSSeedData("192.243.103.202", "192.243.103.202")); // Single node address
+		vSeeds.push_back(CDNSSeedData("207.246.95.9", "207.246.95.9")); // Single node address
 		
 		
 
