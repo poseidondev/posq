@@ -6,7 +6,7 @@ Poseidon Core version *version* is now available from:
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/eastcoastcrypto/Jewita/issues>
+  <https://github.com/poseidondev/posq/issues>
 
 Mandatory Update
 ==============
