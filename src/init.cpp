@@ -1609,7 +1609,7 @@ bool AppInit2(boost::thread_group& threadGroup)
         fVerifyingBlocks = false;
 
         bool fEnableZPOSQBackups = GetBoolArg("-backupzbrk", true);
-        pwalletMain->setZPOSQAutoBackups(fEnableZJewBackups);
+        pwalletMain->setZPOSQAutoBackups(fEnableZPOSQBackups);
     }  // (!fDisableWallet)
 #else  // ENABLE_WALLET
     LogPrintf("No wallet compiled in!\n");
