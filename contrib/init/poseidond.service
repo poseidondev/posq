@@ -1,0 +1,26 @@
+[Unit]
+Description=Poseidon's distributed currency daemon
+After=network.target
+
+[Service]
+User=poseidon
+Group=poseidon
+
+Type=forking
+PIDFile=/var/lib/poseidond/poseidond.pid
+
+ExecStart=/usr/bin/poseidond -daemon -pid=/var/lib/poseidond/poseidond.pid \
+          -conf=/etc/poseidon/poseidon.conf -datadir=/var/lib/poseidond
+
+ExecStop=-/usr/bin/poseidon-cli -conf=/etc/poseidon/poseidon.conf \
+         -datadir=/var/lib/poseidond stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
