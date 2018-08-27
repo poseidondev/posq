@@ -20,4 +20,4 @@ public:
     uint256 GetCheckpoint();
     void Reset();
 };
-#endif //SHEKEL_ACCUMULATORMAP_H
+#endif //POSEIDON_ACCUMULATORMAP_H

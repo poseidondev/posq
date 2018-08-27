@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef SHEKEL_ACCUMULATORS_H
-#define SHEKEL_ACCUMULATORS_H
+#ifndef POSEIDON_ACCUMULATORS_H
+#define POSEIDON_ACCUMULATORS_H
 
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Denominations.h"
@@ -22,4 +22,4 @@ uint32_t ParseChecksum(uint256 nChecksum, libzerocoin::CoinDenomination denomina
 uint32_t GetChecksum(const CBigNum &bnValue);
 bool InvalidCheckpointRange(int nHeight);
 
-#endif //SHEKEL_ACCUMULATORS_H
+#endif //POSEIDON_ACCUMULATORS_H
