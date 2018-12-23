@@ -2129,29 +2129,59 @@ int64_t GetBlockValue(int nHeight)
 
     else {
         if (nHeight == 0) {
-            nSubsidy = 1600000 * COIN;
-        } else if (nHeight <= 5 && nHeight > 1) { //First POW phase
-            nSubsidy = 1600000 * COIN;
-        } else if (nHeight <= 200 && nHeight > 1) { //First POW phase
-            nSubsidy = 0 * COIN;
-        } else if (nHeight <= 25000 && nHeight > 200) { //Public phase 17.22 days 24,800 coins
+            nSubsidy = 2000000 * COIN;
+        }else if (nHeight <= 400 && nHeight > 0) {
+            nSubsidy = 100 * COIN;
+        }else if (nHeight <= 50000 && nHeight >= 400) {
             nSubsidy = 1 * COIN;
-        } else if (nHeight <= 50000 && nHeight > 25000) { //17.36 days            625,000 coins
-            nSubsidy = 25 * COIN;
-        } else if (nHeight <= 75000 && nHeight > 50000) { //17.36 days            1,250,000 coins
-            nSubsidy = 50 * COIN;
-        } else if (nHeight <= 100000 && nHeight > 75000) { //17.36 days           2,125,000 coins
-            nSubsidy = 85 * COIN;
-        } else if (nHeight <= 125000 && nHeight > 100000) { //17.36 days          1,875,000 coins
-            nSubsidy = 75 * COIN;
-        } else if (nHeight <= 168000 && nHeight > 125000) { //30 days             2,150,000 coins
-            nSubsidy = 50 * COIN;
-        } else if (nHeight <= 297600 && nHeight > 168000) { //90 days             3,240,000 coins
-            nSubsidy = 25 * COIN;
-        } else if (nHeight <= 556800 && nHeight > 297600) { //180 days            2,592,000 coins
-            nSubsidy = 10 * COIN;
-        } else if (nHeight <= 556800) { //Till max supply           Total coins used 17,882,000
-            nSubsidy = 5 * COIN;        //57,026.38 days will max supply is reached
+        }else if (nHeight <= 100000 && nHeight > 50000) {
+            nSubsidy = 2 * COIN;
+            if (nHeight == 50404 || nHeight == 55089 || nHeight == 60387 || nHeight == 65101 || nHeight == 70555 ||
+                nHeight == 75578 || nHeight == 80917 || nHeight == 85876 || nHeight == 90876 || nHeight == 95876 || nHeight == 99123) {
+                nSubsidy = 50 * COIN;
+            }
+        }else if (nHeight <= 200000 && nHeight > 100000) {
+            nSubsidy = 5 * COIN;
+            if (nHeight == 105404 || nHeight == 115089 || nHeight == 121387 || nHeight == 126101 || nHeight == 130555 ||
+                nHeight == 140578 || nHeight == 145917 || nHeight == 150876 || nHeight == 156876 || nHeight == 161876 || nHeight == 166123 || nHeight == 171555 ||
+                nHeight == 176420 || nHeight == 181812 || nHeight == 185212 || nHeight == 191331 || nHeight == 196845 || nHeight == 199987) {
+                nSubsidy = 100 * COIN;
+            }
+        }else if (nHeight <= 400000 && nHeight > 200000) {
+            nSubsidy = 2.5 * COIN;
+            if (nHeight == 205344 || nHeight == 215183 || nHeight == 221387 || nHeight == 226101 || nHeight == 231525 ||
+                nHeight == 239448 || nHeight == 245917 || nHeight == 250876 || nHeight == 256321 || nHeight == 261313 || nHeight == 271123 || nHeight == 277235 ||
+                nHeight == 289444 || nHeight == 300820 || nHeight == 310002 || nHeight == 321010 || nHeight == 333333 || nHeight == 345542 || nHeight == 355342 ||
+                nHeight == 364332 || nHeight == 373111 || nHeight == 382119 || nHeight == 392121 || nHeight == 399678) {
+                nSubsidy = 150 * COIN;
+            }
+        }else if (nHeight <= 800000 && nHeight > 400000) {
+            nSubsidy = 1.25 * COIN;
+            if (nHeight == 405344 || nHeight == 415183 || nHeight == 421387 || nHeight == 426101 || nHeight == 431525 ||
+                nHeight == 439448 || nHeight == 445917 || nHeight == 450876 || nHeight == 456321 || nHeight == 461313 || nHeight == 471123 || nHeight == 477235 ||
+                nHeight == 489444 || nHeight == 500820 || nHeight == 510002 || nHeight == 521312 || nHeight == 535353 || nHeight == 545122) {
+                nSubsidy = 200 * COIN;
+            }
+        }else if (nHeight <= 1600000 && nHeight > 800000) {
+            nSubsidy = 3 * COIN;
+            if (nHeight == 804404 || nHeight == 900989 || nHeight == 1010587 || nHeight == 1150101 || nHeight == 1225321 ||
+                nHeight == 1331578 || nHeight == 1437917 || nHeight == 1541554) {
+                nSubsidy = 250 * COIN;
+            }
+        }else if (nHeight <= 3200000 && nHeight > 1600000) {
+            nSubsidy = 1 * COIN;
+            if (nHeight == 1654404 || nHeight == 1759989 || nHeight == 1853437 || nHeight == 2220101 || nHeight == 2455555 ||
+                nHeight == 2781578 || nHeight == 2817917 || nHeight == 2911321 || nHeight == 3151412) {
+                nSubsidy = 300 * COIN;
+            }
+        }else if (nHeight <= 6400000 && nHeight > 3200000) {
+            nSubsidy = 0.5 * COIN;
+        }else if (nHeight <= 12800000 && nHeight > 6400000) {
+            nSubsidy = 0.25 * COIN;
+        }else if (nHeight <= 25600000 && nHeight > 12800000) {
+            nSubsidy = 1 * COIN;
+        }else {
+            nSubsidy = .5 * COIN;
         }
 
         int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
@@ -2162,7 +2192,7 @@ int64_t GetBlockValue(int nHeight)
     }
     return nSubsidy;
 }
-
+/*
 CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
 {
     //if a mn count is inserted into the function we are looking for a specific result for a masternode count
@@ -2397,6 +2427,7 @@ CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
     }
     return ret;
 }
+*/
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
 {
@@ -2410,38 +2441,8 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
     // Changes alot and levels out to seesaw at end.
     if (nHeight == 0) {
         ret = blockValue * 0;
-    } else if (nHeight <= 25000 && nHeight > 200) {
-        ret = blockValue / 10 * 6; //60%
-    } else if (nHeight <= 60000 && nHeight > 25000) {
-        ret = blockValue / 10 * 6; //60%
-    } else if (nHeight <= 65000 && nHeight > 60000) {
-        ret = blockValue / 10 * 6.5; //65%
-    } else if (nHeight <= 70000 && nHeight > 65000) {
-        ret = blockValue / 10 * 6.6; //66%
-    } else if (nHeight <= 75000 && nHeight > 70000) {
-        ret = blockValue / 10 * 6.7; //67%
-    } else if (nHeight <= 80000 && nHeight > 75000) {
-        ret = blockValue / 10 * 6.8; //68%
-    } else if (nHeight <= 85000 && nHeight > 80000) {
-        ret = blockValue / 10 * 6.9; //69%
-    } else if (nHeight <= 88000 && nHeight > 85000) {
-        ret = blockValue / 10 * 7; //70%
-    } else if (nHeight <= 91000 && nHeight > 88000) {
-        ret = blockValue / 10 * 7.2; //72%
-    } else if (nHeight <= 94000 && nHeight > 91000) {
-        ret = blockValue / 10 * 7.4; //74%
-    } else if (nHeight <= 97000 && nHeight > 94000) {
-        ret = blockValue / 10 * 7.6; //76%
-    } else if (nHeight <= 100000 && nHeight > 97000) {
-        ret = blockValue / 10 * 7.8; //78%
-    } else if (nHeight <= 125000 && nHeight > 100000) {
-        ret = blockValue / 10 * 8; //80%
-    } else if (nHeight <= 150000 && nHeight > 125000) {
-        ret = blockValue / 10 * 8.5; //85%
-    } else if (nHeight <= 175000 && nHeight > 150000) {
-        ret = blockValue / 10 * 9; //90%
-    } else if (nHeight > 175000) {
-        ret = blockValue / 10 * 9; //90%
+    } else {
+        ret = blockValue * 7; //70%
     }
     return ret;
 }
