@@ -153,9 +153,9 @@ public:
 		genesis.hashPrevBlock = 0;
 		genesis.hashMerkleRoot = genesis.BuildMerkleTree();
 		genesis.nVersion = 1;
-		genesis.nTime = 1534438799;
+		genesis.nTime = 1545442921;
 		genesis.nBits = 504365040;
-		genesis.nNonce = 647688;
+		genesis.nNonce = 191435;
 
 		nEnforceNewSporkKey = 1546300800; //!> Sporks signed after (GMT): Tuesday, Jan 1, 2018 12:00:00 AM GMT must use the new spork key
         nRejectOldSporkKey = 1548979200;  //!> Fully reject old spork key after (GMT): Friday, Feb 1, 2018 12:00:00 AM
@@ -165,17 +165,14 @@ public:
 
 		//printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
 		//printf("genesis.hashMerkleRoot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
-		assert(hashGenesisBlock == uint256("0xa9f081734c579a25872ce366d5520482755d26ff3db73fbe7bdd4e973bc0e173"));
+		assert(hashGenesisBlock == uint256("0xe6cfdfac2355b12069552ab170cda9cc9d11cb7bdbeec21fc23500c797a65f38"));
 		assert(genesis.hashMerkleRoot == uint256("0x598ffdff99e67551b7a05dc08dfafcf2e7a6ecea89f9b369bf830f4b21ff160f"));
 
 		//Teams Seeder
 		vSeeds.push_back(CDNSSeedData("seeder.posqoin.club", "seeder.posqoin.club"));
 		//Seeds	Community Nodes
 		vSeeds.push_back(CDNSSeedData("144.202.16.251", "144.202.16.251"));
-		vSeeds.push_back(CDNSSeedData("104.238.159.161", "104.238.159.161"));
-		vSeeds.push_back(CDNSSeedData("178.128.116.146", "178.128.116.146"));
-		vSeeds.push_back(CDNSSeedData("95.179.199.170", "95.179.199.170"));
-		vSeeds.push_back(CDNSSeedData("158.69.143.106", "158.69.143.106"));
+
 
 		//IPV6 Nodes
 		vSeeds.push_back(CDNSSeedData("[2001:19f0:5:6c99:3b12::1]", "[2001:19f0:5:6c99:3b12::1]"));
