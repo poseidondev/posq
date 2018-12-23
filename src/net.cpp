@@ -6,7 +6,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/poseidon-config.h"
+#include "config/ccbc-config.h"
 #endif
 
 #include "net.h"
@@ -77,7 +77,7 @@ bool fListen = true;
 uint64_t nLocalServices = NODE_NETWORK;
 CCriticalSection cs_mapLocalHost;
 map<CNetAddr, LocalServiceInfo> mapLocalHost;
-static bool vfReachable[NET_MAX] = {};
+//static bool vfReachable[NET_MAX] = {};
 static bool vfLimited[NET_MAX] = {};
 static CNode* pnodeLocalHost = NULL;
 uint64_t nLocalHostNonce = 0;
@@ -237,6 +237,7 @@ void AdvertizeLocal(CNode* pnode)
     }
 }
 
+/*
 void SetReachable(enum Network net, bool fFlag)
 {
     LOCK(cs_mapLocalHost);
@@ -244,6 +245,7 @@ void SetReachable(enum Network net, bool fFlag)
     if (net == NET_IPV6 && fFlag)
         vfReachable[NET_IPV4] = true;
 }
+*/
 
 // learn a new local address
 bool AddLocal(const CService& addr, int nScore)
@@ -267,7 +269,7 @@ bool AddLocal(const CService& addr, int nScore)
             info.nScore = nScore + (fAlready ? 1 : 0);
             info.nPort = addr.GetPort();
         }
-        SetReachable(addr.GetNetwork());
+        //SetReachable(addr.GetNetwork());
     }
 
     return true;
@@ -330,7 +332,8 @@ bool IsLocal(const CService& addr)
 bool IsReachable(enum Network net)
 {
     LOCK(cs_mapLocalHost);
-    return vfReachable[net] && !vfLimited[net];
+    //return vfReachable[net] && !vfLimited[net];
+    return !vfLimited[net];
 }
 
 /** check whether a given address is in a network we can probably connect to */
@@ -570,7 +573,7 @@ void CNode::copyStats(CNodeStats& stats)
         nPingUsecWait = GetTimeMicros() - nPingUsecStart;
     }
 
-    // Raw ping time is in microseconds, but show it to user as whole seconds (Poseidon users should be well used to small numbers with many decimal places by now :)
+    // Raw ping time is in microseconds, but show it to user as whole seconds (Ccbc users should be well used to small numbers with many decimal places by now :)
     stats.dPingTime = (((double)nPingUsecTime) / 1e6);
     stats.dPingWait = (((double)nPingUsecWait) / 1e6);
 
@@ -1032,7 +1035,7 @@ void ThreadMapPort()
             }
         }
 
-        string strDesc = "Poseidon " + FormatFullVersion();
+        string strDesc = "Ccbc " + FormatFullVersion();
 
         try {
             while (true) {
@@ -1504,7 +1507,7 @@ bool BindListenPort(const CService& addrBind, string& strError, bool fWhiteliste
     if (::bind(hListenSocket, (struct sockaddr*)&sockaddr, len) == SOCKET_ERROR) {
         int nErr = WSAGetLastError();
         if (nErr == WSAEADDRINUSE)
-            strError = strprintf(_("Unable to bind to %s on this computer. Poseidon Core is probably already running."), addrBind.ToString());
+            strError = strprintf(_("Unable to bind to %s on this computer. Ccbc Core is probably already running."), addrBind.ToString());
         else
             strError = strprintf(_("Unable to bind to %s on this computer (bind returned error %s)"), addrBind.ToString(), NetworkErrorString(nErr));
         LogPrintf("%s\n", strError);

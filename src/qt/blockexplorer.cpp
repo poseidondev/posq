@@ -44,7 +44,7 @@ static std::string ValueToString(CAmount nValue, bool AllowNegative = false)
     if (nValue < 0 && !AllowNegative)
         return "<span>" + _("unknown") + "</span>";
 
-    QString Str = BitcoinUnits::formatWithUnit(BitcoinUnits::POSQ, nValue);
+    QString Str = BitcoinUnits::formatWithUnit(BitcoinUnits::CCBC, nValue);
     if (AllowNegative && nValue > 0)
         Str = '+' + Str;
     return std::string("<span>") + Str.toUtf8().data() + "</span>";
@@ -471,8 +471,8 @@ void BlockExplorer::showEvent(QShowEvent*)
         updateNavButtons();
 
         if (!GetBoolArg("-txindex", false)) {
-            QString Warning = tr("Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (poseidon.conf).");
-            QMessageBox::warning(this, "Poseidon Core Blockchain Explorer", Warning, QMessageBox::Ok);
+            QString Warning = tr("Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (ccbc.conf).");
+            QMessageBox::warning(this, "Ccbc Core Blockchain Explorer", Warning, QMessageBox::Ok);
         }
     }
 }
@@ -548,7 +548,7 @@ void BlockExplorer::setBlock(CBlockIndex* pBlock)
 
 void BlockExplorer::setContent(const std::string& Content)
 {
-    QString CSS = "body {font-size:12px; color:#f8f6f6; bgcolor:#466a9b;}\n a, span { font-family: monospace; }\n span.addr {color:#466a9b; font-weight: bold;}\n table tr td {padding: 3px; border: 1px solid black; background-color: #466a9b;}\n td.d0 {font-weight: bold; color:#f8f6f6;}\n h2, h3 { white-space:nowrap; color:#466a9b;}\n a { color:#FFF; text-decoration:none; }\n a.nav {color:#466a9b;}\n";
+    QString CSS = "body {font-size:12px; color:#f8f6f6; bgcolor:#F38F10;}\n a, span { font-family: monospace; }\n span.addr {color:#F38F10; font-weight: bold;}\n table tr td {padding: 3px; border: 1px solid black; background-color: #F38F10;}\n td.d0 {font-weight: bold; color:#f8f6f6;}\n h2, h3 { white-space:nowrap; color:#F38F10;}\n a { color:#FFFC00; text-decoration:none; }\n a.nav {color:#F38F10;}\n";
     QString FullContent = "<html><head><style type=\"text/css\">" + CSS + "</style></head>" + "<body>" + Content.c_str() + "</body></html>";
     // printf(FullContent.toUtf8());
 

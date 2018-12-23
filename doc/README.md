@@ -1,39 +1,39 @@
-Poseidon Core
+Ccbc Core
 =====================
 
 Setup
 ---------------------
-[Poseidon Core](http://Poseidoncoin.com) is the original Poseidon client and it builds the backbone of the network. However, it downloads and stores the entire history of Poseidon transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Ccbc Core](http://ccbccoin.com) is the original Ccbc client and it builds the backbone of the network. However, it downloads and stores the entire history of Ccbc transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Poseidon on your native platform.
+The following are some helpful notes on how to run Ccbc on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- bin/32/poseidon-qt (GUI, 32-bit) or bin/32/poseidond (headless, 32-bit)
-- bin/64/poseidon-qt (GUI, 64-bit) or bin/64/poseidond (headless, 64-bit)
+- bin/32/ccbc-qt (GUI, 32-bit) or bin/32/ccbcd (headless, 32-bit)
+- bin/64/ccbc-qt (GUI, 64-bit) or bin/64/ccbcd (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run poseidon-qt.exe.
+Unpack the files into a directory, and then run ccbc-qt.exe.
 
 ### OSX
 
-Drag Poseidon-Qt to your applications folder, and then run Poseidon-Qt.
+Drag Ccbc-Qt to your applications folder, and then run Ccbc-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Poseidon Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
+* See the documentation at the [Ccbc Wiki]() ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php) or on the [Poseidon Forum](http://Poseidoncoin.com/).
-* Join one of our Discord groups [Poseidon Discord Groups](https://discord.gg/YcnvMqt).
+* Ask for help on [BitcoinTalk]() or on the [Ccbc Forum]().
+* Join one of our Discord groups [Ccbc Discord Groups]().
 
 Building
 ---------------------
-The following are developer notes on how to build Poseidon on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Ccbc on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -41,7 +41,7 @@ The following are developer notes on how to build Poseidon on your native platfo
 
 Development
 ---------------------
-The Poseidon repo's [root README](https://github.com/eastcoastcrypto/Poseidon/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Ccbc repo's [root README](https://github.com/eastcoastcrypto/Ccbc/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -55,8 +55,8 @@ The Poseidon repo's [root README](https://github.com/eastcoastcrypto/Poseidon/bl
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) .
-* Join the [Poseidon-Dev] Discord groups [Poseidon Discord Groups](https://discord.gg/YcnvMqt).
+* Discuss on the [BitcoinTalk]() .
+* Join the [Ccbc-Dev] Discord groups [Ccbc Discord Groups]().
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

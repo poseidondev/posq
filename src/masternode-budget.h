@@ -236,6 +236,8 @@ public:
     bool IsTransactionValid(const CTransaction& txNew, int nBlockHeight);
     std::string GetRequiredPaymentsString(int nBlockHeight);
     void FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, bool fProofOfStake);
+	void FillTreasuryBlockPayee(CMutableTransaction& txNew, CAmount nFees, bool fProofOfStake);
+    void FillReviveBlockPayee(CMutableTransaction& txNew, CAmount nFees, bool fProofOfStake);
 
     void CheckOrphanVotes();
     void Clear()
@@ -360,7 +362,7 @@ public:
 
     //check to see if we should vote on this
     void AutoCheck();
-    //total poseidon paid out by this budget
+    //total ccbc paid out by this budget
     CAmount GetTotalPayout();
     //vote on this finalized budget as a masternode
     void SubmitVote();

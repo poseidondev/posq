@@ -1,0 +1,26 @@
+[Unit]
+Description=Ccbc's distributed currency daemon
+After=network.target
+
+[Service]
+User=ccbc
+Group=ccbc
+
+Type=forking
+PIDFile=/var/lib/ccbcd/ccbcd.pid
+
+ExecStart=/usr/bin/ccbcd -daemon -pid=/var/lib/ccbcd/ccbcd.pid \
+          -conf=/etc/ccbc/ccbc.conf -datadir=/var/lib/ccbcd
+
+ExecStop=-/usr/bin/ccbc-cli -conf=/etc/ccbc/ccbc.conf \
+         -datadir=/var/lib/ccbcd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

@@ -654,7 +654,7 @@ std::vector<pair<int, CMasternode> > CMasternodeMan::GetMasternodeRanks(int64_t 
         if (mn.protocolVersion < minProtocol) continue;
 
         if (!mn.IsEnabled()) {
-            vecMasternodeScores.push_back(make_pair(9999, mn));
+            vecMasternodeScores.push_back(make_pair(4999, mn));
             continue;
         }
 
@@ -925,8 +925,8 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
         }
 
         if (Params().NetworkID() == CBaseChainParams::MAIN) {
-            if (addr.GetPort() != 5510) return;
-        } else if (addr.GetPort() == 5510)
+            if (addr.GetPort() != 5520) return;
+        } else if (addr.GetPort() == 5520)
             return;
 
         //search existing Masternode list, this is where we update existing Masternodes with new dsee broadcasts
@@ -986,7 +986,8 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
 
         CValidationState state;
         CMutableTransaction tx = CMutableTransaction();
-        CTxOut vout = CTxOut(9999.99 * COIN, obfuScationPool.collateralPubKey);
+        //CTxOut vout = CTxOut(4999.99 * COIN, obfuScationPool.collateralPubKey);
+		CTxOut vout = CTxOut(24999.99 * COIN, obfuScationPool.collateralPubKey);
         tx.vin.push_back(vin);
         tx.vout.push_back(vout);
 
@@ -1005,13 +1006,13 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
             }
 
             // verify that sig time is legit in past
-            // should be at least not earlier than block when 10000 POSQ tx got MASTERNODE_MIN_CONFIRMATIONS
+            // should be at least not earlier than block when 10000 CCBC tx got MASTERNODE_MIN_CONFIRMATIONS
             uint256 hashBlock = 0;
             CTransaction tx2;
             GetTransaction(vin.prevout.hash, tx2, hashBlock, true);
             BlockMap::iterator mi = mapBlockIndex.find(hashBlock);
             if (mi != mapBlockIndex.end() && (*mi).second) {
-                CBlockIndex* pMNIndex = (*mi).second;                                                        // block for 10000 POSQ tx -> 1 confirmation
+                CBlockIndex* pMNIndex = (*mi).second;                                                        // block for 10000 CCBC tx -> 1 confirmation
                 CBlockIndex* pConfIndex = chainActive[pMNIndex->nHeight + MASTERNODE_MIN_CONFIRMATIONS - 1]; // block where tx got MASTERNODE_MIN_CONFIRMATIONS
                 if (pConfIndex->GetBlockTime() > sigTime) {
                     LogPrint("masternode","mnb - Bad sigTime %d for Masternode %s (%i conf block is at %d)\n",

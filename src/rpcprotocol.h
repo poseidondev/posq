@@ -30,7 +30,7 @@ enum HTTPStatusCode {
     HTTP_SERVICE_UNAVAILABLE = 503,
 };
 
-//! Poseidon RPC error codes
+//! Ccbc RPC error codes
 enum RPCErrorCode {
     //! Standard JSON-RPC 2.0 errors
     RPC_INVALID_REQUEST = -32600,
@@ -59,7 +59,7 @@ enum RPCErrorCode {
     RPC_TRANSACTION_ALREADY_IN_CHAIN = RPC_VERIFY_ALREADY_IN_CHAIN,
 
     //! P2P client errors
-    RPC_CLIENT_NOT_CONNECTED = -9,        //! Poseidon is not connected
+    RPC_CLIENT_NOT_CONNECTED = -9,        //! Ccbc is not connected
     RPC_CLIENT_IN_INITIAL_DOWNLOAD = -10, //! Still downloading initial blocks
     RPC_CLIENT_NODE_ALREADY_ADDED = -23,  //! Node is already added
     RPC_CLIENT_NODE_NOT_ADDED = -24,      //! Node has not been added before
@@ -70,7 +70,7 @@ enum RPCErrorCode {
     RPC_WALLET_INVALID_ACCOUNT_NAME = -11, //! Invalid account name
     RPC_WALLET_KEYPOOL_RAN_OUT = -12,      //! Keypool ran out, call keypoolrefill first
     RPC_WALLET_UNLOCK_NEEDED = -13,        //! Enter the wallet passphrase with walletpassphrase first
-    RPC_WALLET_PASSPOSQASE_INCORRECT = -14, //! The wallet passphrase entered was incorrect
+    RPC_WALLET_PASSPHRASE_INCORRECT = -14, //! The wallet passphrase entered was incorrect
     RPC_WALLET_WRONG_ENC_STATE = -15,      //! Command given in wrong wallet encryption state (encrypting an encrypted wallet etc.)
     RPC_WALLET_ENCRYPTION_FAILED = -16,    //! Failed to encrypt the wallet
     RPC_WALLET_ALREADY_UNLOCKED = -17,     //! Wallet is already unlocked

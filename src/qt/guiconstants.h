@@ -11,9 +11,9 @@
 static const int MODEL_UPDATE_DELAY = 250;
 
 /* AskPassphraseDialog -- Maximum passphrase length */
-static const int MAX_PASSPOSQASE_SIZE = 1024;
+static const int MAX_PASSPHRASE_SIZE = 1024;
 
-/* Poseidon GUI -- Size of icons in status bar */
+/* Ccbc GUI -- Size of icons in status bar */
 static const int STATUSBAR_ICONSIZE = 16;
 
 static const bool DEFAULT_SPLASHSCREEN = true;
@@ -32,7 +32,7 @@ static const bool DEFAULT_SPLASHSCREEN = true;
 /* Transaction list -- TX status decoration - offline */
 #define COLOR_TX_STATUS_OFFLINE QColor(192, 192, 192)
 /* Transaction list -- TX status decoration - default color */
-#define COLOR_BLACK QColor(0, 0, 0)
+#define COLOR_BLACK QColor(51, 51, 51)
 
 /* Tooltips longer than this (in characters) are converted into rich text,
    so that they can be word-wrapped.
@@ -48,9 +48,9 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 35
 
-#define QAPP_ORG_NAME "Poseidon"
-#define QAPP_ORG_DOMAIN "poseidon.org"
-#define QAPP_APP_NAME_DEFAULT "Poseidon-Qt"
-#define QAPP_APP_NAME_TESTNET "Poseidon-Qt-testnet"
+#define QAPP_ORG_NAME "Ccbc"
+#define QAPP_ORG_DOMAIN "ccbc.org"
+#define QAPP_APP_NAME_DEFAULT "Ccbc-Qt"
+#define QAPP_APP_NAME_TESTNET "Ccbc-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

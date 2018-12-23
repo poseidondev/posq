@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: poseidond.service
-Upstart: poseidond.conf
-OpenRC:  poseidond.openrc
-         poseidond.openrcconf
-CentOS:  poseidond.init
+SystemD: ccbcd.service
+Upstart: ccbcd.conf
+OpenRC:  ccbcd.openrc
+         ccbcd.openrcconf
+CentOS:  ccbcd.init
 
 have been made available to assist packagers in creating node packages here.
 

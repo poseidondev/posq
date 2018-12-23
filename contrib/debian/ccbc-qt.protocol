@@ -1,0 +1,11 @@
+[Protocol]
+exec=ccbc-qt '%u'
+protocol=ccbc
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

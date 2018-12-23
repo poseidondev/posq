@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX Core developers
+// Copyright (c) 2015-2017 The CCBC Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -26,7 +26,7 @@ struct CDNSSeedData {
 
 /**
  * CChainParams defines various tweakable parameters of a given instance of the
- * Poseidon system. There are three: the main network on which people trade goods
+ * Ccbc system. There are three: the main network on which people trade goods
  * and services, the public test network which gets reset from time to time and
  * a regression test mode which is intended for private networks only. It has
  * minimal difficulty to ensure that blocks can be found instantly.
@@ -91,10 +91,17 @@ public:
     const std::vector<CAddress>& FixedSeeds() const { return vFixedSeeds; }
     virtual const Checkpoints::CCheckpointData& Checkpoints() const = 0;
     int PoolMaxTransactions() const { return nPoolMaxTransactions; }
+
+	//Spork Related items
+    //std::string SporkKey() const { return strSporkKey; }
     std::string SporkKey() const { return strSporkKey; }
+    std::string SporkKeyOld() const { return strSporkKeyOld; }
+    int64_t NewSporkStart() const { return nEnforceNewSporkKey; }
+    int64_t RejectOldSporkKey() const { return nRejectOldSporkKey; }
     std::string ObfuscationPoolDummyAddress() const { return strObfuscationPoolDummyAddress; }
     int64_t StartMasternodePayments() const { return nStartMasternodePayments; }
     int64_t Budget_Fee_Confirmations() const { return nBudget_Fee_Confirmations; }
+
     CBaseChainParams::Network NetworkID() const { return networkID; }
 
     /** Zerocoin **/
@@ -117,6 +124,15 @@ public:
     int Zerocoin_Block_LastGoodCheckpoint() const { return nBlockLastGoodCheckpoint; }
     int Zerocoin_StartTime() const { return nZerocoinStartTime; }
     int Zerocoin_AccumulatorStartHeight() const { return nAccumulatorStartHeight; }
+	//Central Collateral Amount
+	int MasternodeCollateralAmt() const { return nMasternodeCollateralAmt; }
+	//Treasury Code
+	std::string vTreasuryRewardAddress;
+    std::string vReviveRewardAddress;
+    std::string GetTreasuryRewardAddressAtHeight(int height) const;
+    CScript GetTreasuryRewardScriptAtHeight(int height) const;
+    std::string GetReviveRewardAddressAtHeight(int height) const;
+    CScript GetReviveRewardScriptAtHeight(int height) const;
 
 protected:
     CChainParams() {}
@@ -126,6 +142,7 @@ protected:
     //! Raw pub key bytes for the broadcast alert signing key.
     std::vector<unsigned char> vAlertPubKey;
     int nDefaultPort;
+	int nMasternodeCollateralAmt;
     uint256 bnProofOfWorkLimit;
     int nMaxReorganizationDepth;
     int nSubsidyHalvingInterval;
@@ -156,7 +173,13 @@ protected:
     bool fTestnetToBeDeprecatedFieldRPC;
     bool fHeadersFirstSyncingActive;
     int nPoolMaxTransactions;
+
+    //std::string strSporkKey;
     std::string strSporkKey;
+    std::string strSporkKeyOld;
+    int64_t nEnforceNewSporkKey;
+    int64_t nRejectOldSporkKey;
+
     std::string strObfuscationPoolDummyAddress;
     int64_t nStartMasternodePayments;
     std::string zerocoinModulus;
