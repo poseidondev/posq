@@ -9,7 +9,7 @@
 #include "base58.h"
 #include "chainparams.h"
 #include "libzerocoin/Params.h"
-#include "net.h" a
+#include "net.h"
 #include "random.h"
 #include "util.h"
 #include "utilstrencodings.h"
@@ -116,7 +116,7 @@ public:
 		pchMessageStart[2] = 0xc2;
 		pchMessageStart[3] = 0x45;
 		vAlertPubKey = ParseHex("0427032f4aea9ade6b709caa6f302c0850e1ecdc9f4cd2619ef28dcd560afcc65bcd7a97bf58523a450a7c8e6e178c9ced2ed5ff96afd8e88284332a87f18af63f");
-		nDefaultPort = 5520;
+		nDefaultPort = 6978;
 		bnProofOfWorkLimit = ~uint256(0) >> 1;
 		nSubsidyHalvingInterval = 210000;
 		nMaxReorganizationDepth = 100;
@@ -265,7 +265,7 @@ public:
 		pchMessageStart[2] = 0xc2;
 		pchMessageStart[3] = 0x45;
 		vAlertPubKey = ParseHex("0427032f4aea9ade6b709caa6f302c0850e1ecdc9f4cd2619ef28dcd560afcc65bcd7a97bf58523a450a7c8e6e178c9ced2ed5ff96afd8e88284332a87f18af63f");
-		nDefaultPort = 15521;
+		nDefaultPort = 17456;
 		nEnforceBlockUpgradeMajority = 750;
 		nRejectBlockOutdatedMajority = 950;
 		nToCheckBlockUpgradeMajority = 1000;
