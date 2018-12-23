@@ -66,15 +66,15 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += ccbcd
+  bin_PROGRAMS += posqd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += ccbc-cli ccbc-tx
+  bin_PROGRAMS += posq-cli posq-tx
 endif
 
 .PHONY: FORCE
-# ccbc core #
+# posq core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
@@ -190,7 +190,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between ccbcd and ccbc-qt
+# server: shared between posqd and posq-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -236,7 +236,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between ccbcd and ccbc-qt, but only linked
+# wallet: shared between posqd and posq-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -356,7 +356,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between ccbcd, and ccbc-qt and non-server tools
+# common: shared between posqd, and posq-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   accumulators.cpp \
@@ -416,7 +416,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between ccbc-cli and ccbc-qt
+# cli: shared between posq-cli and posq-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -426,7 +426,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-ccbcd_LDADD = \
+posqd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -438,26 +438,26 @@ ccbcd_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-ccbcd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+posqd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-ccbcd_LDADD += libbitcoin_wallet.a
+posqd_LDADD += libbitcoin_wallet.a
 endif
-ccbcd_SOURCES = ccbcd.cpp
+posqd_SOURCES = posqd.cpp
 #
 
 if TARGET_WINDOWS
-ccbcd_SOURCES += ccbcd-res.rc
+posqd_SOURCES += posqd-res.rc
 endif
 
-ccbcd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-ccbcd_CPPFLAGS = $(BITCOIN_INCLUDES)
-ccbcd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+posqd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+posqd_CPPFLAGS = $(BITCOIN_INCLUDES)
+posqd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# ccbc-cli binary #
-ccbc_cli_LDADD = \
+# posq-cli binary #
+posq_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
@@ -465,14 +465,14 @@ ccbc_cli_LDADD = \
   $(CRYPTO_LIBS) \
   $(EVENT_LIBS)
 
-ccbc_cli_SOURCES = \
-  ccbc-cli.cpp
+posq_cli_SOURCES = \
+  posq-cli.cpp
 
-ccbc_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+posq_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 #
 
-# ccbc-tx binary #
-ccbc_tx_LDADD = \
+# posq-tx binary #
+posq_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -482,15 +482,15 @@ ccbc_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-ccbc_tx_SOURCES = ccbc-tx.cpp
-ccbc_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+posq_tx_SOURCES = posq-tx.cpp
+posq_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-ccbc_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+posq_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-ccbc_cli_SOURCES += ccbc-cli-res.rc
+posq_cli_SOURCES += posq-cli-res.rc
 endif
-ccbc_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+posq_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h

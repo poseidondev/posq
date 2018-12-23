@@ -1,19 +1,19 @@
 [Unit]
-Description=Ccbc's distributed currency daemon
+Description=Posq's distributed currency daemon
 After=network.target
 
 [Service]
-User=ccbc
-Group=ccbc
+User=posq
+Group=posq
 
 Type=forking
-PIDFile=/var/lib/ccbcd/ccbcd.pid
+PIDFile=/var/lib/posqd/posqd.pid
 
-ExecStart=/usr/bin/ccbcd -daemon -pid=/var/lib/ccbcd/ccbcd.pid \
-          -conf=/etc/ccbc/ccbc.conf -datadir=/var/lib/ccbcd
+ExecStart=/usr/bin/posqd -daemon -pid=/var/lib/posqd/posqd.pid \
+          -conf=/etc/posq/posq.conf -datadir=/var/lib/posqd
 
-ExecStop=-/usr/bin/ccbc-cli -conf=/etc/ccbc/ccbc.conf \
-         -datadir=/var/lib/ccbcd stop
+ExecStop=-/usr/bin/posq-cli -conf=/etc/posq/posq.conf \
+         -datadir=/var/lib/posqd stop
 
 Restart=always
 PrivateTmp=true

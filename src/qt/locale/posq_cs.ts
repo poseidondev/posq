@@ -62,12 +62,12 @@
         <translation>Adresy pro přijetí peněz</translation>
     </message>
     <message>
-        <source>These are your Ccbc addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto jsou Vaše Ccbc adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
+        <source>These are your Posq addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto jsou Vaše Posq adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
     </message>
     <message>
-        <source>These are your Ccbc addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto jsou Vaše Ccbc adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
+        <source>These are your Posq addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto jsou Vaše Posq adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Potvrdit zašifrování peněženky</translation>
     </message>
     <message>
-        <source>Ccbc will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CCBCs from being stolen by malware infecting your computer.</source>
-        <translation>Ccbc se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše CCBCy před krádží, pokud je Váš počítač infikován malwarem.</translation>
+        <source>Posq will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POSQs from being stolen by malware infecting your computer.</source>
+        <translation>Posq se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše POSQy před krádží, pokud je Váš počítač infikován malwarem.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Opravdu chcete zašifrovat Vaši peněženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCBC&lt;/b&gt;!</source>
-        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE CCBCy&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR POSQ&lt;/b&gt;!</source>
+        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE POSQy&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Šifrovat</translation>
     </message>
     <message>
-        <source>Enter a Ccbc Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadejte Ccbc adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
+        <source>Enter a Posq Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadejte Posq adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The Ccbc address to sign the message with</source>
-        <translation>Ccbc adresa pro podepsání zprávy</translation>
+        <source>The Posq address to sign the message with</source>
+        <translation>Posq adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ccbc address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Ccbc adresu</translation>
+        <source>Sign the message to prove you own this Posq address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Posq adresu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Vložte BIP 38 šifrovaný privítní klíc. Frázové heslo vložte do prostředního boxu. Kliknětě na Dešifrovat Klíč pro výpočet privátního klíče. Poté co bude klíč dešifrován, kliknutím na 'Importovat Adresu' přidáte privátní klíč do Vaší peněženky.</translation>
     </message>
     <message>
-        <source>The Ccbc address the message was signed with</source>
-        <translation>Ccbc adresa zprávy byla podpsána</translation>
+        <source>The Posq address the message was signed with</source>
+        <translation>Posq adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ccbc address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Ccbc adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Posq address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Posq adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Nástrojová lišta záložek</translation>
     </message>
     <message>
-        <source>Ccbc Core</source>
-        <translation>Ccbc Core</translation>
+        <source>Posq Core</source>
+        <translation>Posq Core</translation>
     </message>
     <message>
-        <source>Send coins to a Ccbc address</source>
-        <translation>Odeslat platbuna Ccbc adresu</translation>
+        <source>Send coins to a Posq address</source>
+        <translation>Odeslat platbuna Posq adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ccbc: URIs)</source>
-        <translation>Vyžádat platbu (generování QK kódu a ccbc: URIs)</translation>
+        <source>Request payments (generates QR codes and posq: URIs)</source>
+        <translation>Vyžádat platbu (generování QK kódu a posq: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Procházet masternody</translation>
     </message>
     <message>
-        <source>&amp;About Ccbc Core</source>
-        <translation>&amp;O Ccbc Core</translation>
+        <source>&amp;About Posq Core</source>
+        <translation>&amp;O Posq Core</translation>
     </message>
     <message>
-        <source>Show information about Ccbc Core</source>
-        <translation>Zobraz informace o Ccbc Core</translation>
+        <source>Show information about Posq Core</source>
+        <translation>Zobraz informace o Posq Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ccbc</source>
-        <translation>Upravit možnosti konfigurace pro Ccbc</translation>
+        <source>Modify configuration options for Posq</source>
+        <translation>Upravit možnosti konfigurace pro Posq</translation>
     </message>
     <message>
-        <source>Sign messages with your Ccbc addresses to prove you own them</source>
-        <translation>Podepsat zprávy Vaší Ccbc adresou pro prokázaní, že jste jejich vlastníkem</translation>
+        <source>Sign messages with your Posq addresses to prove you own them</source>
+        <translation>Podepsat zprávy Vaší Posq adresou pro prokázaní, že jste jejich vlastníkem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Ccbc addresses</source>
-        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými Ccbc adresami</translation>
+        <source>Verify messages to ensure they were signed with specified Posq addresses</source>
+        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými Posq adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a Ccbc: URI or payment request</source>
-        <translation>Otevřít Ccbc: URI nebo platební žádost</translation>
+        <source>Open a Posq: URI or payment request</source>
+        <translation>Otevřít Posq: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the Ccbc Core help message to get a list with possible Ccbc command-line options</source>
-        <translation>Zobrazit Ccbc Core pomocnou zpráv pro získání seznamu možných parametrů Ccbc pro příkazy do příkazové řádky</translation>
+        <source>Show the Posq Core help message to get a list with possible Posq command-line options</source>
+        <translation>Zobrazit Posq Core pomocnou zpráv pro získání seznamu možných parametrů Posq pro příkazy do příkazové řádky</translation>
     </message>
     <message>
-        <source>Ccbc Core client</source>
-        <translation>Ccbc Core klient</translation>
+        <source>Posq Core client</source>
+        <translation>Posq Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -809,8 +809,8 @@ MultiSend: %1</translation>
         <translation>TextPopisku</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (ccbc.conf).</source>
-        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (ccbc.conf) txindex=1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (posq.conf).</source>
+        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (posq.conf) txindex=1.</translation>
     </message>
 </context>
 <context>
@@ -1066,8 +1066,8 @@ MultiSend: %1</translation>
         <translation>Upravit adresu k odeslání platby</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Ccbc address.</source>
-        <translation>Zadaná adresa "%1" není validní Ccbc adresa.</translation>
+        <source>The entered address "%1" is not a valid Posq address.</source>
+        <translation>Zadaná adresa "%1" není validní Posq adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1112,12 +1112,12 @@ MultiSend: %1</translation>
         <translation>verze</translation>
     </message>
     <message>
-        <source>Ccbc Core</source>
-        <translation>Ccbc Core</translation>
+        <source>Posq Core</source>
+        <translation>Posq Core</translation>
     </message>
     <message>
-        <source>About Ccbc Core</source>
-        <translation>O Ccbc Core</translation>
+        <source>About Posq Core</source>
+        <translation>O Posq Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1151,16 +1151,16 @@ MultiSend: %1</translation>
         <translation>Vítejte</translation>
     </message>
     <message>
-        <source>Welcome to Ccbc Core.</source>
-        <translation>Vítejte v Ccbc Core.</translation>
+        <source>Welcome to Posq Core.</source>
+        <translation>Vítejte v Posq Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Ccbc Core will store its data.</source>
-        <translation>Při prvním spuštění programu si můžete vybrat, kam bude Ccbc Core ukládat svá data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Posq Core will store its data.</source>
+        <translation>Při prvním spuštění programu si můžete vybrat, kam bude Posq Core ukládat svá data.</translation>
     </message>
     <message>
-        <source>Ccbc Core will download and store a copy of the Ccbc block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Ccbc Core stáhne a uloží kopii Ccbc blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>Posq Core will download and store a copy of the Posq block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Posq Core stáhne a uloží kopii Posq blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1171,8 +1171,8 @@ MultiSend: %1</translation>
         <translation>Použít vlastní složku pro data</translation>
     </message>
     <message>
-        <source>Ccbc Core</source>
-        <translation>Ccbc Core</translation>
+        <source>Posq Core</source>
+        <translation>Posq Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1438,24 +1438,24 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Vyberte úrpvěň ochrany soukromí</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CCBC</source>
-        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 10000 CCBC</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 POSQ</source>
+        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 10000 POSQ</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Použít 16 oddělených masternodů</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 CCBC to anonymize 10000 CCBC</source>
-        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 CCBC pro anonymizaci 10000 CCBC</translation>
+        <source>This option is the quickest and will cost about ~0.025 POSQ to anonymize 10000 POSQ</source>
+        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 POSQ pro anonymizaci 10000 POSQ</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Toto je nejpomalejší a nejvíce bezpečná volba. Použití maximalní anonymity bude stát</translation>
     </message>
     <message>
-        <source>0.1 CCBC per 10000 CCBC you anonymize.</source>
-        <translation>0.1 CCBC za 10000 CCBC anonymizujete.</translation>
+        <source>0.1 POSQ per 10000 POSQ you anonymize.</source>
+        <translation>0.1 POSQ za 10000 POSQ anonymizujete.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1520,12 +1520,12 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Ccbc after logging in to the system.</source>
-        <translation>Automaticky spustit Ccbc po přihlášení do systému</translation>
+        <source>Automatically start Posq after logging in to the system.</source>
+        <translation>Automaticky spustit Posq po přihlášení do systému</translation>
     </message>
     <message>
-        <source>&amp;Start Ccbc on system login</source>
-        <translation>&amp;Spusti Ccbc při přihlášení do systému</translation>
+        <source>&amp;Start Posq on system login</source>
+        <translation>&amp;Spusti Posq při přihlášení do systému</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
@@ -2057,8 +2057,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Změna:</translation>
     </message>
     <message>
-        <source>0 CCBC</source>
-        <translation>0 CCBC</translation>
+        <source>0 POSQ</source>
+        <translation>0 POSQ</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2186,8 +2186,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Ccbc address to sign the message with</source>
-        <translation>Ccbc adresa pro podepsání zprávy</translation>
+        <source>The Posq address to sign the message with</source>
+        <translation>Posq adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2214,16 +2214,16 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ccbc address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Ccbc adresu</translation>
+        <source>Sign the message to prove you own this Posq address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Posq adresu</translation>
     </message>
     <message>
-        <source>The Ccbc address the message was signed with</source>
-        <translation>Ccbc adresa zprávy byla podpsána</translation>
+        <source>The Posq address the message was signed with</source>
+        <translation>Posq adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ccbc address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Ccbc adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Posq address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Posq adresou</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2265,8 +2265,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Ccbc Core</source>
-        <translation>Ccbc Core</translation>
+        <source>Posq Core</source>
+        <translation>Posq Core</translation>
     </message>
     </context>
 <context>
@@ -2376,7 +2376,7 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     </message>
     </context>
 <context>
-    <name>ccbc-core</name>
+    <name>posq-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

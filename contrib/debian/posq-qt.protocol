@@ -1,6 +1,6 @@
 [Protocol]
-exec=ccbc-qt '%u'
-protocol=ccbc
+exec=posq-qt '%u'
+protocol=posq
 input=none
 output=none
 helper=true

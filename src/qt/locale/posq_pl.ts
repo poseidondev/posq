@@ -148,8 +148,8 @@
         <translation>Czy na pewno chcesz zakodować portfel?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CCBC&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE CCBC!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR POSQ&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE POSQ!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ccbc address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Ccbc jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this Posq address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Posq jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,16 +518,16 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>Ccbc Core</source>
-        <translation>&amp;Rdzeń Ccbc</translation>
+        <source>Posq Core</source>
+        <translation>&amp;Rdzeń Posq</translation>
     </message>
     <message>
-        <source>Send coins to a Ccbc address</source>
-        <translation>Wyślij monety do adresu Ccbc</translation>
+        <source>Send coins to a Posq address</source>
+        <translation>Wyślij monety do adresu Posq</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ccbc: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i ccbc:URI)</translation>
+        <source>Request payments (generates QR codes and posq: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i posq:URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Ccbc Core</source>
+        <source>&amp;About Posq Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about Ccbc Core</source>
+        <source>Show information about Posq Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for Ccbc</source>
-        <translation>Modyfikuj opcje konfiguracji Ccbc</translation>
+        <source>Modify configuration options for Posq</source>
+        <translation>Modyfikuj opcje konfiguracji Posq</translation>
     </message>
     <message>
-        <source>Sign messages with your Ccbc addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami Ccbc, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your Posq addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami Posq, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Ccbc addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu Ccbc</translation>
+        <source>Verify messages to ensure they were signed with specified Posq addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu Posq</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -582,8 +582,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a Ccbc: URI or payment request</source>
-        <translation>OtwórzCCBC: URI i żądanie zapłaty</translation>
+        <source>Open a Posq: URI or payment request</source>
+        <translation>OtwórzPOSQ: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the Ccbc Core help message to get a list with possible Ccbc command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia Ccbc, aby dostać listę możliwych opcji Ccbc command-line</translation>
+        <source>Show the Posq Core help message to get a list with possible Posq command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia Posq, aby dostać listę możliwych opcji Posq command-line</translation>
     </message>
     <message>
-        <source>Ccbc Core client</source>
-        <translation>Rdzeń Ccbc klient</translation>
+        <source>Posq Core client</source>
+        <translation>Rdzeń Posq klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -912,8 +912,8 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Ccbc Core</source>
-        <translation>&amp;Rdzeń Ccbc</translation>
+        <source>Posq Core</source>
+        <translation>&amp;Rdzeń Posq</translation>
     </message>
     </context>
 <context>
@@ -927,8 +927,8 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>Ccbc Core</source>
-        <translation>&amp;Rdzeń Ccbc</translation>
+        <source>Posq Core</source>
+        <translation>&amp;Rdzeń Posq</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1188,12 +1188,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start Ccbc after logging in to the system.</source>
-        <translation>Automatycznie uruchom Ccbc po zalogowaniu do systemu</translation>
+        <source>Automatically start Posq after logging in to the system.</source>
+        <translation>Automatycznie uruchom Posq po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start Ccbc on system login</source>
-        <translation>&amp;Uruchom Ccbc podczas logowania do systemu</translation>
+        <source>&amp;Start Posq on system login</source>
+        <translation>&amp;Uruchom Posq podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1212,18 +1212,18 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Ccbc.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie Ccbc</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Posq.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie Posq</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/ccbc-project/ccbc-project-translations</source>
+https://www.transifex.com/posq-project/posq-project-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/ccbc-project/ccbc-project-translations </translation>
+https://www.transifex.com/posq-project/posq-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the Ccbc network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią Ccbc poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the Posq network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią Posq poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1461,8 +1461,8 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations </translation>
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a Ccbc address (e.g. %1)</source>
-        <translation>Wprowadź adres Ccbc (np. %1)</translation>
+        <source>Enter a Posq address (e.g. %1)</source>
+        <translation>Wprowadź adres Posq (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1900,8 +1900,8 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations </translation>
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ccbc address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Ccbc jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this Posq address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Posq jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1935,8 +1935,8 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations </translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Ccbc Core</source>
-        <translation>&amp;Rdzeń Ccbc</translation>
+        <source>Posq Core</source>
+        <translation>&amp;Rdzeń Posq</translation>
     </message>
     </context>
 <context>
@@ -2034,7 +2034,7 @@ https://www.transifex.com/ccbc-project/ccbc-project-translations </translation>
     </message>
     </context>
 <context>
-    <name>ccbc-core</name>
+    <name>posq-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

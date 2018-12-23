@@ -17,22 +17,22 @@ RUN deps="alpine-sdk curl autoconf automake libtool boost-dev openssl-dev libeve
     make install && \
     mkdir /wallet &&\
     cd /wallet && \
-    git clone https://github.com/CryptoCashBack-Hub/CCBC.git . &&\   
+    git clone https://github.com/Poseidon-POSQ/POSQ.git . &&\   
     ./autogen.sh && \
     ./configure LDFLAGS=-L/opt/db/lib CPPFLAGS=-I/opt/db/include \
       && \
     make install && \
-    strip /usr/local/bin/ccbcd &&\
-    strip /usr/local/bin/ccbc-cli &&\
-    rm /usr/local/bin/ccbc-tx &&\
-    rm /usr/local/bin/test_ccbc &&\
+    strip /usr/local/bin/posqd &&\
+    strip /usr/local/bin/posq-cli &&\
+    rm /usr/local/bin/posq-tx &&\
+    rm /usr/local/bin/test_posq &&\
     adduser -D wallet && \
     apk del $deps && \
     rm -r /opt/db/docs /var/cache/apk/* /wallet /db-$DB_VERSION
 
-VOLUME ["/home/wallet/.ccbc"]
+VOLUME ["/home/wallet/.posq"]
 
 EXPOSE 5520/tcp
 
 USER wallet
-CMD ccbcd -printtoconsole
+CMD posqd -printtoconsole

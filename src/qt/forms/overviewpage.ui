@@ -76,7 +76,7 @@
                </font>
               </property>
               <property name="text">
-               <string>CCBC Balances</string>
+               <string>POSQ Balances</string>
               </property>
              </widget>
             </item>
@@ -86,7 +86,7 @@
                <cursorShape>WhatsThisCursor</cursorShape>
               </property>
               <property name="toolTip">
-               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the CCBC network after a connection is established, but this process has not completed yet.</string>
+               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the POSQ network after a connection is established, but this process has not completed yet.</string>
               </property>
               <property name="styleSheet">
                <string notr="true">QLabel { color: red; }</string>
@@ -134,7 +134,7 @@
                <string>Unconfirmed transactions to watch-only addresses</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 CCBC</string>
+               <string notr="true">0.000 000 00 POSQ</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -159,7 +159,7 @@
                <string>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 CCBC</string>
+               <string notr="true">0.000 000 00 POSQ</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -184,7 +184,7 @@
                <string>Staked or masternode rewards in watch-only addresses that has not yet matured</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 CCBC</string>
+               <string notr="true">0.000 000 00 POSQ</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -242,7 +242,7 @@
                <string>Staked or masternode rewards that has not yet matured</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 CCBC</string>
+               <string notr="true">0.000 000 00 POSQ</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -287,7 +287,7 @@
                <string>Your current total balance</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 CCBC</string>
+               <string notr="true">0.000 000 00 POSQ</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -312,7 +312,7 @@
                <string>Current total balance in watch-only addresses</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 CCBC</string>
+               <string notr="true">0.000 000 00 POSQ</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -354,7 +354,7 @@
                <string>Your current spendable balance</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 CCBC</string>
+               <string notr="true">0.000 000 00 POSQ</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -379,7 +379,7 @@
                <string>Your current balance in watch-only addresses</string>
               </property>
               <property name="text">
-               <string notr="true">0.000 000 00 CCBC</string>
+               <string notr="true">0.000 000 00 POSQ</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -966,7 +966,7 @@
                 <string>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</string>
                </property>
                <property name="text">
-                <string notr="true">0.000 000 00 CCBC</string>
+                <string notr="true">0.000 000 00 POSQ</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -991,7 +991,7 @@
                 <string>Total Balance, including unconfirmed and immature coins.</string>
                </property>
                <property name="text">
-                <string notr="true">0.000 000 00 CCBC</string>
+                <string notr="true">0.000 000 00 POSQ</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1024,7 +1024,7 @@
              <item row="1" column="0">
               <widget class="QLabel" name="labelBalanceTextz">
                <property name="text">
-                <string>CCBC:</string>
+                <string>POSQ:</string>
                </property>
               </widget>
              </item>
@@ -1043,7 +1043,7 @@
                 <string>Your current spendable balance</string>
                </property>
                <property name="text">
-                <string notr="true">0.000 000 00 CCBC</string>
+                <string notr="true">0.000 000 00 POSQ</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1059,15 +1059,15 @@
                 <string/>
                </property>
                <property name="text">
-                <string>zCCBC:</string>
+                <string>zPOSQ:</string>
                </property>
               </widget>
              </item>
              <item row="4" column="2">
-              <widget class="QLabel" name="labelzCCBCPercent">
+              <widget class="QLabel" name="labelzPOSQPercent">
                <property name="toolTip">
                 <string>
-                                  Current percentage of zCCBC.
+                                  Current percentage of zPOSQ.
                                   If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%)
                                 </string>
                </property>
@@ -1092,10 +1092,10 @@
              <item row="2" column="1">
               <widget class="QLabel" name="labelLockedBalance">
                <property name="toolTip">
-                <string>Locked CCBC or Masternode collaterals. These are excluded from zCCBC minting.</string>
+                <string>Locked POSQ or Masternode collaterals. These are excluded from zPOSQ minting.</string>
                </property>
                <property name="text">
-                <string>0.000 000 00 CCBC</string>
+                <string>0.000 000 00 POSQ</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1105,7 +1105,7 @@
              <item row="2" column="0">
               <widget class="QLabel" name="labelLockedBalanceText">
                <property name="toolTip">
-                <string>Locked CCBC or Masternode collaterals. These are excluded from zCCBC minting.</string>
+                <string>Locked POSQ or Masternode collaterals. These are excluded from zPOSQ minting.</string>
                </property>
                <property name="text">
                 <string>Locked:</string>
@@ -1115,7 +1115,7 @@
              <item row="3" column="0">
               <widget class="QLabel" name="labelUnLockedBalanceText">
                <property name="toolTip">
-                <string>Unlocked CCBCs. These can be used for zCCBC minting.</string>
+                <string>Unlocked POSQs. These can be used for zPOSQ minting.</string>
                </property>
                <property name="text">
                 <string>Unlocked:</string>
@@ -1125,10 +1125,10 @@
              <item row="3" column="1">
               <widget class="QLabel" name="labelUnLockedBalance">
                <property name="toolTip">
-                <string>Unlocked CCBCs. These can be used for zCCBC minting.</string>
+                <string>Unlocked POSQs. These can be used for zPOSQ minting.</string>
                </property>
                <property name="text">
-                <string>0.000 000 00 CCBC</string>
+                <string>0.000 000 00 POSQ</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1136,7 +1136,7 @@
               </widget>
              </item>
              <item row="3" column="2">
-              <widget class="QLabel" name="labelCCBCPercent">
+              <widget class="QLabel" name="labelPOSQPercent">
                <property name="text">
                 <string>0 %</string>
                </property>
@@ -1195,7 +1195,7 @@
                 </font>
                </property>
                <property name="text">
-                <string>zCCBC Balance</string>
+                <string>zPOSQ Balance</string>
                </property>
               </widget>
              </item>
@@ -1211,7 +1211,7 @@
                <property name="toolTip">
                 <string>
                                   Mature: more than 20 confirmation and more than 1 mints of the same denomination after it was minted.
-                                  These zCCBC are spendable.
+                                  These zPOSQ are spendable.
                                 </string>
                </property>
                <property name="text">
@@ -1238,10 +1238,10 @@
                 <cursorShape>IBeamCursor</cursorShape>
                </property>
                <property name="toolTip">
-                <string>All available zCCBC, unconfirmed and immature zCCBC included.</string>
+                <string>All available zPOSQ, unconfirmed and immature zPOSQ included.</string>
                </property>
                <property name="text">
-                <string notr="true">0.000 000 00 zCCBC</string>
+                <string notr="true">0.000 000 00 zPOSQ</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1273,7 +1273,7 @@
              <item row="1" column="0">
               <widget class="QLabel" name="labelzBalanceText">
                <property name="toolTip">
-                <string>All available zCCBC, unconfirmed and immature zCCBC included.</string>
+                <string>All available zPOSQ, unconfirmed and immature zPOSQ included.</string>
                </property>
                <property name="text">
                 <string>Total:</string>
@@ -1317,11 +1317,11 @@
                <property name="toolTip">
                 <string>
                                   Mature: more than 20 confirmation and more than 1 mints of the same denomination after it was minted.
-                                  These zCCBC are spendable.
+                                  These zPOSQ are spendable.
                                 </string>
                </property>
                <property name="text">
-                <string>0.000 000 00 zCCBC</string>
+                <string>0.000 000 00 zPOSQ</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1356,7 +1356,7 @@
                                 </string>
                </property>
                <property name="text">
-                <string>0.000 000 00 zCCBC</string>
+                <string>0.000 000 00 zPOSQ</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1404,7 +1404,7 @@
                                 </string>
                </property>
                <property name="text">
-                <string>0.000 000 00 zCCBC</string>
+                <string>0.000 000 00 zPOSQ</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1480,7 +1480,7 @@
                <cursorShape>WhatsThisCursor</cursorShape>
               </property>
               <property name="toolTip">
-               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the CCBC network after a connection is established, but this process has not completed yet.</string>
+               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the POSQ network after a connection is established, but this process has not completed yet.</string>
               </property>
               <property name="styleSheet">
                <string notr="true">QLabel { color: red; }</string>

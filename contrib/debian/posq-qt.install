@@ -1,6 +1,6 @@
-usr/local/bin/ccbc-qt usr/bin
+usr/local/bin/posq-qt usr/bin
 share/pixmaps/bitcoin32.xpm usr/share/pixmaps
 share/pixmaps/bitcoin16.xpm usr/share/pixmaps
 share/pixmaps/bitcoin128.png usr/share/pixmaps
-debian/ccbc-qt.desktop usr/share/applications
-debian/ccbc-qt.protocol usr/share/kde4/services/
+debian/posq-qt.desktop usr/share/applications
+debian/posq-qt.protocol usr/share/kde4/services/

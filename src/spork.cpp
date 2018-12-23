@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2016 The Dash developers
-// Copyright (c) 2016-2017 The CCBC developers
+// Copyright (c) 2016-2017 The POSQ developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -26,7 +26,7 @@ CSporkManager sporkManager;
 std::map<uint256, CSporkMessage> mapSporks;
 std::map<int, CSporkMessage> mapSporksActive;
 
-// Ccbc: on startup load spork values from previous session if they exist in the sporkDB
+// Posq: on startup load spork values from previous session if they exist in the sporkDB
 void LoadSporksFromDB()
 {
 	for (int i = SPORK_START; i <= SPORK_END; ++i) {
@@ -105,7 +105,7 @@ void ProcessSpork(CNode* pfrom, std::string& strCommand, CDataStream& vRecv)
 		mapSporksActive[spork.nSporkID] = spork;
 		sporkManager.Relay(spork);
 
-		// Ccbc: add to spork database.
+		// Posq: add to spork database.
 		pSporkDB->WriteSpork(spork.nSporkID, spork);
 	}
 	if (strCommand == "getsporks") {

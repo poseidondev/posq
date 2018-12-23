@@ -1,9 +1,9 @@
-/* src/config/ccbc-config.h.  Generated from ccbc-config.h.in by configure.  */
-/* src/config/ccbc-config.h.in.  Generated from configure.ac by autoheader.  */
+/* src/config/posq-config.h.  Generated from posq-config.h.in by configure.  */
+/* src/config/posq-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef CCBC_CONFIG_H
+#ifndef POSQ_CONFIG_H
 
-#define CCBC_CONFIG_H
+#define POSQ_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
@@ -268,16 +268,16 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "www.ccbc.org"
+#define PACKAGE_BUGREPORT "www.posq.org"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "Ccbc Core"
+#define PACKAGE_NAME "Posq Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Ccbc Core 1.0.0"
+#define PACKAGE_STRING "Posq Core 1.0.0"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "ccbc"
+#define PACKAGE_TARNAME "posq"
 
 /* Define to the home page for this package. */
 #define PACKAGE_URL ""
@@ -340,4 +340,4 @@
 /* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */
 
-#endif //CCBC_CONFIG_H
+#endif //POSQ_CONFIG_H

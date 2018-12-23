@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between ccbc-cli and ccbcd)
- * of a given instance of the Ccbc system.
+ * CBaseChainParams defines the base parameters (shared between posq-cli and posqd)
+ * of a given instance of the Posq system.
  */
 class CBaseChainParams
 {

@@ -1,10 +1,10 @@
-// Copyright (c) 2017 The CCBC developers
-// Copyright (c) 2017-2018 The Ccbc developers
+// Copyright (c) 2017 The POSQ developers
+// Copyright (c) 2017-2018 The Posq developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ZCCBCCONTROLDIALOG_H
-#define ZCCBCCONTROLDIALOG_H
+#ifndef ZPOSQCONTROLDIALOG_H
+#define ZPOSQCONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
@@ -15,16 +15,16 @@ class CZerocoinMint;
 class WalletModel;
 
 namespace Ui {
-class ZCcbcControlDialog;
+class ZPosqControlDialog;
 }
 
-class ZCcbcControlDialog : public QDialog
+class ZPosqControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ZCcbcControlDialog(QWidget *parent);
-    ~ZCcbcControlDialog();
+    explicit ZPosqControlDialog(QWidget *parent);
+    ~ZPosqControlDialog();
 
     void setModel(WalletModel* model);
 
@@ -33,7 +33,7 @@ public:
     static std::vector<CZerocoinMint> GetSelectedMints();
 
 private:
-    Ui::ZCcbcControlDialog *ui;
+    Ui::ZPosqControlDialog *ui;
     WalletModel* model;
     PrivacyDialog* privacyDialog;
 
@@ -53,4 +53,4 @@ private slots:
     void ButtonAllClicked();
 };
 
-#endif // ZCCBCCONTROLDIALOG_H
+#endif // ZPOSQCONTROLDIALOG_H

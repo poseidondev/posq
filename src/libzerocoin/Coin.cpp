@@ -10,7 +10,7 @@
  * @license    This project is released under the MIT license.
  **/
 
-// Copyright (c) 2017 The CCBC developers
+// Copyright (c) 2017 The POSQ developers
 #include <stdexcept>
 #include <iostream>
 #include "Coin.h"

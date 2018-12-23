@@ -1,8 +1,8 @@
-// Copyright (c) 2017 The CCBC developers
+// Copyright (c) 2017 The POSQ developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef CCBC_ZEROCOIN_H
-#define CCBC_ZEROCOIN_H
+#ifndef POSQ_ZEROCOIN_H
+#define POSQ_ZEROCOIN_H
 
 #include <amount.h>
 #include <limits.h>
@@ -189,4 +189,4 @@ public:
     int GetNeededSpends();
 };
 
-#endif //CCBC_ZEROCOIN_H
+#endif //POSQ_ZEROCOIN_H

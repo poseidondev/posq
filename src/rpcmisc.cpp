@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The Ccbc developers
+// Copyright (c) 2017-2018 The Posq developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -57,7 +57,7 @@ Value getinfo(const Array& params, bool fHelp)
             "  \"version\": xxxxx,           (numeric) the server version\n"
             "  \"protocolversion\": xxxxx,   (numeric) the protocol version\n"
             "  \"walletversion\": xxxxx,     (numeric) the wallet version\n"
-            "  \"balance\": xxxxxxx,         (numeric) the total ccbc balance of the wallet (excluding zerocoins)\n"
+            "  \"balance\": xxxxxxx,         (numeric) the total posq balance of the wallet (excluding zerocoins)\n"
             "  \"zerocoinbalance\": xxxxxxx, (numeric) the total zerocoin balance of the wallet\n"
             "  \"blocks\": xxxxxx,           (numeric) the current number of blocks processed in the server\n"
             "  \"timeoffset\": xxxxx,        (numeric) the time offset\n"
@@ -66,23 +66,23 @@ Value getinfo(const Array& params, bool fHelp)
             "  \"difficulty\": xxxxxx,       (numeric) the current difficulty\n"
             "  \"testnet\": true|false,      (boolean) if the server is using testnet or not\n"
             "  \"moneysupply\" : \"supply\"       (numeric) The money supply when this block was added to the blockchain\n"
-            "  \"zCCBCsupply\" :\n"
+            "  \"zPOSQsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zCCBC denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zCCBC denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zCCBC denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zCCBC denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zCCBC denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zCCBC denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zCCBC denomination\n"
-            "     \"5000\" : n,         (numeric) supply of 5000 zCCBC denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zCCBC denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zPOSQ denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zPOSQ denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zPOSQ denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zPOSQ denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zPOSQ denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zPOSQ denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zPOSQ denomination\n"
+            "     \"5000\" : n,         (numeric) supply of 5000 zPOSQ denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zPOSQ denominations\n"
             "  }\n"
             "  \"keypoololdest\": xxxxxx,    (numeric) the timestamp (seconds since GMT epoch) of the oldest pre-generated key in the key pool\n"
             "  \"keypoolsize\": xxxx,        (numeric) how many new keys are pre-generated\n"
             "  \"unlocked_until\": ttt,      (numeric) the timestamp in seconds since epoch (midnight Jan 1 1970 GMT) that the wallet is unlocked for transfers, or 0 if the wallet is locked\n"
-            "  \"paytxfee\": x.xxxx,         (numeric) the transaction fee set in ccbc/kb\n"
-            "  \"relayfee\": x.xxxx,         (numeric) minimum relay fee for non-free transactions in ccbc/kb\n"
+            "  \"paytxfee\": x.xxxx,         (numeric) the transaction fee set in posq/kb\n"
+            "  \"relayfee\": x.xxxx,         (numeric) minimum relay fee for non-free transactions in posq/kb\n"
             "  \"staking status\": true|false,  (boolean) if the wallet is staking or not\n"
             "  \"errors\": \"...\"           (string) any error messages\n"
             "}\n"
@@ -109,12 +109,12 @@ Value getinfo(const Array& params, bool fHelp)
     obj.push_back(Pair("difficulty", (double)GetDifficulty()));
     obj.push_back(Pair("testnet", Params().TestnetToBeDeprecatedFieldRPC()));
     obj.push_back(Pair("moneysupply",ValueFromAmount(chainActive.Tip()->nMoneySupply)));
-    Object zCCBCObj;
+    Object zPOSQObj;
     for (auto denom : libzerocoin::zerocoinDenomList) {
-        zCCBCObj.push_back(Pair(to_string(denom), ValueFromAmount(chainActive.Tip()->mapZerocoinSupply.at(denom) * (denom * COIN))));
+        zPOSQObj.push_back(Pair(to_string(denom), ValueFromAmount(chainActive.Tip()->mapZerocoinSupply.at(denom) * (denom * COIN))));
     }
-    zCCBCObj.emplace_back(Pair("total", ValueFromAmount(chainActive.Tip()->GetZerocoinSupply())));
-    obj.emplace_back(Pair("zCCBCsupply", zCCBCObj));
+    zPOSQObj.emplace_back(Pair("total", ValueFromAmount(chainActive.Tip()->GetZerocoinSupply())));
+    obj.emplace_back(Pair("zPOSQsupply", zPOSQObj));
     
 #ifdef ENABLE_WALLET
     if (pwalletMain) {
@@ -302,14 +302,14 @@ Value validateaddress(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "validateaddress \"ccbcaddress\"\n"
-            "\nReturn information about the given ccbc address.\n"
+            "validateaddress \"posqaddress\"\n"
+            "\nReturn information about the given posq address.\n"
             "\nArguments:\n"
-            "1. \"ccbcaddress\"     (string, required) The ccbc address to validate\n"
+            "1. \"posqaddress\"     (string, required) The posq address to validate\n"
             "\nResult:\n"
             "{\n"
             "  \"isvalid\" : true|false,         (boolean) If the address is valid or not. If not, this is the only property returned.\n"
-            "  \"address\" : \"ccbcaddress\", (string) The ccbc address validated\n"
+            "  \"address\" : \"posqaddress\", (string) The posq address validated\n"
             "  \"ismine\" : true|false,          (boolean) If the address is yours or not\n"
             "  \"isscript\" : true|false,        (boolean) If the key is a script\n"
             "  \"pubkey\" : \"publickeyhex\",    (string) The hex value of the raw public key\n"
@@ -366,7 +366,7 @@ CScript _createmultisig_redeemScript(const Array& params)
     for (unsigned int i = 0; i < keys.size(); i++) {
         const std::string& ks = keys[i].get_str();
 #ifdef ENABLE_WALLET
-        // Case 1: Ccbc address and we have full public key:
+        // Case 1: Posq address and we have full public key:
         CBitcoinAddress address(ks);
         if (pwalletMain && address.IsValid()) {
             CKeyID keyID;
@@ -412,9 +412,9 @@ Value createmultisig(const Array& params, bool fHelp)
 
                      "\nArguments:\n"
                      "1. nrequired      (numeric, required) The number of required signatures out of the n keys or addresses.\n"
-                     "2. \"keys\"       (string, required) A json array of keys which are ccbc addresses or hex-encoded public keys\n"
+                     "2. \"keys\"       (string, required) A json array of keys which are posq addresses or hex-encoded public keys\n"
                      "     [\n"
-                     "       \"key\"    (string) ccbc address or hex-encoded public key\n"
+                     "       \"key\"    (string) posq address or hex-encoded public key\n"
                      "       ,...\n"
                      "     ]\n"
 
@@ -447,10 +447,10 @@ Value verifymessage(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 3)
         throw runtime_error(
-            "verifymessage \"ccbcaddress\" \"signature\" \"message\"\n"
+            "verifymessage \"posqaddress\" \"signature\" \"message\"\n"
             "\nVerify a signed message\n"
             "\nArguments:\n"
-            "1. \"ccbcaddress\"  (string, required) The ccbc address to use for the signature.\n"
+            "1. \"posqaddress\"  (string, required) The posq address to use for the signature.\n"
             "2. \"signature\"       (string, required) The signature provided by the signer in base 64 encoding (see signmessage).\n"
             "3. \"message\"         (string, required) The message that was signed.\n"
             "\nResult:\n"

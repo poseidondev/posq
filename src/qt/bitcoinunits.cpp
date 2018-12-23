@@ -19,18 +19,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(CCBC);
-    unitlist.append(mCCBC);
-    unitlist.append(uCCBC);
+    unitlist.append(POSQ);
+    unitlist.append(mPOSQ);
+    unitlist.append(uPOSQ);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case CCBC:
-    case mCCBC:
-    case uCCBC:
+    case POSQ:
+    case mPOSQ:
+    case uPOSQ:
         return true;
     default:
         return false;
@@ -40,12 +40,12 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case CCBC:
-        return QString("ccbc");
-    case mCCBC:
-        return QString("mccbc");
-    case uCCBC:
-        return QString::fromUtf8("uccbc");
+    case POSQ:
+        return QString("posq");
+    case mPOSQ:
+        return QString("mposq");
+    case uPOSQ:
+        return QString::fromUtf8("uposq");
     default:
         return QString("???");
     }
@@ -55,23 +55,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case CCBC:
-            return QString("CCBC");
-        case mCCBC:
-            return QString("mCCBC");
-        case uCCBC:
-            return QString::fromUtf8("μCCBC");
+        case POSQ:
+            return QString("POSQ");
+        case mPOSQ:
+            return QString("mPOSQ");
+        case uPOSQ:
+            return QString::fromUtf8("μPOSQ");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case CCBC:
-            return QString("tCCBC");
-        case mCCBC:
-            return QString("mtCCBC");
-        case uCCBC:
-            return QString::fromUtf8("μtCCBC");
+        case POSQ:
+            return QString("tPOSQ");
+        case mPOSQ:
+            return QString("mtPOSQ");
+        case uPOSQ:
+            return QString::fromUtf8("μtPOSQ");
         default:
             return QString("???");
         }
@@ -82,23 +82,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case CCBC:
-            return QString("CCBC");
-        case mCCBC:
-            return QString("Milli-CCBC (1 / 1" THIN_SP_UTF8 "000)");
-        case uCCBC:
-            return QString("Micro-CCBC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case POSQ:
+            return QString("POSQ");
+        case mPOSQ:
+            return QString("Milli-POSQ (1 / 1" THIN_SP_UTF8 "000)");
+        case uPOSQ:
+            return QString("Micro-POSQ (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case CCBC:
-            return QString("TestCCBCs");
-        case mCCBC:
-            return QString("Milli-TestCCBC (1 / 1" THIN_SP_UTF8 "000)");
-        case uCCBC:
-            return QString("Micro-TestCCBC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case POSQ:
+            return QString("TestPOSQs");
+        case mPOSQ:
+            return QString("Milli-TestPOSQ (1 / 1" THIN_SP_UTF8 "000)");
+        case uPOSQ:
+            return QString("Micro-TestPOSQ (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -108,11 +108,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case CCBC:
+    case POSQ:
         return 100000000;
-    case mCCBC:
+    case mPOSQ:
         return 100000;
-    case uCCBC:
+    case uPOSQ:
         return 100;
     default:
         return 100000000;
@@ -122,11 +122,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case CCBC:
+    case POSQ:
         return 8;
-    case mCCBC:
+    case mPOSQ:
         return 5;
-    case uCCBC:
+    case uPOSQ:
         return 2;
     default:
         return 0;

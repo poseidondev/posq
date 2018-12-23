@@ -1,2 +1,2 @@
-strip ccbc{d,-cli}
-tar cvzf CCBC-linux.tar.gz ccbcd ccbc-cli
+strip posq{d,-cli}
+tar cvzf POSQ-linux.tar.gz posqd posq-cli

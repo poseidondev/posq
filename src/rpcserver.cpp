@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The CCBC developers
+// Copyright (c) 2018 The POSQ developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -238,10 +238,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop Ccbc server.");
+            "\nStop Posq server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "Ccbc server stopping";
+    return "Posq server stopping";
 }
 
 
@@ -318,36 +318,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* Ccbc features */
-        {"ccbc", "masternode", &masternode, true, true, false},
-        {"ccbc", "listmasternodes", &listmasternodes, true, true, false},
-        {"ccbc", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"ccbc", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"ccbc", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"ccbc", "masternodedebug", &masternodedebug, true, true, false},
-        {"ccbc", "startmasternode", &startmasternode, true, true, false},
-        {"ccbc", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"ccbc", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"ccbc", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"ccbc", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"ccbc", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"ccbc", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"ccbc", "mnbudget", &mnbudget, true, true, false},
-        {"ccbc", "preparebudget", &preparebudget, true, true, false},
-        {"ccbc", "submitbudget", &submitbudget, true, true, false},
-        {"ccbc", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"ccbc", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"ccbc", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"ccbc", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"ccbc", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"ccbc", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"ccbc", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"ccbc", "checkbudgets", &checkbudgets, true, true, false},
-        {"ccbc", "mnsync", &mnsync, true, true, false},
-        {"ccbc", "spork", &spork, true, true, false},
-        {"ccbc", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* Posq features */
+        {"posq", "masternode", &masternode, true, true, false},
+        {"posq", "listmasternodes", &listmasternodes, true, true, false},
+        {"posq", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"posq", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"posq", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"posq", "masternodedebug", &masternodedebug, true, true, false},
+        {"posq", "startmasternode", &startmasternode, true, true, false},
+        {"posq", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"posq", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"posq", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"posq", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"posq", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"posq", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"posq", "mnbudget", &mnbudget, true, true, false},
+        {"posq", "preparebudget", &preparebudget, true, true, false},
+        {"posq", "submitbudget", &submitbudget, true, true, false},
+        {"posq", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"posq", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"posq", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"posq", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"posq", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"posq", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"posq", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"posq", "checkbudgets", &checkbudgets, true, true, false},
+        {"posq", "mnsync", &mnsync, true, true, false},
+        {"posq", "spork", &spork, true, true, false},
+        {"posq", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"ccbc", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"posq", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -626,16 +626,16 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use ccbcd, or the -server option to ccbc-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use posqd, or the -server option to posq-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=ccbcrpc\n"
+                                               "rpcuser=posqrpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"Ccbc Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"Posq Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1086,7 +1086,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> ccbc-cli " + methodname + " " + args + "\n";
+    return "> posq-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

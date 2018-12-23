@@ -16,16 +16,16 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "CCBC" 
+            VALUE "CompanyName",        "POSQ" 
 	    VALUE "Programmer",		"TFinch" 
-	    VALUE "RevivedBy",		"CCBC Team"
-            VALUE "FileDescription",    "CCBC (OSS daemon/client for CCBC) In partnership with CCBCX Team"
+	    VALUE "RevivedBy",		"POSQ Team"
+            VALUE "FileDescription",    "POSQ (OSS daemon/client for POSQ) In partnership with POSQX Team"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "ccbcd"
+            VALUE "InternalName",       "posqd"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "ccbcd.exe"
-            VALUE "ProductName",        "CCBC Revival Partnership"
+            VALUE "OriginalFilename",   "posqd.exe"
+            VALUE "ProductName",        "POSQ Revival Partnership"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

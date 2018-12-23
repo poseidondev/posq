@@ -247,7 +247,7 @@ public:
 class CObfuScationSigner
 {
 public:
-    /// Is the inputs associated with this public key? (and there is 10000 CCBC - checking if valid masternode)
+    /// Is the inputs associated with this public key? (and there is 10000 POSQ - checking if valid masternode)
     bool IsVinAssociatedWithPubkey(CTxIn& vin, CPubKey& pubkey);
     /// Set the private/public key values, returns true if successful
     bool GetKeysFromSecret(std::string strSecret, CKey& keyRet, CPubKey& pubkeyRet);
@@ -271,7 +271,7 @@ private:
 
     int64_t lastTimeChanged; // last time the 'state' changed, in UTC milliseconds
 
-    unsigned int state; // should be one of the POOL_STATUS_CCBC values
+    unsigned int state; // should be one of the POOL_STATUS_POSQ values
     unsigned int entriesCount;
     unsigned int lastEntryAccepted;
     unsigned int countEntriesAccepted;
@@ -493,7 +493,7 @@ public:
 
     void GetDenominationsToString(int nDenom, std::string& strDenom);
 
-    /// Get the denominations for a specific amount of ccbc.
+    /// Get the denominations for a specific amount of posq.
     int GetDenominationsByAmount(CAmount nAmount, int nDenomTarget = 0); // is not used anymore?
     int GetDenominationsByAmounts(std::vector<CAmount>& vecAmount);
 

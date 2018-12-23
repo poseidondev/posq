@@ -1,9 +1,9 @@
-// Copyright (c) 2017 The CCBC developers
+// Copyright (c) 2017 The POSQ developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CCBC_CSPORKDB_H
-#define CCBC_CSPORKDB_H
+#ifndef POSQ_CSPORKDB_H
+#define POSQ_CSPORKDB_H
 
 #include <boost/filesystem/path.hpp>
 #include "leveldbwrapper.h"
@@ -25,4 +25,4 @@ public:
 };
 
 
-#endif //CCBC_CSPORKDB_H
+#endif //POSQ_CSPORKDB_H

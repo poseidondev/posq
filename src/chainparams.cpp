@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The CCBC developers
+// Copyright (c) 2018 The POSQ developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -124,8 +124,8 @@ public:
 		nRejectBlockOutdatedMajority = 950;
 		nToCheckBlockUpgradeMajority = 1000;
 		nMinerThreads = 0;
-		nTargetTimespan = 1 * 60;         // Ccbc: 1 day
-		nTargetSpacing = 1 * 60;          // Ccbc: 1 minutes
+		nTargetTimespan = 1 * 60;         // Posq: 1 day
+		nTargetSpacing = 1 * 60;          // Posq: 1 minutes
 		nMaturity = 10;                   // 5 Conf to mature coins
 		nMasternodeCountDrift = 20;       //Was 20
 		nMasternodeCollateralAmt = 25000; //masternode collateral 25K
@@ -169,7 +169,7 @@ public:
 		assert(genesis.hashMerkleRoot == uint256("0x598ffdff99e67551b7a05dc08dfafcf2e7a6ecea89f9b369bf830f4b21ff160f"));
 
 		//Teams Seeder
-		vSeeds.push_back(CDNSSeedData("seeder.ccbcoin.club", "seeder.ccbcoin.club"));
+		vSeeds.push_back(CDNSSeedData("seeder.posqoin.club", "seeder.posqoin.club"));
 		//Seeds	Community Nodes
 		vSeeds.push_back(CDNSSeedData("144.202.16.251", "144.202.16.251"));
 		vSeeds.push_back(CDNSSeedData("104.238.159.161", "104.238.159.161"));
@@ -270,8 +270,8 @@ public:
 		nRejectBlockOutdatedMajority = 950;
 		nToCheckBlockUpgradeMajority = 1000;
 		nMinerThreads = 0;
-		nTargetTimespan = 1 * 60; // Ccbc: 1 day
-		nTargetSpacing = 1 * 60;  // Ccbc: 1 minute
+		nTargetTimespan = 1 * 60; // Posq: 1 day
+		nTargetSpacing = 1 * 60;  // Posq: 1 minute
 		nLastPOWBlock = 200;
 		nMaturity = 10;
 		nMasternodeCountDrift = 4;
@@ -298,14 +298,14 @@ public:
 
 
 
-		base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet ccbc addresses start with 'x' or 'y'
-		base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet ccbc script addresses start with '8' or '9'
+		base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet posq addresses start with 'x' or 'y'
+		base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet posq script addresses start with '8' or '9'
 		base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-																			 // Testnet ccbc BIP32 pubkeys start with 'DRKV'
+																			 // Testnet posq BIP32 pubkeys start with 'DRKV'
 		base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-		// Testnet ccbc BIP32 prvkeys start with 'DRKP'
+		// Testnet posq BIP32 prvkeys start with 'DRKP'
 		base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-		// Testnet ccbc BIP44 coin type is '1' (All coin's testnet default)
+		// Testnet posq BIP44 coin type is '1' (All coin's testnet default)
 		base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
 		convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
@@ -349,8 +349,8 @@ public:
 		nRejectBlockOutdatedMajority = 950;
 		nToCheckBlockUpgradeMajority = 1000;
 		nMinerThreads = 1;
-		nTargetTimespan = 1 * 60; // Ccbc: 1 day
-		nTargetSpacing = 1 * 60;        // Ccbc: 1 minutes
+		nTargetTimespan = 1 * 60; // Posq: 1 day
+		nTargetSpacing = 1 * 60;        // Posq: 1 minutes
 		bnProofOfWorkLimit = ~uint256(0) >> 1;
 		genesis.nTime = 1534438799;
 		genesis.nBits = 504365040;

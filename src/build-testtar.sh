@@ -1,1 +1,1 @@
-tar cvzf CCBC-linux-Testnet.tar.gz ccbcd ccbc-cli
+tar cvzf POSQ-linux-Testnet.tar.gz posqd posq-cli

@@ -137,7 +137,7 @@
            <enum>Qt::ActionsContextMenu</enum>
           </property>
           <property name="text">
-           <string notr="true">0.00 CCBC</string>
+           <string notr="true">0.00 POSQ</string>
           </property>
           <property name="textInteractionFlags">
            <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -334,7 +334,7 @@
          <enum>Qt::ActionsContextMenu</enum>
         </property>
         <property name="text">
-         <string notr="true">0.000 000 00 CCBC</string>
+         <string notr="true">0.000 000 00 POSQ</string>
         </property>
         <property name="textInteractionFlags">
          <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -674,7 +674,7 @@
     </widget>
    </item>
    <item row="0" column="0" colspan="2">
-    <widget class="QLabel" name="zCCBCLabel">
+    <widget class="QLabel" name="zPOSQLabel">
      <property name="minimumSize">
       <size>
        <width>460</width>
@@ -695,13 +695,13 @@
       </font>
      </property>
      <property name="toolTip">
-      <string>CCBC which were anonymized via Zerocin Protocol</string>
+      <string>POSQ which were anonymized via Zerocin Protocol</string>
      </property>
      <property name="autoFillBackground">
       <bool>true</bool>
      </property>
      <property name="text">
-      <string>Zerocoin CCBC (zCCBC)</string>
+      <string>Zerocoin POSQ (zPOSQ)</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -807,7 +807,7 @@
            <item>
             <widget class="QLabel" name="labelZsupplyAmount1">
              <property name="text">
-              <string>0 zCCBC</string>
+              <string>0 zPOSQ</string>
              </property>
             </widget>
            </item>
@@ -874,14 +874,14 @@
             <widget class="QLabel" name="label_AutoMintStatus">
              <property name="toolTip">
               <string>
-                                      Show the current status of automatic zCCBC minting.
+                                      Show the current status of automatic zPOSQ minting.
 
                                       To change the status (restart required):
                                       - enable: add 'enablezeromint=1' to pivx.conf
                                       - disable: add 'enablezeromint=0' to pivx.conf
 
                                       To change the percentage (no restart required):
-                                      - menu Settings-&gt;Options-&gt;Percentage of autominted zCCBC
+                                      - menu Settings-&gt;Options-&gt;Percentage of autominted zPOSQ
 
                                     </string>
              </property>
@@ -974,7 +974,7 @@
               </font>
              </property>
              <property name="text">
-              <string>0 zCCBC</string>
+              <string>0 zPOSQ</string>
              </property>
             </widget>
            </item>
@@ -1010,7 +1010,7 @@
               </font>
              </property>
              <property name="toolTip">
-              <string>Total Balance including unconfirmed and immature zCCBC</string>
+              <string>Total Balance including unconfirmed and immature zPOSQ</string>
              </property>
              <property name="text">
               <string>Total Zerocoin  Balance:</string>
@@ -1048,10 +1048,10 @@
               </font>
              </property>
              <property name="toolTip">
-              <string>Total Balance including unconfirmed and immature zCCBC</string>
+              <string>Total Balance including unconfirmed and immature zPOSQ</string>
              </property>
              <property name="text">
-              <string>0 zCCBC</string>
+              <string>0 zPOSQ</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1118,7 +1118,7 @@
          <item row="0" column="0">
           <layout class="QHBoxLayout" name="horizontalLayout_25">
            <item>
-            <widget class="QLabel" name="labelzCCBCStats">
+            <widget class="QLabel" name="labelzPOSQStats">
              <property name="font">
               <font>
                <pointsize>12</pointsize>
@@ -1361,7 +1361,7 @@
            <item>
             <widget class="QLabel" name="labelZsupplyAmount5">
              <property name="text">
-              <string>0 zCCBC</string>
+              <string>0 zPOSQ</string>
              </property>
             </widget>
            </item>
@@ -1408,7 +1408,7 @@
            <item>
             <widget class="QLabel" name="labelZsupplyAmount10">
              <property name="text">
-              <string>0 zCCBC</string>
+              <string>0 zPOSQ</string>
              </property>
             </widget>
            </item>
@@ -1439,7 +1439,7 @@
            <item>
             <widget class="QLabel" name="labelZsupplyAmount50">
              <property name="text">
-              <string>0 zCCBC</string>
+              <string>0 zPOSQ</string>
              </property>
             </widget>
            </item>
@@ -1623,7 +1623,7 @@
              <property name="toolTip">
               <string>
                                       Mature: more than 20 confirmation and more than 1 mints of the same denomination after it was minted.
-                                      These zCCBC are spendable.
+                                      These zPOSQ are spendable.
                                     </string>
              </property>
              <property name="text">
@@ -1666,7 +1666,7 @@
                                     </string>
              </property>
              <property name="text">
-              <string>0.000 000 00 zCCBC</string>
+              <string>0.000 000 00 zPOSQ</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1688,7 +1688,7 @@
                                     </string>
              </property>
              <property name="text">
-              <string>0.000 000 00 zCCBC</string>
+              <string>0.000 000 00 zPOSQ</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1706,11 +1706,11 @@
              <property name="toolTip">
               <string>
                                       Mature: more than 20 confirmation and more than 1 mints of the same denomination after it was minted.
-                                      These zCCBC are spendable.
+                                      These zPOSQ are spendable.
                                     </string>
              </property>
              <property name="text">
-              <string>0.000 000 00 zCCBC</string>
+              <string>0.000 000 00 zPOSQ</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1770,7 +1770,7 @@
            <item>
             <widget class="QLabel" name="labelZsupplyAmount1000">
              <property name="text">
-              <string>0 zCCBC</string>
+              <string>0 zPOSQ</string>
              </property>
             </widget>
            </item>
@@ -1801,7 +1801,7 @@
            <item>
             <widget class="QLabel" name="labelZsupplyAmount500">
              <property name="text">
-              <string>0 zCCBC</string>
+              <string>0 zPOSQ</string>
              </property>
             </widget>
            </item>
@@ -1832,7 +1832,7 @@
            <item>
             <widget class="QLabel" name="labelZsupplyAmount5000">
              <property name="text">
-              <string>0 zCCBC</string>
+              <string>0 zPOSQ</string>
              </property>
             </widget>
            </item>
@@ -1882,7 +1882,7 @@
            <item>
             <widget class="QLabel" name="labelZsupplyAmount100">
              <property name="text">
-              <string>0 zCCBC</string>
+              <string>0 zPOSQ</string>
              </property>
             </widget>
            </item>
@@ -1899,7 +1899,7 @@
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_3">
            <item>
-            <widget class="QLabel" name="labelzCCBCActions">
+            <widget class="QLabel" name="labelzPOSQActions">
              <property name="font">
               <font>
                <pointsize>12</pointsize>
@@ -1908,7 +1908,7 @@
               </font>
              </property>
              <property name="text">
-              <string>zCCBC Actions:</string>
+              <string>zPOSQ Actions:</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1916,9 +1916,9 @@
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="labelzCCBCSyncStatus">
+            <widget class="QLabel" name="labelzPOSQSyncStatus">
              <property name="toolTip">
-              <string>The displayed information may be out of date. Your wallet automatically synchronizes with the CCBC network after a connection is established, but this process has not completed yet.</string>
+              <string>The displayed information may be out of date. Your wallet automatically synchronizes with the POSQ network after a connection is established, but this process has not completed yet.</string>
              </property>
              <property name="styleSheet">
               <string notr="true">QLabel { color: red; }</string>
@@ -1962,7 +1962,7 @@
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_4">
            <item>
-            <widget class="QPushButton" name="pushButtonMintzCCBC">
+            <widget class="QPushButton" name="pushButtonMintzPOSQ">
              <property name="minimumSize">
               <size>
                <width>131</width>
@@ -1970,10 +1970,10 @@
               </size>
              </property>
              <property name="toolTip">
-              <string>Enter an amount of CCBC to convert (mint) to zCcbc</string>
+              <string>Enter an amount of POSQ to convert (mint) to zPosq</string>
              </property>
              <property name="text">
-              <string>Convert CCBC to zCCBC</string>
+              <string>Convert POSQ to zPOSQ</string>
              </property>
             </widget>
            </item>
@@ -1994,16 +1994,16 @@
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="labelzCCBC_2">
+            <widget class="QLabel" name="labelzPOSQ_2">
              <property name="text">
-              <string>zCCBC</string>
+              <string>zPOSQ</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="labelzCCBCAmountText">
+            <widget class="QLabel" name="labelzPOSQAmountText">
              <property name="toolTip">
-              <string>Available Balance are coins (CCBC) which are confirmed and not locked or Masternode collaterals.</string>
+              <string>Available Balance are coins (POSQ) which are confirmed and not locked or Masternode collaterals.</string>
              </property>
              <property name="text">
               <string>Available Balance:</string>
@@ -2014,12 +2014,12 @@
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="labelzCCBCAmountValue">
+            <widget class="QLabel" name="labelzPOSQAmountValue">
              <property name="toolTip">
-              <string>Enter an amount of CCBC to convert to zCcbc</string>
+              <string>Enter an amount of POSQ to convert to zPosq</string>
              </property>
              <property name="text">
-              <string>0.000 000 00 CCBC</string>
+              <string>0.000 000 00 POSQ</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -2048,7 +2048,7 @@
               </size>
              </property>
              <property name="toolTip">
-              <string>Reset Zerocoin (zCcbc) Wallet DB. Deletes transactions that did not make it into the blockchain.</string>
+              <string>Reset Zerocoin (zPosq) Wallet DB. Deletes transactions that did not make it into the blockchain.</string>
              </property>
              <property name="text">
               <string>Reset</string>
@@ -2195,7 +2195,7 @@
                 <enum>Qt::ActionsContextMenu</enum>
                </property>
                <property name="text">
-                <string notr="true">0.00 CCBC</string>
+                <string notr="true">0.00 POSQ</string>
                </property>
                <property name="textInteractionFlags">
                 <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -2302,21 +2302,21 @@
             <number>0</number>
            </property>
            <item>
-            <widget class="QPushButton" name="pushButtonZCcbcControl">
+            <widget class="QPushButton" name="pushButtonZPosqControl">
              <property name="text">
-              <string>zCcbc Control</string>
+              <string>zPosq Control</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="labelzCcbcSelected">
+            <widget class="QLabel" name="labelzPosqSelected">
              <property name="text">
-              <string>zCcbc Selected:</string>
+              <string>zPosq Selected:</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="labelzCcbcSelected_int">
+            <widget class="QLabel" name="labelzPosqSelected_int">
              <property name="text">
               <string>0</string>
              </property>
@@ -2370,7 +2370,7 @@
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_6">
            <item>
-            <widget class="QPushButton" name="pushButtonSpendzCCBC">
+            <widget class="QPushButton" name="pushButtonSpendzPOSQ">
              <property name="minimumSize">
               <size>
                <width>131</width>
@@ -2378,17 +2378,17 @@
               </size>
              </property>
              <property name="toolTip">
-              <string>Send zCCBC. Without 'Pay To:' address creates payments to yourself.</string>
+              <string>Send zPOSQ. Without 'Pay To:' address creates payments to yourself.</string>
              </property>
              <property name="text">
-              <string>Send zCCBC</string>
+              <string>Send zPOSQ</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QLabel" name="labelzCCBCBalanceText">
+            <widget class="QLabel" name="labelzPOSQBalanceText">
              <property name="toolTip">
-              <string>Available (mature and spendable) zCCBC for spending</string>
+              <string>Available (mature and spendable) zPOSQ for spending</string>
              </property>
              <property name="text">
               <string>Available Balance:</string>
@@ -2408,13 +2408,13 @@
              </property>
              <property name="toolTip">
               <string>
-                                      Available (mature and spendable) zCCBC for spending
+                                      Available (mature and spendable) zPOSQ for spending
 
-                                      zCCBC are mature when they have more than 20 confirmations AND more than 1 mints of the same denomination after them were minted
+                                      zPOSQ are mature when they have more than 20 confirmations AND more than 1 mints of the same denomination after them were minted
                                     </string>
              </property>
              <property name="text">
-              <string>0 zCCBC</string>
+              <string>0 zPOSQ</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -2437,7 +2437,7 @@
            <item>
             <widget class="QLabel" name="labelSecurityLevel">
              <property name="toolTip">
-              <string>Security Level for Zerocoin (zCcbc) Transactions. More is better, but needs more time and resources.</string>
+              <string>Security Level for Zerocoin (zPosq) Transactions. More is better, but needs more time and resources.</string>
              </property>
              <property name="frameShape">
               <enum>QFrame::Box</enum>
@@ -2525,7 +2525,7 @@
                 </size>
                </property>
                <property name="toolTip">
-                <string>The CCBC address to send the payment to. Creates local payment to yourself when empty.</string>
+                <string>The POSQ address to send the payment to. Creates local payment to yourself when empty.</string>
                </property>
               </widget>
              </item>
@@ -2614,15 +2614,15 @@
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
              </property>
              <property name="buddy">
-              <cstring>zCCBCpayAmount</cstring>
+              <cstring>zPOSQpayAmount</cstring>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="zCCBCpayAmount"/>
+            <widget class="QLineEdit" name="zPOSQpayAmount"/>
            </item>
            <item>
-            <widget class="QLabel" name="labelzCCBC">
+            <widget class="QLabel" name="labelzPOSQ">
              <property name="minimumSize">
               <size>
                <width>55</width>
@@ -2630,7 +2630,7 @@
               </size>
              </property>
              <property name="text">
-              <string>zCCBC</string>
+              <string>zPOSQ</string>
              </property>
             </widget>
            </item>
@@ -2663,7 +2663,7 @@
               <enum>Qt::LeftToRight</enum>
              </property>
              <property name="text">
-              <string>Convert Change Back to zCCBC (might cost additional fees)</string>
+              <string>Convert Change Back to zPOSQ (might cost additional fees)</string>
              </property>
             </widget>
            </item>
@@ -2766,7 +2766,7 @@
       <enum>Qt::ActionsContextMenu</enum>
      </property>
      <property name="text">
-      <string notr="true">0.000 000 00 CCBC</string>
+      <string notr="true">0.000 000 00 POSQ</string>
      </property>
      <property name="textInteractionFlags">
       <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>

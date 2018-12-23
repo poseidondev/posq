@@ -186,6 +186,6 @@
     <name>ZPhrControlDialog</name>
     </context>
 <context>
-    <name>ccbc-core</name>
+    <name>posq-core</name>
     </context>
 </TS>

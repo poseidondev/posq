@@ -1,31 +1,31 @@
 #!/bin/bash
 #
-#  ccbcd The Ccbc core server.
+#  posqd The Posq core server.
 #
 #
 # chkconfig: 345 80 20
-# description: ccbcd
-# processname: ccbcd
+# description: posqd
+# processname: posqd
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/ccbcd, see below
-if [ -f /etc/sysconfig/ccbcd ]; then
-        . /etc/sysconfig/ccbcd
+# you can override defaults in /etc/sysconfig/posqd, see below
+if [ -f /etc/sysconfig/posqd ]; then
+        . /etc/sysconfig/posqd
 fi
 
 RETVAL=0
 
-prog=ccbcd
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/ccbcd
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/ccbcd}
+prog=posqd
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/posqd
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/posqd}
 
-# ccbcd defaults to /usr/bin/ccbcd, override with BITCOIND_BIN
-bitcoind=${BITCOIND_BIN-/usr/bin/ccbcd}
+# posqd defaults to /usr/bin/posqd, override with BITCOIND_BIN
+bitcoind=${BITCOIND_BIN-/usr/bin/posqd}
 
-# ccbcd opts default to -disablewallet, override with BITCOIND_OPTS
+# posqd opts default to -disablewallet, override with BITCOIND_OPTS
 bitcoind_opts=${BITCOIND_OPTS}
 
 start() {
