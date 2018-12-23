@@ -2204,7 +2204,7 @@ CAmount GetSeeSaw(const CAmount& blockValue, int nMasternodeCount, int nHeight)
     }
 
     int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
-    int64_t mNodeCoins = nMasternodeCount * 25000 * COIN; //25k coins required
+    int64_t mNodeCoins = nMasternodeCount * 15000 * COIN; //25k coins required
 
     // Use this log to compare the masternode count for different clients
     //LogPrintf("Adjusting seesaw at height %d with %d masternodes (without drift: %d) at %ld\n", nHeight, nMasternodeCount, nMasternodeCount - Params().MasternodeCountDrift(), GetTime());

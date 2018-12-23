@@ -103,8 +103,8 @@ public:
 	CMainParams()
 	{
 		networkID = CBaseChainParams::MAIN;
-		vReviveRewardAddress = "SgMdQaxB7woK4dtudTCWcVizCYhBjzcfuv";   //This address will be depreicated when spork 18 is turned on and coins will be burned.
-		vTreasuryRewardAddress = "SdkfmdG4b3uUt6cFZhXvbyPyAVM6GGmxr9"; //This address is held by Tfinch and will be paying out coins to team and funding of projects.
+		vReviveRewardAddress = "";   //This address will be depreicated when spork 18 is turned on and coins will be burned.
+		vTreasuryRewardAddress = ""; //This address is held by Tfinch and will be paying out coins to team and funding of projects.
 		strNetworkID = "main";
 		/**
 		* The message start string is designed to be unlikely to occur in normal data.
@@ -173,10 +173,6 @@ public:
 		//Seeds	Community Nodes
 		vSeeds.push_back(CDNSSeedData("144.202.16.251", "144.202.16.251"));
 
-
-		//IPV6 Nodes
-		vSeeds.push_back(CDNSSeedData("[2001:19f0:5:6c99:3b12::1]", "[2001:19f0:5:6c99:3b12::1]"));
-
 		base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 58); //Q
 		base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
 		base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 212);
@@ -189,7 +185,7 @@ public:
 
 		fRequireRPCPassword = true;
 		fMiningRequiresPeers = false;
-		fAllowMinDifficultyBlocks = true;
+		fAllowMinDifficultyBlocks = false;
 		fDefaultConsistencyChecks = false;
 		fRequireStandard = true;
 		fMineBlocksOnDemand = false;
