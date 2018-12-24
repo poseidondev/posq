@@ -271,10 +271,10 @@
 #define PACKAGE_BUGREPORT "www.posq.org"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "Posq Core"
+#define PACKAGE_NAME "POSQ Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Posq Core 1.0.0"
+#define PACKAGE_STRING "POSQ Core 1.0.0"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "posq"

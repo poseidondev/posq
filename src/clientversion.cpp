@@ -13,7 +13,7 @@
  * for both posqd and posq-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Posq Core");
+const std::string CLIENT_NAME("POSQ Core");
 
 /**
  * Client version number

@@ -62,12 +62,12 @@
         <translation>Alıcı Adres</translation>
     </message>
     <message>
-        <source>These are your Posq addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Bunlar ödemeleri göndermek için olan Posq adreslerinizdir.Coinleri göndermeden önce her zaman gönderilen miktarı ve adresi kontrol edin</translation>
+        <source>These are your POSQ addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Bunlar ödemeleri göndermek için olan POSQ adreslerinizdir.Coinleri göndermeden önce her zaman gönderilen miktarı ve adresi kontrol edin</translation>
     </message>
     <message>
-        <source>These are your Posq addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Bunlar ödemeleri almak için olan Posq adreslerinizdirHer işlem için yeni bir adres kullanmanız önerilir.</translation>
+        <source>These are your POSQ addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Bunlar ödemeleri almak için olan POSQ adreslerinizdirHer işlem için yeni bir adres kullanmanız önerilir.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>cüzdan şifrelemesini onayla</translation>
     </message>
     <message>
-        <source>Posq will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POSQs from being stolen by malware infecting your computer.</source>
-        <translation>Posq şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, POSQ'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
+        <source>POSQ will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POSQs from being stolen by malware infecting your computer.</source>
+        <translation>POSQ şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, POSQ'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -242,8 +242,8 @@
         <translation>&amp;BIP 38 şifrele</translation>
     </message>
     <message>
-        <source>Enter a Posq Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>BIP 38'i kullanarak şifrelemek istediğiniz bir Posq Adresi girin. Orta kutuya bir parola girin. Şifreli özel anahtarı hesaplamak için şifreleme tuşuna basın.
+        <source>Enter a POSQ Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>BIP 38'i kullanarak şifrelemek istediğiniz bir POSQ Adresi girin. Orta kutuya bir parola girin. Şifreli özel anahtarı hesaplamak için şifreleme tuşuna basın.
 </translation>
     </message>
     <message>
@@ -251,8 +251,8 @@
         <translation>adres</translation>
     </message>
     <message>
-        <source>The Posq address to sign the message with</source>
-        <translation>Ile mesaj imzalamak için Posq adresi
+        <source>The POSQ address to sign the message with</source>
+        <translation>Ile mesaj imzalamak için POSQ adresi
 </translation>
     </message>
     <message>
@@ -289,8 +289,8 @@
 </translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Posq address</source>
-        <translation>Bu Posq adresinin sahibi olduğunuzu kanıtlamak için mesajı imzala
+        <source>Sign the message to prove you own this POSQ address</source>
+        <translation>Bu POSQ adresinin sahibi olduğunuzu kanıtlamak için mesajı imzala
 </translation>
     </message>
     <message>
@@ -316,12 +316,12 @@
         <translation>BIP 38 şifreli özel anahtarını girin. Orta kutuya şifreyi  girin. Özel anahtarı hesaplamak için Anahtarın Çözülmesini tıklayın. Anahtar çözüldükten sonra 'Alma Adresi'ni tıklamak, bu özel anahtarı cüzdana ekleyecektir.</translation>
     </message>
     <message>
-        <source>The Posq address the message was signed with</source>
-        <translation>Mesajın imzalandığı Posq adresi</translation>
+        <source>The POSQ address the message was signed with</source>
+        <translation>Mesajın imzalandığı POSQ adresi</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Posq address</source>
-        <translation>Belirtilen Posq adresi ile imzalanmış olduğundan emin olmak için iletiyi doğrulayın</translation>
+        <source>Verify the message to ensure it was signed with the specified POSQ address</source>
+        <translation>Belirtilen POSQ adresi ile imzalanmış olduğundan emin olmak için iletiyi doğrulayın</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -613,12 +613,12 @@
         <translation>Sekme tablosu</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq CORE</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ CORE</translation>
     </message>
     <message>
-        <source>Send coins to a Posq address</source>
-        <translation>Koinleri Posq adresine gönder</translation>
+        <source>Send coins to a POSQ address</source>
+        <translation>Koinleri POSQ adresine gönder</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and posq: URIs)</source>
@@ -637,24 +637,24 @@
         <translation>Masternodları ara</translation>
     </message>
     <message>
-        <source>&amp;About Posq Core</source>
+        <source>&amp;About POSQ Core</source>
         <translation>Pıvx core Hakkında</translation>
     </message>
     <message>
-        <source>Show information about Posq Core</source>
+        <source>Show information about POSQ Core</source>
         <translation>Pıvx Core hakkında bilgi göster</translation>
     </message>
     <message>
-        <source>Modify configuration options for Posq</source>
-        <translation>Posq için yapılandırma seçeneklerini değiştirin</translation>
+        <source>Modify configuration options for POSQ</source>
+        <translation>POSQ için yapılandırma seçeneklerini değiştirin</translation>
     </message>
     <message>
-        <source>Sign messages with your Posq addresses to prove you own them</source>
-        <translation>Sahip olduğunuzu kanıtlamak için mesajlarınızı Posq adresleriyle imzalayın</translation>
+        <source>Sign messages with your POSQ addresses to prove you own them</source>
+        <translation>Sahip olduğunuzu kanıtlamak için mesajlarınızı POSQ adresleriyle imzalayın</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Posq addresses</source>
-        <translation>Belirtilen Posq adresleriyle imzalanmış olduklarından emin olmak için iletileri doğrulayın</translation>
+        <source>Verify messages to ensure they were signed with specified POSQ addresses</source>
+        <translation>Belirtilen POSQ adresleriyle imzalanmış olduklarından emin olmak için iletileri doğrulayın</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -686,8 +686,8 @@
         <translation>Açık Masternode yapılandırma dosyası</translation>
     </message>
     <message>
-        <source>Open a Posq: URI or payment request</source>
-        <translation>Bir Posq: URI veya ödeme isteği açın</translation>
+        <source>Open a POSQ: URI or payment request</source>
+        <translation>Bir POSQ: URI veya ödeme isteği açın</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -698,12 +698,12 @@
         <translation>Kaşif penceresini engelle</translation>
     </message>
     <message>
-        <source>Show the Posq Core help message to get a list with possible Posq command-line options</source>
-        <translation>Olası Posq komut satırı seçeneklerine sahip bir liste almak için Posq Core yardım mesajını gösterin</translation>
+        <source>Show the POSQ Core help message to get a list with possible POSQ command-line options</source>
+        <translation>Olası POSQ komut satırı seçeneklerine sahip bir liste almak için POSQ Core yardım mesajını gösterin</translation>
     </message>
     <message>
-        <source>Posq Core client</source>
-        <translation>Posq Core istemci</translation>
+        <source>POSQ Core client</source>
+        <translation>POSQ Core istemci</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1121,8 +1121,8 @@ Adres: %4</translation>
         <translation>versiyon</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq CORE</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ CORE</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -1144,16 +1144,16 @@ Adres: %4</translation>
         <translation>Hoşgeldiniz</translation>
     </message>
     <message>
-        <source>Welcome to Posq Core.</source>
-        <translation>Posq Core'a hoşgeldiniz.</translation>
+        <source>Welcome to POSQ Core.</source>
+        <translation>POSQ Core'a hoşgeldiniz.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Varsayılan veri dosyasını kullanınız</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq CORE</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ CORE</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1508,8 +1508,8 @@ Adres: %4</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Posq address to sign the message with</source>
-        <translation>Ile mesaj imzalamak için Posq adresi
+        <source>The POSQ address to sign the message with</source>
+        <translation>Ile mesaj imzalamak için POSQ adresi
 </translation>
     </message>
     <message>
@@ -1538,17 +1538,17 @@ Adres: %4</translation>
 </translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Posq address</source>
-        <translation>Bu Posq adresinin sahibi olduğunuzu kanıtlamak için mesajı imzala
+        <source>Sign the message to prove you own this POSQ address</source>
+        <translation>Bu POSQ adresinin sahibi olduğunuzu kanıtlamak için mesajı imzala
 </translation>
     </message>
     <message>
-        <source>The Posq address the message was signed with</source>
-        <translation>Mesajın imzalandığı Posq adresi</translation>
+        <source>The POSQ address the message was signed with</source>
+        <translation>Mesajın imzalandığı POSQ adresi</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Posq address</source>
-        <translation>Belirtilen Posq adresi ile imzalanmış olduğundan emin olmak için iletiyi doğrulayın</translation>
+        <source>Verify the message to ensure it was signed with the specified POSQ address</source>
+        <translation>Belirtilen POSQ adresi ile imzalanmış olduğundan emin olmak için iletiyi doğrulayın</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1587,8 +1587,8 @@ Adres: %4</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq CORE</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ CORE</translation>
     </message>
     </context>
 <context>

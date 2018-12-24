@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Posq address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Posq jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this POSQ address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres POSQ jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,12 +518,12 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>&amp;Rdzeń Posq</translation>
+        <source>POSQ Core</source>
+        <translation>&amp;Rdzeń POSQ</translation>
     </message>
     <message>
-        <source>Send coins to a Posq address</source>
-        <translation>Wyślij monety do adresu Posq</translation>
+        <source>Send coins to a POSQ address</source>
+        <translation>Wyślij monety do adresu POSQ</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and posq: URIs)</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Posq Core</source>
+        <source>&amp;About POSQ Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about Posq Core</source>
+        <source>Show information about POSQ Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for Posq</source>
-        <translation>Modyfikuj opcje konfiguracji Posq</translation>
+        <source>Modify configuration options for POSQ</source>
+        <translation>Modyfikuj opcje konfiguracji POSQ</translation>
     </message>
     <message>
-        <source>Sign messages with your Posq addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami Posq, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your POSQ addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami POSQ, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Posq addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu Posq</translation>
+        <source>Verify messages to ensure they were signed with specified POSQ addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu POSQ</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -582,8 +582,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a Posq: URI or payment request</source>
-        <translation>OtwórzPOSQ: URI i żądanie zapłaty</translation>
+        <source>Open a POSQ: URI or payment request</source>
+        <translation>OtwórzPOSQX: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the Posq Core help message to get a list with possible Posq command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia Posq, aby dostać listę możliwych opcji Posq command-line</translation>
+        <source>Show the POSQ Core help message to get a list with possible POSQ command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia POSQ, aby dostać listę możliwych opcji POSQ command-line</translation>
     </message>
     <message>
-        <source>Posq Core client</source>
-        <translation>Rdzeń Posq klient</translation>
+        <source>POSQ Core client</source>
+        <translation>Rdzeń POSQ klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -660,7 +660,7 @@ Type: %3
 Address: %4
 </source>
         <translation>Data: %1
-Liczba: %2
+Licposq: %2
 Typ: %3
 Adres: %4
 </translation>
@@ -724,7 +724,7 @@ MultiWysyłlka: %1</translation>
     <name>CoinControlDialog</name>
     <message>
         <source>Amount:</source>
-        <translation>Liczba:</translation>
+        <translation>Licposq:</translation>
     </message>
     <message>
         <source>Priority:</source>
@@ -764,7 +764,7 @@ MultiWysyłlka: %1</translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Liczba</translation>
+        <translation>Licposq</translation>
     </message>
     <message>
         <source>Received with label</source>
@@ -912,8 +912,8 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Posq Core</source>
-        <translation>&amp;Rdzeń Posq</translation>
+        <source>POSQ Core</source>
+        <translation>&amp;Rdzeń POSQ</translation>
     </message>
     </context>
 <context>
@@ -927,8 +927,8 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>&amp;Rdzeń Posq</translation>
+        <source>POSQ Core</source>
+        <translation>&amp;Rdzeń POSQ</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1188,12 +1188,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start Posq after logging in to the system.</source>
-        <translation>Automatycznie uruchom Posq po zalogowaniu do systemu</translation>
+        <source>Automatically start POSQ after logging in to the system.</source>
+        <translation>Automatycznie uruchom POSQ po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start Posq on system login</source>
-        <translation>&amp;Uruchom Posq podczas logowania do systemu</translation>
+        <source>&amp;Start POSQ on system login</source>
+        <translation>&amp;Uruchom POSQ podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1212,8 +1212,8 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Posq.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie Posq</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting POSQ.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie POSQ</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1222,8 +1222,8 @@ https://www.transifex.com/posq-project/posq-project-translations</source>
 https://www.transifex.com/posq-project/posq-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the Posq network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią Posq poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the POSQ network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią POSQ poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1403,7 +1403,7 @@ https://www.transifex.com/posq-project/posq-project-translations </translation>
     </message>
     <message>
         <source>Amount:</source>
-        <translation>Liczba:</translation>
+        <translation>Licposq:</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1458,11 +1458,11 @@ https://www.transifex.com/posq-project/posq-project-translations </translation>
     <name>QObject</name>
     <message>
         <source>Amount</source>
-        <translation>Liczba</translation>
+        <translation>Licposq</translation>
     </message>
     <message>
-        <source>Enter a Posq address (e.g. %1)</source>
-        <translation>Wprowadź adres Posq (np. %1)</translation>
+        <source>Enter a POSQ address (e.g. %1)</source>
+        <translation>Wprowadź adres POSQ (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1544,7 +1544,7 @@ https://www.transifex.com/posq-project/posq-project-translations </translation>
     </message>
     <message>
         <source>Number of connections</source>
-        <translation>Liczba połączeń</translation>
+        <translation>Licposq połączeń</translation>
     </message>
     <message>
         <source>&amp;Open</source>
@@ -1576,7 +1576,7 @@ https://www.transifex.com/posq-project/posq-project-translations </translation>
     </message>
     <message>
         <source>Current number of blocks</source>
-        <translation>Bieżąca liczba bloków</translation>
+        <translation>Bieżąca licposq bloków</translation>
     </message>
     <message>
         <source>Client version</source>
@@ -1592,7 +1592,7 @@ https://www.transifex.com/posq-project/posq-project-translations </translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
-        <translation>Liczba Masternode</translation>
+        <translation>Licposq Masternode</translation>
     </message>
     <message>
         <source>&amp;Console</source>
@@ -1770,7 +1770,7 @@ https://www.transifex.com/posq-project/posq-project-translations </translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Liczba</translation>
+        <translation>Licposq</translation>
     </message>
     <message>
         <source>Label</source>
@@ -1789,7 +1789,7 @@ https://www.transifex.com/posq-project/posq-project-translations </translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Liczba</translation>
+        <translation>Licposq</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1800,7 +1800,7 @@ https://www.transifex.com/posq-project/posq-project-translations </translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Amount:</source>
-        <translation>Liczba:</translation>
+        <translation>Licposq:</translation>
     </message>
     <message>
         <source>Priority:</source>
@@ -1900,8 +1900,8 @@ https://www.transifex.com/posq-project/posq-project-translations </translation>
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Posq address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Posq jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this POSQ address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres POSQ jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1935,8 +1935,8 @@ https://www.transifex.com/posq-project/posq-project-translations </translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Posq Core</source>
-        <translation>&amp;Rdzeń Posq</translation>
+        <source>POSQ Core</source>
+        <translation>&amp;Rdzeń POSQ</translation>
     </message>
     </context>
 <context>
@@ -1954,7 +1954,7 @@ https://www.transifex.com/posq-project/posq-project-translations </translation>
     </message>
     <message>
         <source>Amount</source>
-        <translation>Liczba</translation>
+        <translation>Licposq</translation>
     </message>
     </context>
 <context>

@@ -152,8 +152,8 @@
         <translation>Confirmer le cryptage du portefeuille</translation>
     </message>
     <message>
-        <source>Posq will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POSQs from being stolen by malware infecting your computer.</source>
-        <translation>Posq va maintenant se fermer pour finir le processus cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos POSQs d'un vol par un malware ayant infecté votre ordinateur. </translation>
+        <source>POSQ will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POSQs from being stolen by malware infecting your computer.</source>
+        <translation>POSQ va maintenant se fermer pour finir le processus cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos POSQs d'un vol par un malware ayant infecté votre ordinateur. </translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -211,16 +211,16 @@
         <translation>BIP 38 crypter</translation>
     </message>
     <message>
-        <source>Enter a Posq Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Entrez une adresse Posq que vous voulez crypter en utilisant BIP 38. Entrez une phrase secrète dans le champ du milieu. Cliquez sur crypter pour calculer la clé de cryptage privée.</translation>
+        <source>Enter a POSQ Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Entrez une adresse POSQ que vous voulez crypter en utilisant BIP 38. Entrez une phrase secrète dans le champ du milieu. Cliquez sur crypter pour calculer la clé de cryptage privée.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse :</translation>
     </message>
     <message>
-        <source>The Posq address to sign the message with</source>
-        <translation>L'adresse Posq avec laquelle signer le message</translation>
+        <source>The POSQ address to sign the message with</source>
+        <translation>L'adresse POSQ avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -251,8 +251,8 @@
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Posq address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse Posq</translation>
+        <source>Sign the message to prove you own this POSQ address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse POSQ</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -271,12 +271,12 @@
         <translation>BIP 38 Décrypter</translation>
     </message>
     <message>
-        <source>The Posq address the message was signed with</source>
-        <translation>L'adresse Posq avec laquelle le message a été signé</translation>
+        <source>The POSQ address the message was signed with</source>
+        <translation>L'adresse POSQ avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Posq address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse Posq renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified POSQ address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse POSQ renseignée</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -534,8 +534,8 @@
         <translation>&amp;Aide</translation>
     </message>
     <message>
-        <source>Send coins to a Posq address</source>
-        <translation>Envoyer des pièces à une adresse Posq</translation>
+        <source>Send coins to a POSQ address</source>
+        <translation>Envoyer des pièces à une adresse POSQ</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -546,16 +546,16 @@
         <translation>Afficher les masternodes</translation>
     </message>
     <message>
-        <source>Modify configuration options for Posq</source>
-        <translation>Modifier les options de configuration pour Posq</translation>
+        <source>Modify configuration options for POSQ</source>
+        <translation>Modifier les options de configuration pour POSQ</translation>
     </message>
     <message>
-        <source>Sign messages with your Posq addresses to prove you own them</source>
-        <translation>Signer les messages avec votre adresse Posq pour prouver qu'elles sont bien à vous.</translation>
+        <source>Sign messages with your POSQ addresses to prove you own them</source>
+        <translation>Signer les messages avec votre adresse POSQ pour prouver qu'elles sont bien à vous.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Posq addresses</source>
-        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse Posq spécifié</translation>
+        <source>Verify messages to ensure they were signed with specified POSQ addresses</source>
+        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse POSQ spécifié</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -854,8 +854,8 @@ Adresse : %4
         <translation>Modifier l'adresse d'envoi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Posq address.</source>
-        <translation>L'adresse entrée "%1" n'est pas une adresse Posq valide</translation>
+        <source>The entered address "%1" is not a valid POSQ address.</source>
+        <translation>L'adresse entrée "%1" n'est pas une adresse POSQ valide</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1524,8 +1524,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Payer à :</translation>
     </message>
     <message>
-        <source>The Posq address to send the payment to</source>
-        <translation>L'adresse Posq à laquelle envoyer le paiement</translation>
+        <source>The POSQ address to send the payment to</source>
+        <translation>L'adresse POSQ à laquelle envoyer le paiement</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1570,8 +1570,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Signer le message</translation>
     </message>
     <message>
-        <source>The Posq address to sign the message with</source>
-        <translation>L'adresse Posq avec laquelle signer le message</translation>
+        <source>The POSQ address to sign the message with</source>
+        <translation>L'adresse POSQ avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1598,16 +1598,16 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Posq address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse Posq</translation>
+        <source>Sign the message to prove you own this POSQ address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse POSQ</translation>
     </message>
     <message>
-        <source>The Posq address the message was signed with</source>
-        <translation>L'adresse Posq avec laquelle le message a été signé</translation>
+        <source>The POSQ address the message was signed with</source>
+        <translation>L'adresse POSQ avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Posq address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse Posq renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified POSQ address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse POSQ renseignée</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>

@@ -25,8 +25,8 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called Posq (http://www.posq.io),
- * which enables instant payments to anyone, anywhere in the world. Posq uses peer-to-peer technology to operate
+ * This is the developer documentation of the reference client for an experimental new digital currency called POSQ (http://www.posq.io),
+ * which enables instant payments to anyone, anywhere in the world. POSQ uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.
@@ -70,13 +70,13 @@ bool AppInit(int argc, char* argv[])
 
     // Process help and version before taking care about datadir
     if (mapArgs.count("-?") || mapArgs.count("-help") || mapArgs.count("-version")) {
-        std::string strUsage = _("Posq Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
+        std::string strUsage = _("POSQ Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
 
         if (mapArgs.count("-version")) {
             strUsage += LicenseInfo();
         } else {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  posqd [options]                     " + _("Start Posq Core Daemon") + "\n";
+                        "  posqd [options]                     " + _("Start POSQ Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -122,7 +122,7 @@ bool AppInit(int argc, char* argv[])
 #ifndef WIN32
         fDaemon = GetBoolArg("-daemon", false);
         if (fDaemon) {
-            fprintf(stdout, "Posq server starting\n");
+            fprintf(stdout, "POSQ server starting\n");
 
             // Daemonize
             pid_t pid = fork();

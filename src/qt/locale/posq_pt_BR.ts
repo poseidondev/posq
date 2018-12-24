@@ -62,12 +62,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your Posq addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços Posq para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
+        <source>These are your POSQ addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços POSQ para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your Posq addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços Posq para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
+        <source>These are your POSQ addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços POSQ para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +172,8 @@
         <translation>Confirmar criptografia de carteira</translation>
     </message>
     <message>
-        <source>Posq will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POSQs from being stolen by malware infecting your computer.</source>
-        <translation>Posq vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas POSQs de serem roubadas por malwares infectando seu computador.</translation>
+        <source>POSQ will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POSQs from being stolen by malware infecting your computer.</source>
+        <translation>POSQ vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas POSQs de serem roubadas por malwares infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -235,7 +235,7 @@
         <translation>&amp;Encriptação BIP 38</translation>
     </message>
     <message>
-        <source>Enter a Posq Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a POSQ Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation>Insira um endereço que você deseja criptografar usando a BIP 38. Insira a palavra-chave na caixa do meio. Pressione criptografar para computar a chave privada criptografada.</translation>
     </message>
     <message>
@@ -243,8 +243,8 @@
         <translation>Endereço:</translation>
     </message>
     <message>
-        <source>The Posq address to sign the message with</source>
-        <translation>O endereço Posq para assinar a mensagem</translation>
+        <source>The POSQ address to sign the message with</source>
+        <translation>O endereço POSQ para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Copia a assinatura atual do sistema de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Posq address</source>
-        <translation>Assine a mensagem para provar que você possui este endereço Posq</translation>
+        <source>Sign the message to prove you own this POSQ address</source>
+        <translation>Assine a mensagem para provar que você possui este endereço POSQ</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -291,12 +291,12 @@
         <translation>Limpar &amp;Tudo</translation>
     </message>
     <message>
-        <source>The Posq address the message was signed with</source>
-        <translation>O endereço Posq que assinou a mensagem</translation>
+        <source>The POSQ address the message was signed with</source>
+        <translation>O endereço POSQ que assinou a mensagem</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Posq address</source>
-        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço Posq especificado.</translation>
+        <source>Verify the message to ensure it was signed with the specified POSQ address</source>
+        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço POSQ especificado.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -586,12 +586,12 @@
         <translation>Ferramentas de abas</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Core</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Core</translation>
     </message>
     <message>
-        <source>Send coins to a Posq address</source>
-        <translation>Enviar moedas para um endereço Posq</translation>
+        <source>Send coins to a POSQ address</source>
+        <translation>Enviar moedas para um endereço POSQ</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and posq: URIs)</source>
@@ -606,24 +606,24 @@
         <translation>Procurar masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Posq Core</source>
-        <translation>&amp;Sobre o Posq Core</translation>
+        <source>&amp;About POSQ Core</source>
+        <translation>&amp;Sobre o POSQ Core</translation>
     </message>
     <message>
-        <source>Show information about Posq Core</source>
-        <translation>Mostra informação sobre o Posq Core</translation>
+        <source>Show information about POSQ Core</source>
+        <translation>Mostra informação sobre o POSQ Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Posq</source>
-        <translation>Modificar opções de configuração para Posq</translation>
+        <source>Modify configuration options for POSQ</source>
+        <translation>Modificar opções de configuração para POSQ</translation>
     </message>
     <message>
-        <source>Sign messages with your Posq addresses to prove you own them</source>
-        <translation>Assine mensagens com seus endereços Posq para provar que você os detém</translation>
+        <source>Sign messages with your POSQ addresses to prove you own them</source>
+        <translation>Assine mensagens com seus endereços POSQ para provar que você os detém</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Posq addresses</source>
-        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços Posq especificados</translation>
+        <source>Verify messages to ensure they were signed with specified POSQ addresses</source>
+        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços POSQ especificados</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -654,8 +654,8 @@
         <translation>Abrir arquivo de configuração de Masternode</translation>
     </message>
     <message>
-        <source>Open a Posq: URI or payment request</source>
-        <translation>Abrir um Posq: URI ou requisição de pagamento</translation>
+        <source>Open a POSQ: URI or payment request</source>
+        <translation>Abrir um POSQ: URI ou requisição de pagamento</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -666,12 +666,12 @@
         <translation>Janela de exploração de blocos</translation>
     </message>
     <message>
-        <source>Show the Posq Core help message to get a list with possible Posq command-line options</source>
-        <translation>Mostra a ajuda da Posq Core para receber uma lista com possíveis opções de linha de comando Posq</translation>
+        <source>Show the POSQ Core help message to get a list with possible POSQ command-line options</source>
+        <translation>Mostra a ajuda da POSQ Core para receber uma lista com possíveis opções de linha de comando POSQ</translation>
     </message>
     <message>
-        <source>Posq Core client</source>
-        <translation>Cliente Core Posq</translation>
+        <source>POSQ Core client</source>
+        <translation>Cliente Core POSQ</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1083,8 +1083,8 @@ MultiSend: %1</translation>
         <translation>Editar endereço remetente</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Posq address.</source>
-        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de Posq</translation>
+        <source>The entered address "%1" is not a valid POSQ address.</source>
+        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de POSQ</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1129,16 +1129,16 @@ MultiSend: %1</translation>
         <translation>versão</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Core</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Posq Core</source>
-        <translation>Sobre o Posq Core</translation>
+        <source>About POSQ Core</source>
+        <translation>Sobre o POSQ Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1172,16 +1172,16 @@ MultiSend: %1</translation>
         <translation>Bem-vindo</translation>
     </message>
     <message>
-        <source>Welcome to Posq Core.</source>
-        <translation>Bem-vindo ao Posq Core.</translation>
+        <source>Welcome to POSQ Core.</source>
+        <translation>Bem-vindo ao POSQ Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Posq Core will store its data.</source>
-        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde Posq Core vai armazenar os seus dados.</translation>
+        <source>As this is the first time the program is launched, you can choose where POSQ Core will store its data.</source>
+        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde POSQ Core vai armazenar os seus dados.</translation>
     </message>
     <message>
-        <source>Posq Core will download and store a copy of the Posq block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Posq Core vai baixar e armazenar uma cópia da blockchain Posq. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
+        <source>POSQ Core will download and store a copy of the POSQ block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>POSQ Core vai baixar e armazenar uma cópia da blockchain POSQ. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1192,8 +1192,8 @@ MultiSend: %1</translation>
         <translation>Usar um diretório personalizado de dados:</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Core</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1480,16 +1480,16 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Configuração de ofuscação</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Posq's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para o básico (%1 e 2 rodadas) Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Posq's.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening POSQ's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para o básico (%1 e 2 rodadas) Você pode mudar isto a qualquer tempo ao abrir a configuração de tela POSQ's.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Posq's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para alto (%1 e 8 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Posq's.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening POSQ's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para alto (%1 e 8 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela POSQ's.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Posq's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para máxima (%1 e 16 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela Posq's.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening POSQ's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para máxima (%1 e 16 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela POSQ's.</translation>
     </message>
 </context>
 <context>
@@ -1542,8 +1542,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>C&amp;arteira</translation>
     </message>
     <message>
-        <source>Automatically open the Posq client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automaticamente a porta do cliente Posq no roteador. Isto somente funciona quando seu roteador suporta UPnP e este esteja habilitado.</translation>
+        <source>Automatically open the POSQ client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automaticamente a porta do cliente POSQ no roteador. Isto somente funciona quando seu roteador suporta UPnP e este esteja habilitado.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1562,12 +1562,12 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Posq after logging in to the system.</source>
-        <translation>Iniciar automaticamente Posq depois de logar no sistema.</translation>
+        <source>Automatically start POSQ after logging in to the system.</source>
+        <translation>Iniciar automaticamente POSQ depois de logar no sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start Posq on system login</source>
-        <translation>&amp;Iniciar Posq ao logar no sistema</translation>
+        <source>&amp;Start POSQ on system login</source>
+        <translation>&amp;Iniciar POSQ ao logar no sistema</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1582,8 +1582,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>&amp;Rede</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Posq.</source>
-        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do Posq.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting POSQ.</source>
+        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do POSQ.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1592,8 +1592,8 @@ https://www.transifex.com/posq-project/posq-project-translations</source>
 https://www.transifex.com/posq-project/posq-project-translations</translation>
     </message>
     <message>
-        <source>Connect to the Posq network through a SOCKS5 proxy.</source>
-        <translation>Conectar à rede Posq através de um proxy SOCKS5</translation>
+        <source>Connect to the POSQ network through a SOCKS5 proxy.</source>
+        <translation>Conectar à rede POSQ através de um proxy SOCKS5</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1727,8 +1727,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Imaturo:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Posq network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede Posq após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the POSQ network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede POSQ após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1816,8 +1816,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Posq network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede Posq após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the POSQ network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede POSQ após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
     <message>
         <source>0</source>
@@ -1923,8 +1923,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Quantidade</translation>
     </message>
     <message>
-        <source>Enter a Posq address (e.g. %1)</source>
-        <translation>Insira um endereço Posq (e.g. %1)</translation>
+        <source>Enter a POSQ address (e.g. %1)</source>
+        <translation>Insira um endereço POSQ (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2173,8 +2173,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>saída:</translation>
     </message>
     <message>
-        <source>Welcome to the Posq RPC console.</source>
-        <translation>Bem-vindo ao console da Posq RPC</translation>
+        <source>Welcome to the POSQ RPC console.</source>
+        <translation>Bem-vindo ao console da POSQ RPC</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2469,8 +2469,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Se a taxa padrão estiver definida para 1000 uPOSQs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uPOSQs em taxa,&lt;br /&gt; pagará pelo menos 1000 uPOSQs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Posq transactions than the network can process.</source>
-        <translation>Pagar a taxa mínima é aceitável desde que existe menos volume de transações que espaço nos blocos. &lt;br/&gt; Mas fique atento que isso pode acabar em uma transação que nunca será confirmada caso haja mais demanda por transações de Posq do que a rede pode processar.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for POSQ transactions than the network can process.</source>
+        <translation>Pagar a taxa mínima é aceitável desde que existe menos volume de transações que espaço nos blocos. &lt;br/&gt; Mas fique atento que isso pode acabar em uma transação que nunca será confirmada caso haja mais demanda por transações de POSQ do que a rede pode processar.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -2557,8 +2557,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>fundos anônimos</translation>
     </message>
     <message>
-        <source>Warning: Invalid Posq address</source>
-        <translation>Aviso: endereço Posq inválido</translation>
+        <source>Warning: Invalid POSQ address</source>
+        <translation>Aviso: endereço POSQ inválido</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -2652,8 +2652,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Pagar &amp;Para:</translation>
     </message>
     <message>
-        <source>The Posq address to send the payment to</source>
-        <translation>O endereço Posq para enviar o pagamento</translation>
+        <source>The POSQ address to send the payment to</source>
+        <translation>O endereço POSQ para enviar o pagamento</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2715,8 +2715,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Posq Core is shutting down...</source>
-        <translation>Posq Core está desligando...</translation>
+        <source>POSQ Core is shutting down...</source>
+        <translation>POSQ Core está desligando...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2734,8 +2734,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>&amp;Assinar mensagem</translation>
     </message>
     <message>
-        <source>The Posq address to sign the message with</source>
-        <translation>O endereço Posq para assinar a mensagem</translation>
+        <source>The POSQ address to sign the message with</source>
+        <translation>O endereço POSQ para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2766,16 +2766,16 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Copia a assinatura atual do sistema de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Posq address</source>
-        <translation>Assine a mensagem para provar que você possui este endereço Posq</translation>
+        <source>Sign the message to prove you own this POSQ address</source>
+        <translation>Assine a mensagem para provar que você possui este endereço POSQ</translation>
     </message>
     <message>
-        <source>The Posq address the message was signed with</source>
-        <translation>O endereço Posq que assinou a mensagem</translation>
+        <source>The POSQ address the message was signed with</source>
+        <translation>O endereço POSQ que assinou a mensagem</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Posq address</source>
-        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço Posq especificado.</translation>
+        <source>Verify the message to ensure it was signed with the specified POSQ address</source>
+        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço POSQ especificado.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2857,8 +2857,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Core</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2873,8 +2873,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Os desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>The Posq Core developers</source>
-        <translation>Os desenvolvedores do Posq Core</translation>
+        <source>The POSQ Core developers</source>
+        <translation>Os desenvolvedores do POSQ Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3414,8 +3414,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes da blockchain através de -rescan na inicialização</translation>
     </message>
     <message>
-        <source>Disable all Posq specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Desabilitar todas as funcionalidades específicas Posq (Masternodes, Ofuscação, SwiftTX, Budgeting) (0-1, padrão: %u)</translation>
+        <source>Disable all POSQ specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Desabilitar todas as funcionalidades específicas POSQ (Masternodes, Ofuscação, SwiftTX, Budgeting) (0-1, padrão: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
@@ -3474,8 +3474,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Aviso: -paytxfee está definido como muito alto! Está e a taxa de transação que você irá pagar se enviar uma transação.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Posq Core will not work properly.</source>
-        <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core Posq não vai funcionar corretamente.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong POSQ Core will not work properly.</source>
+        <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core POSQ não vai funcionar corretamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -3490,8 +3490,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Você deve especificar uma masternodeprivkey na configuração. Favor verificar o manual para obter ajuda.</translation>
     </message>
     <message>
-        <source>(5520 could be used only on mainnet)</source>
-        <translation>(5520 could be used only on mainnet)</translation>
+        <source>(5500 could be used only on mainnet)</source>
+        <translation>(5500 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3502,8 +3502,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>(padrão: 1)</translation>
     </message>
     <message>
-        <source>(must be 5520 for mainnet)</source>
-        <translation>(deve ser 5520 para mainnet)</translation>
+        <source>(must be 5500 for mainnet)</source>
+        <translation>(deve ser 5500 para mainnet)</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
@@ -3554,8 +3554,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Todos os direitos reservados (C) 2014-%i aos Desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Posq Core Developers</source>
-        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do Posq Core</translation>
+        <source>Copyright (C) 2015-%i The POSQ Core Developers</source>
+        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do POSQ Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -3606,8 +3606,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Erro no carregamento da wallet.dat: Carteira corrompida</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Posq Core</source>
-        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da Posq Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of POSQ Core</source>
+        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da POSQ Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4078,8 +4078,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Carteira está travada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Posq Core to complete</source>
-        <translation>A carteira precisa ser reescrita: reinicia o Posq Core para completar</translation>
+        <source>Wallet needed to be rewritten: restart POSQ Core to complete</source>
+        <translation>A carteira precisa ser reescrita: reinicia o POSQ Core para completar</translation>
     </message>
     <message>
         <source>Wallet options:</source>

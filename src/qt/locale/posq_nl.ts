@@ -62,12 +62,12 @@
         <translation>Ontvangstadressen</translation>
     </message>
     <message>
-        <source>These are your Posq addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw Posqadressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
+        <source>These are your POSQ addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw POSQadressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
     </message>
     <message>
-        <source>These are your Posq addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw Posqadressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
+        <source>These are your POSQ addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dit zijn uw POSQadressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
-        <source>Posq will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POSQs from being stolen by malware infecting your computer.</source>
-        <translation>Posq zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw POSQs stelen.</translation>
+        <source>POSQ will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POSQs from being stolen by malware infecting your computer.</source>
+        <translation>POSQ zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw POSQs stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Versleuteling</translation>
     </message>
     <message>
-        <source>Enter a Posq Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Voer een Posq adres in dat u wilt versleutelen met BIP 38. Voer een wachtwoord in, in het middelste veld. Druk op versleutelen om de versleutelde geheime sleutel te berekenen.</translation>
+        <source>Enter a POSQ Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Voer een POSQ adres in dat u wilt versleutelen met BIP 38. Voer een wachtwoord in, in het middelste veld. Druk op versleutelen om de versleutelde geheime sleutel te berekenen.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adres:</translation>
     </message>
     <message>
-        <source>The Posq address to sign the message with</source>
-        <translation>Het Posq adres om het bericht met te ondertekenen</translation>
+        <source>The POSQ address to sign the message with</source>
+        <translation>Het POSQ adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Posq address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het Posq adres bezit</translation>
+        <source>Sign the message to prove you own this POSQ address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het POSQ adres bezit</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Voer de BIP 38 versleutelde geheime sleutel in. Voer het wachtwoord in, in het middelste veld. Druk op Ontsleutelen Sleutel om de geheime sleutel te berekenen.  Nadat de geheime sleutel is ontsleuteld, zal het klikken op 'Adres Importeren' de geheime sleutel toevoegen aan de portemonnee.</translation>
     </message>
     <message>
-        <source>The Posq address the message was signed with</source>
-        <translation>Het Posq adres waarmee het bericht was ondertekend</translation>
+        <source>The POSQ address the message was signed with</source>
+        <translation>Het POSQ adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Posq address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde Posq adres</translation>
+        <source>Verify the message to ensure it was signed with the specified POSQ address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde POSQ adres</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,16 +602,16 @@
         <translation>Tabblad werkbalk</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Kern</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Kern</translation>
     </message>
     <message>
-        <source>Send coins to a Posq address</source>
-        <translation>Verstuur munten naar een Posq adres</translation>
+        <source>Send coins to a POSQ address</source>
+        <translation>Verstuur munten naar een POSQ adres</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and posq: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR-codes en Posq: URI's)</translation>
+        <translation>Vraag betaling aan (genereert QR-codes en POSQ: URI's)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -630,24 +630,24 @@
         <translation>Bekijk masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Posq Core</source>
-        <translation>&amp;Over Posq Kern</translation>
+        <source>&amp;About POSQ Core</source>
+        <translation>&amp;Over POSQ Kern</translation>
     </message>
     <message>
-        <source>Show information about Posq Core</source>
-        <translation>Toon informatie over Posq Kern</translation>
+        <source>Show information about POSQ Core</source>
+        <translation>Toon informatie over POSQ Kern</translation>
     </message>
     <message>
-        <source>Modify configuration options for Posq</source>
-        <translation>Wijzig Posq configuratie opties</translation>
+        <source>Modify configuration options for POSQ</source>
+        <translation>Wijzig POSQ configuratie opties</translation>
     </message>
     <message>
-        <source>Sign messages with your Posq addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw Posq adressen om te bewijzen dat u deze adressen bezit</translation>
+        <source>Sign messages with your POSQ addresses to prove you own them</source>
+        <translation>Onderteken berichten met uw POSQ adressen om te bewijzen dat u deze adressen bezit</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Posq addresses</source>
-        <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde Posq adressen</translation>
+        <source>Verify messages to ensure they were signed with specified POSQ addresses</source>
+        <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde POSQ adressen</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -678,8 +678,8 @@
         <translation>Open Masternode configuratiebestand</translation>
     </message>
     <message>
-        <source>Open a Posq: URI or payment request</source>
-        <translation>Open een Posq: URI of betaalverzoek</translation>
+        <source>Open a POSQ: URI or payment request</source>
+        <translation>Open een POSQ: URI of betaalverzoek</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -690,16 +690,16 @@
         <translation>Block verkenner venster</translation>
     </message>
     <message>
-        <source>Show the Posq Core help message to get a list with possible Posq command-line options</source>
-        <translation>Toon het Posq Core help bericht om een ​​lijst te krijgen met mogelijke Posq command line opties</translation>
+        <source>Show the POSQ Core help message to get a list with possible POSQ command-line options</source>
+        <translation>Toon het POSQ Core help bericht om een ​​lijst te krijgen met mogelijke POSQ command line opties</translation>
     </message>
     <message>
-        <source>Posq Core client</source>
-        <translation>Posq Core client</translation>
+        <source>POSQ Core client</source>
+        <translation>POSQ Core client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Posq network</source>
-        <translation><numerusform>%n actieve verbinding(en) naar het Posq netwerk</numerusform><numerusform>%n actieve verbinding(en) naar het Posq netwerk</numerusform></translation>
+        <source>%n active connection(s) to POSQ network</source>
+        <translation><numerusform>%n actieve verbinding(en) naar het POSQ netwerk</numerusform><numerusform>%n actieve verbinding(en) naar het POSQ netwerk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1134,8 +1134,8 @@ MultiSend: %1</translation>
         <translation>Wijzig verzendadres</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Posq address.</source>
-        <translation>Het ingevoerde adres: "%1" is geen geldig Posq adres.</translation>
+        <source>The entered address "%1" is not a valid POSQ address.</source>
+        <translation>Het ingevoerde adres: "%1" is geen geldig POSQ adres.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1180,16 +1180,16 @@ MultiSend: %1</translation>
         <translation>versie</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Kern</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Kern</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Posq Core</source>
-        <translation>Over Posq Core</translation>
+        <source>About POSQ Core</source>
+        <translation>Over POSQ Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1227,16 +1227,16 @@ MultiSend: %1</translation>
         <translation>Welkom</translation>
     </message>
     <message>
-        <source>Welcome to Posq Core.</source>
-        <translation>Welkom bij Posq Core</translation>
+        <source>Welcome to POSQ Core.</source>
+        <translation>Welkom bij POSQ Core</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Posq Core will store its data.</source>
-        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar Posq Core zijn gegevens opslaat.</translation>
+        <source>As this is the first time the program is launched, you can choose where POSQ Core will store its data.</source>
+        <translation>Aangezien dit de eerste keer is dat het programma is gestart, kun je kiezen waar POSQ Core zijn gegevens opslaat.</translation>
     </message>
     <message>
-        <source>Posq Core will download and store a copy of the Posq block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Posq Core zal een kopie van de Posq blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee wordt ook in deze map opgeslagen.</translation>
+        <source>POSQ Core will download and store a copy of the POSQ block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>POSQ Core zal een kopie van de POSQ blockchain downloaden en opslaan. Tenminste %1GB aan data zal worden opgeslagen in deze map en het zal over de tijd groeien. De portemonnee wordt ook in deze map opgeslagen.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1247,8 +1247,8 @@ MultiSend: %1</translation>
         <translation>Gebruik een aangepaste data directory:</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Kern</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Kern</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1389,12 +1389,12 @@ MultiSend: %1</translation>
         <translation>Vul het verzendadres in</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Posq addresses after it matures.
-To Add: enter percentage to give and Posq address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other POSQ addresses after it matures.
+To Add: enter percentage to give and POSQ address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend stelt je in staat om automatisch 100% van uw inzet of masternode-beloning automatisch te verzenden naar een lijst van andere Posq adressen nadat het volwassen is. 
-Toevoegen: voer percentage in om te geven en Posq adres om toe te voegen aan de MultiSend vector.
+        <translation>MultiSend stelt je in staat om automatisch 100% van uw inzet of masternode-beloning automatisch te verzenden naar een lijst van andere POSQ adressen nadat het volwassen is. 
+Toevoegen: voer percentage in om te geven en POSQ adres om toe te voegen aan de MultiSend vector.
 Verwijderen: Voer adres in om te verwijderen en druk op delete.
 MultiSend wordt niet geactiveerd, tenzij je op Activeer hebt geklikt</translation>
     </message>
@@ -1563,16 +1563,16 @@ Controleer het adres alsjeblieft en probeer het opnieuw.</translation>
         <translation>Verduistering configuratie</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Posq's configuration screen.</source>
-        <translation>Verduistering is succesvol ingesteld op basic (%1 en 2 rondes). Je kunt dit op elk gewenst moment wijzigen door het configuratiescherm van Posq te openen.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening POSQ's configuration screen.</source>
+        <translation>Verduistering is succesvol ingesteld op basic (%1 en 2 rondes). Je kunt dit op elk gewenst moment wijzigen door het configuratiescherm van POSQ te openen.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Posq's configuration screen.</source>
-        <translation>Verduistering is succesvol ingesteld op hoog (%1 en 8 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van Posq te openen.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening POSQ's configuration screen.</source>
+        <translation>Verduistering is succesvol ingesteld op hoog (%1 en 8 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van POSQ te openen.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Posq's configuration screen.</source>
-        <translation>Verduistering is succesvol ingesteld op hoog (%1 en 16 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van Posq te openen.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening POSQ's configuration screen.</source>
+        <translation>Verduistering is succesvol ingesteld op hoog (%1 en 16 rondes). U kunt dit op elk gewenst moment wijzigen door het configuratiescherm van POSQ te openen.</translation>
     </message>
 </context>
 <context>
@@ -1633,8 +1633,8 @@ Controleer het adres alsjeblieft en probeer het opnieuw.</translation>
         <translation>Als je de uitgaven van onbevestigde wijzigingen uitschakelt, de wijziging van een transactie&lt;br/&gt;kan niet worden gebruikt tot die transactie tenminste één bevestiging heeft.&lt;br/&gt;Dit beïnvloedt ook hoe uw saldo is berekend.</translation>
     </message>
     <message>
-        <source>Automatically open the Posq client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Open de Posq client poort automatisch op de router. Dit werkt alleen als je router UPnP ondersteunt en het is ingeschakeld.</translation>
+        <source>Automatically open the POSQ client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Open de POSQ client poort automatisch op de router. Dit werkt alleen als je router UPnP ondersteunt en het is ingeschakeld.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1653,12 +1653,12 @@ Controleer het adres alsjeblieft en probeer het opnieuw.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Posq after logging in to the system.</source>
-        <translation>Posq automatisch opstarten na inloggen op het systeem.</translation>
+        <source>Automatically start POSQ after logging in to the system.</source>
+        <translation>POSQ automatisch opstarten na inloggen op het systeem.</translation>
     </message>
     <message>
-        <source>&amp;Start Posq on system login</source>
-        <translation>&amp;Posq starten bij systeemlogin</translation>
+        <source>&amp;Start POSQ on system login</source>
+        <translation>&amp;POSQ starten bij systeemlogin</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1685,8 +1685,8 @@ Controleer het adres alsjeblieft en probeer het opnieuw.</translation>
         <translation>&amp;Netwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Posq.</source>
-        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van Posq.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting POSQ.</source>
+        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van POSQ.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1715,8 +1715,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Gewenste Automint zPOSQ denominatie</translation>
     </message>
     <message>
-        <source>Connect to the Posq network through a SOCKS5 proxy.</source>
-        <translation>Maak verbinding met het Posq netwerk via een SOCKS5 proxy.</translation>
+        <source>Connect to the POSQ network through a SOCKS5 proxy.</source>
+        <translation>Maak verbinding met het POSQ netwerk via een SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1874,8 +1874,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Staked of masternode beloningen die nog niet volwassen zijn</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Posq network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het Posq netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the POSQ network after a connection is established, but this process has not completed yet.</source>
+        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het POSQ netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1965,8 +1965,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Kan posq niet starten: click-to-pay handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Posq address or malformed URI parameters.</source>
-        <translation>URL kan niet ontleed worden! Dit kan worden veroorzaakt door een ongeldig Posq adres of misvormde URL parameters.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid POSQ address or malformed URI parameters.</source>
+        <translation>URL kan niet ontleed worden! Dit kan worden veroorzaakt door een ongeldig POSQ adres of misvormde URL parameters.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2059,8 +2059,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Zerocoin Acties:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Posq network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het Posq netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the POSQ network after a connection is established, but this process has not completed yet.</source>
+        <translation>De weergegeven informatie kan verouderd zijn. Je portemonnee synchroniseert automatisch met het POSQ netwerk nadat een verbinding is opgezet, maar dit proces is nog niet afgerond.</translation>
     </message>
     <message>
         <source>Enter an amount of Phr to convert to zPhr</source>
@@ -2163,8 +2163,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Betaal &amp;Naar:</translation>
     </message>
     <message>
-        <source>The Posq address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>Het Posq adres om de betaling naar te verzenden. Maakt lokale betaling aan jezelf als je leeg bent.</translation>
+        <source>The POSQ address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>Het POSQ adres om de betaling naar te verzenden. Maakt lokale betaling aan jezelf als je leeg bent.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2363,8 +2363,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Kopieer hoeveelheid</translation>
     </message>
     <message>
-        <source>Zerocoin functionality is not enabled on the Posq network yet.</source>
-        <translation>Zerocoin functionaliteit is nog niet ingeschakeld op het Posq netwerk.</translation>
+        <source>Zerocoin functionality is not enabled on the POSQ network yet.</source>
+        <translation>Zerocoin functionaliteit is nog niet ingeschakeld op het POSQ netwerk.</translation>
     </message>
     <message>
         <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
@@ -2417,8 +2417,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Geen 'Betaal aan' adres verstrekt, lokale betaling wordt gemaakt</translation>
     </message>
     <message>
-        <source>Invalid Posq Address</source>
-        <translation>Ongeldig Posq addres</translation>
+        <source>Invalid POSQ Address</source>
+        <translation>Ongeldig POSQ addres</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2509,8 +2509,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Hoeveelheid</translation>
     </message>
     <message>
-        <source>Enter a Posq address (e.g. %1)</source>
-        <translation>Voer een Posq adres in (b.v. %1)</translation>
+        <source>Enter a POSQ address (e.g. %1)</source>
+        <translation>Voer een POSQ adres in (b.v. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2647,8 +2647,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Blockchain</translation>
     </message>
     <message>
-        <source>Open the Posq debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open het Posq debug log bestand uit de huidige data directory. Dit kan enkele seconden duren voor grote logbestanden.</translation>
+        <source>Open the POSQ debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open het POSQ debug log bestand uit de huidige data directory. Dit kan enkele seconden duren voor grote logbestanden.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2815,8 +2815,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Uit:</translation>
     </message>
     <message>
-        <source>Welcome to the Posq RPC console.</source>
-        <translation>Welkom bij de Posq RPC console.</translation>
+        <source>Welcome to the POSQ RPC console.</source>
+        <translation>Welkom bij de POSQ RPC console.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2886,12 +2886,12 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Een optioneel label om te associëren met het nieuwe ontvangstadres.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Posq network.</source>
-        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend. Opmerking: het bericht wordt niet verzonden met de betaling via het Posq netwerk.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the POSQ network.</source>
+        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend. Opmerking: het bericht wordt niet verzonden met de betaling via het POSQ netwerk.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Posq network.</source>
-        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend.&lt;br&gt;Opmerking: het bericht wordt niet verzonden met de betaling via het Posq netwerk.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the POSQ network.</source>
+        <translation>Een optioneel bericht dat aan het betalingsverzoek wordt gehecht, dat wordt weergegeven wanneer het verzoek wordt geopend.&lt;br&gt;Opmerking: het bericht wordt niet verzonden met de betaling via het POSQ netwerk.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3175,8 +3175,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Als de aangepaste vergoeding is ingesteld op 1000 uPOSQs en de transactie is slechts 250 bytes, dan betaalt per kilobyte alleen 250 uPOSQ's in vergoeding,&lt;br /&gt;terwijl "totaal minstens" 1000 uPOSQ's betaalt. Voor transacties die groter zijn dan een kilobyte, betalen beiden per kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Posq transactions than the network can process.</source>
-        <translation>Alleen de minimale vergoeding betalen is prima, zolang er minder transactie volume is dan ruimte in de blokken. &lt;br /&gt;Maar wees ervan bewust dat dit kan leiden tot een nooit bevestigende transactie wanneer er meer vraag is naar Posq transacties dan het netwerk kan verwerken.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for POSQ transactions than the network can process.</source>
+        <translation>Alleen de minimale vergoeding betalen is prima, zolang er minder transactie volume is dan ruimte in de blokken. &lt;br /&gt;Maar wees ervan bewust dat dit kan leiden tot een nooit bevestigende transactie wanneer er meer vraag is naar POSQ transacties dan het netwerk kan verwerken.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3283,8 +3283,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>anonieme financiën</translation>
     </message>
     <message>
-        <source>Warning: Invalid Posq address</source>
-        <translation>Waarschuwing: Ongeldig Posq adres</translation>
+        <source>Warning: Invalid POSQ address</source>
+        <translation>Waarschuwing: Ongeldig POSQ adres</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -3390,8 +3390,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Betaal &amp;Naar:</translation>
     </message>
     <message>
-        <source>The Posq address to send the payment to</source>
-        <translation>Het Posq adres om de betaling naar te verzenden</translation>
+        <source>The POSQ address to send the payment to</source>
+        <translation>Het POSQ adres om de betaling naar te verzenden</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3430,8 +3430,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Bericht:</translation>
     </message>
     <message>
-        <source>A message that was attached to the Posq: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Posq network.</source>
-        <translation>Een bericht dat is gehecht aan de Posq: URI die bij de transactie wordt opgeslagen voor uw referentie. Opmerking: dit bericht wordt niet verzonden via het Posq netwerk.</translation>
+        <source>A message that was attached to the POSQ: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the POSQ network.</source>
+        <translation>Een bericht dat is gehecht aan de POSQ: URI die bij de transactie wordt opgeslagen voor uw referentie. Opmerking: dit bericht wordt niet verzonden via het POSQ netwerk.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3457,8 +3457,8 @@ Wees alsjeblieft geduldig...</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Posq Core is shutting down...</source>
-        <translation>Posq Core is aan het afsluiten...</translation>
+        <source>POSQ Core is shutting down...</source>
+        <translation>POSQ Core is aan het afsluiten...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3480,8 +3480,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Je kunt berichten met je adressen ondertekenen om te bewijzen dat je ze bezit. Wees voorzichtig om niets vaags te ondertekenen, omdat phishing aanvallen je misschien kunnen proberen om je identiteit over te geven. Teken alleen volledig gedetailleerde verklaringen aan waar je mee akkoord gaat.</translation>
     </message>
     <message>
-        <source>The Posq address to sign the message with</source>
-        <translation>Het Posq adres om het bericht met te ondertekenen</translation>
+        <source>The POSQ address to sign the message with</source>
+        <translation>Het POSQ adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3512,16 +3512,16 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Posq address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het Posq adres bezit</translation>
+        <source>Sign the message to prove you own this POSQ address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het POSQ adres bezit</translation>
     </message>
     <message>
-        <source>The Posq address the message was signed with</source>
-        <translation>Het Posq adres waarmee het bericht was ondertekend</translation>
+        <source>The POSQ address the message was signed with</source>
+        <translation>Het POSQ adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Posq address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde Posq adres</translation>
+        <source>Verify the message to ensure it was signed with the specified POSQ address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde POSQ adres</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3607,8 +3607,8 @@ Wees alsjeblieft geduldig...</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Kern</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Kern</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3623,8 +3623,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>De Dash Kernontwikkelaars</translation>
     </message>
     <message>
-        <source>The Posq Core developers</source>
-        <translation>De Posq Kernontwikkelaars</translation>
+        <source>The POSQ Core developers</source>
+        <translation>De POSQ Kernontwikkelaars</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4312,8 +4312,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Het berekende accumulatie controlepunt is niet wat wordt geregistreerd door de blokindex</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Posq Core is probably already running.</source>
-        <translation>Kan geen vergrendeling op data directory %s verkrijgen. Posq Core loopt waarschijnlijk al.</translation>
+        <source>Cannot obtain a lock on data directory %s. POSQ Core is probably already running.</source>
+        <translation>Kan geen vergrendeling op data directory %s verkrijgen. POSQ Core loopt waarschijnlijk al.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4332,8 +4332,8 @@ Wees alsjeblieft geduldig...</translation>
         <translation>Verwijder alle portemonnee transacties en herstel alleen die delen van de blockchain via -rescan bij opstarten</translation>
     </message>
     <message>
-        <source>Disable all Posq specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Schakel alle Posq specifieke functionaliteit uit (Masternodes, Verduistering, SwiftTX, Budgeting) (0-1, standaard: %u)</translation>
+        <source>Disable all POSQ specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Schakel alle POSQ specifieke functionaliteit uit (Masternodes, Verduistering, SwiftTX, Budgeting) (0-1, standaard: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -4485,7 +4485,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Posq Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "POSQ Alert" admin@foo.com
 </source>
         <translation>Om posqd of de -server optie om posq-qt te gebruiken, moet je een rpcpassword instellen in het configuratiebestand:
 %s
@@ -4496,12 +4496,12 @@ rpcpassword=%s
 De gebruikersnaam en het wachtwoord MOETEN NIET hetzelfde zijn.
 Als het bestand niet bestaat, creëer het dan met owner-readable-only bestandsrechten.
 Het is ook aan te raden om alertnotify in te stellen, zodat je van problemen op de hoogte wordt gebracht;
-bijvoorbeeld: alertnotify = echo %%s | mail -s "Posq Alert" admin@foo.com
+bijvoorbeeld: alertnotify = echo %%s | mail -s "POSQ Alert" admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Posq Core is probably already running.</source>
-        <translation>Niet mogelijk te binden aan %s op deze computer. Posq Core loopt waarschijnlijk al.</translation>
+        <source>Unable to bind to %s on this computer. POSQ Core is probably already running.</source>
+        <translation>Niet mogelijk te binden aan %s op deze computer. POSQ Core loopt waarschijnlijk al.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
@@ -4528,8 +4528,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "Posq Alert" admin@foo.com
         <translation>Waarschuwing: -paytxfee is zeer hoog ingesteld! Dit zijn de transactie kosten die je betaalt als je een transactie verstuurt.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Posq Core will not work properly.</source>
-        <translation>Waarschuwing: Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt Posq Core niet goed.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong POSQ Core will not work properly.</source>
+        <translation>Waarschuwing: Controleer of de datum en tijd van je computer juist zijn! Als je klok verkeerd staat, werkt POSQ Core niet goed.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4560,8 +4560,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "Posq Alert" admin@foo.com
         <translation>Je moet een masternodeprivkey opgeven in de configuratie. Raadpleeg de documentatie voor hulp.</translation>
     </message>
     <message>
-        <source>(5520 could be used only on mainnet)</source>
-        <translation>(5520 kan alleen op mainnet worden gebruikt)</translation>
+        <source>(5500 could be used only on mainnet)</source>
+        <translation>(5500 kan alleen op mainnet worden gebruikt)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4572,8 +4572,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "Posq Alert" admin@foo.com
         <translation>(standaard: 1)</translation>
     </message>
     <message>
-        <source>(must be 5520 for mainnet)</source>
-        <translation>(moet 5520 voor mainnet zijn)</translation>
+        <source>(must be 5500 for mainnet)</source>
+        <translation>(moet 5500 voor mainnet zijn)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -4684,8 +4684,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "Posq Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Kernontwikkelaars</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Posq Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Posq Kernontwikkelaars</translation>
+        <source>Copyright (C) 2015-%i The POSQ Core Developers</source>
+        <translation>Copyright (C) 2015-%i The POSQ Kernontwikkelaars</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4764,8 +4764,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "Posq Alert" admin@foo.com
         <translation>Error tijdens het laden van wallet.dat: Portemonnee corrupt</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Posq Core</source>
-        <translation>Fout bij het laden van wallet.dat: Portemonnee vereist een nieuwere versie van Posq Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of POSQ Core</source>
+        <translation>Fout bij het laden van wallet.dat: Portemonnee vereist een nieuwere versie van POSQ Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4876,8 +4876,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "Posq Alert" admin@foo.com
         <translation>Informatie</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Posq Core is shutting down.</source>
-        <translation>Initialisatie saniteitscontrole mislukt. Posq Core wordt afgesloten.</translation>
+        <source>Initialization sanity check failed. POSQ Core is shutting down.</source>
+        <translation>Initialisatie saniteitscontrole mislukt. POSQ Core wordt afgesloten.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -5552,8 +5552,8 @@ bijvoorbeeld: alertnotify = echo %%s | mail -s "Posq Alert" admin@foo.com
         <translation>Portemonnee is vergrendeld.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Posq Core to complete</source>
-        <translation>Wallet moest worden herschreven: start Posq Core opnieuw om te voltooien</translation>
+        <source>Wallet needed to be rewritten: restart POSQ Core to complete</source>
+        <translation>Wallet moest worden herschreven: start POSQ Core opnieuw om te voltooien</translation>
     </message>
     <message>
         <source>Wallet options:</source>

@@ -1,13 +1,13 @@
-Posq Core
+POSQ Core
 =====================
 
 Setup
 ---------------------
-[Posq Core](http://posqcoin.com) is the original Posq client and it builds the backbone of the network. However, it downloads and stores the entire history of Posq transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[POSQ Core](http://posqcoin.com) is the original POSQ client and it builds the backbone of the network. However, it downloads and stores the entire history of POSQ transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Posq on your native platform.
+The following are some helpful notes on how to run POSQ on your native platform.
 
 ### Unix
 
@@ -22,18 +22,18 @@ Unpack the files into a directory, and then run posq-qt.exe.
 
 ### OSX
 
-Drag Posq-Qt to your applications folder, and then run Posq-Qt.
+Drag POSQ-Qt to your applications folder, and then run POSQ-Qt.
 
 ### Need Help?
 
-* See the documentation at the [Posq Wiki]() ***TODO***
+* See the documentation at the [POSQ Wiki]() ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk]() or on the [Posq Forum]().
-* Join one of our Discord groups [Posq Discord Groups]().
+* Ask for help on [BitcoinTalk]() or on the [POSQ Forum]().
+* Join one of our Discord groups [POSQ Discord Groups]().
 
 Building
 ---------------------
-The following are developer notes on how to build Posq on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build POSQ on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -41,7 +41,7 @@ The following are developer notes on how to build Posq on your native platform. 
 
 Development
 ---------------------
-The Posq repo's [root README](https://github.com/eastcoastcrypto/Posq/blob/master/README.md) contains relevant information on the development process and automated testing.
+The POSQ repo's [root README](https://github.com/eastcoastcrypto/POSQ/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -56,7 +56,7 @@ The Posq repo's [root README](https://github.com/eastcoastcrypto/Posq/blob/maste
 ### Resources
 
 * Discuss on the [BitcoinTalk]() .
-* Join the [Posq-Dev] Discord groups [Posq Discord Groups]().
+* Join the [POSQ-Dev] Discord groups [POSQ Discord Groups]().
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

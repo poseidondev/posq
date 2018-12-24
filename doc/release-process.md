@@ -28,7 +28,7 @@ Check out the source code in the following directory hierarchy.
     git clone https://github.com/devrandom/gitian-builder.git
     git clone https://github.com/eastcoastcrypto/posq.git
 
-### Posq maintainers/release engineers, suggestion for writing release notes
+### POSQ maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -96,7 +96,7 @@ NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from 
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Posq Core for Linux, Windows, and OS X:
+### Build and sign POSQ Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
     ./bin/gbuild --memory 3000 --commit posq=v${VERSION} ../posq/contrib/gitian-descriptors/gitian-linux.yml
@@ -265,6 +265,6 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/eastcoastcrypto/Posq/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/eastcoastcrypto/POSQ/releases/new) with a link to the archived release notes.
 
   - Celebrate

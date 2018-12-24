@@ -62,12 +62,12 @@
         <translation>Adresy pro přijetí peněz</translation>
     </message>
     <message>
-        <source>These are your Posq addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto jsou Vaše Posq adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
+        <source>These are your POSQ addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto jsou Vaše POSQ adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
     </message>
     <message>
-        <source>These are your Posq addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto jsou Vaše Posq adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
+        <source>These are your POSQ addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto jsou Vaše POSQ adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Potvrdit zašifrování peněženky</translation>
     </message>
     <message>
-        <source>Posq will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POSQs from being stolen by malware infecting your computer.</source>
-        <translation>Posq se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše POSQy před krádží, pokud je Váš počítač infikován malwarem.</translation>
+        <source>POSQ will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POSQs from being stolen by malware infecting your computer.</source>
+        <translation>POSQ se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše POSQy před krádží, pokud je Váš počítač infikován malwarem.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Šifrovat</translation>
     </message>
     <message>
-        <source>Enter a Posq Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadejte Posq adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
+        <source>Enter a POSQ Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadejte POSQ adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The Posq address to sign the message with</source>
-        <translation>Posq adresa pro podepsání zprávy</translation>
+        <source>The POSQ address to sign the message with</source>
+        <translation>POSQ adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Posq address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Posq adresu</translation>
+        <source>Sign the message to prove you own this POSQ address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto POSQ adresu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Vložte BIP 38 šifrovaný privítní klíc. Frázové heslo vložte do prostředního boxu. Kliknětě na Dešifrovat Klíč pro výpočet privátního klíče. Poté co bude klíč dešifrován, kliknutím na 'Importovat Adresu' přidáte privátní klíč do Vaší peněženky.</translation>
     </message>
     <message>
-        <source>The Posq address the message was signed with</source>
-        <translation>Posq adresa zprávy byla podpsána</translation>
+        <source>The POSQ address the message was signed with</source>
+        <translation>POSQ adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Posq address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Posq adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified POSQ address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou POSQ adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,12 +598,12 @@
         <translation>Nástrojová lišta záložek</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Core</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Core</translation>
     </message>
     <message>
-        <source>Send coins to a Posq address</source>
-        <translation>Odeslat platbuna Posq adresu</translation>
+        <source>Send coins to a POSQ address</source>
+        <translation>Odeslat platbuna POSQ adresu</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and posq: URIs)</source>
@@ -618,24 +618,24 @@
         <translation>Procházet masternody</translation>
     </message>
     <message>
-        <source>&amp;About Posq Core</source>
-        <translation>&amp;O Posq Core</translation>
+        <source>&amp;About POSQ Core</source>
+        <translation>&amp;O POSQ Core</translation>
     </message>
     <message>
-        <source>Show information about Posq Core</source>
-        <translation>Zobraz informace o Posq Core</translation>
+        <source>Show information about POSQ Core</source>
+        <translation>Zobraz informace o POSQ Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Posq</source>
-        <translation>Upravit možnosti konfigurace pro Posq</translation>
+        <source>Modify configuration options for POSQ</source>
+        <translation>Upravit možnosti konfigurace pro POSQ</translation>
     </message>
     <message>
-        <source>Sign messages with your Posq addresses to prove you own them</source>
-        <translation>Podepsat zprávy Vaší Posq adresou pro prokázaní, že jste jejich vlastníkem</translation>
+        <source>Sign messages with your POSQ addresses to prove you own them</source>
+        <translation>Podepsat zprávy Vaší POSQ adresou pro prokázaní, že jste jejich vlastníkem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Posq addresses</source>
-        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými Posq adresami</translation>
+        <source>Verify messages to ensure they were signed with specified POSQ addresses</source>
+        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými POSQ adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a Posq: URI or payment request</source>
-        <translation>Otevřít Posq: URI nebo platební žádost</translation>
+        <source>Open a POSQ: URI or payment request</source>
+        <translation>Otevřít POSQ: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the Posq Core help message to get a list with possible Posq command-line options</source>
-        <translation>Zobrazit Posq Core pomocnou zpráv pro získání seznamu možných parametrů Posq pro příkazy do příkazové řádky</translation>
+        <source>Show the POSQ Core help message to get a list with possible POSQ command-line options</source>
+        <translation>Zobrazit POSQ Core pomocnou zpráv pro získání seznamu možných parametrů POSQ pro příkazy do příkazové řádky</translation>
     </message>
     <message>
-        <source>Posq Core client</source>
-        <translation>Posq Core klient</translation>
+        <source>POSQ Core client</source>
+        <translation>POSQ Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1066,8 +1066,8 @@ MultiSend: %1</translation>
         <translation>Upravit adresu k odeslání platby</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Posq address.</source>
-        <translation>Zadaná adresa "%1" není validní Posq adresa.</translation>
+        <source>The entered address "%1" is not a valid POSQ address.</source>
+        <translation>Zadaná adresa "%1" není validní POSQ adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1112,12 +1112,12 @@ MultiSend: %1</translation>
         <translation>verze</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Core</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Core</translation>
     </message>
     <message>
-        <source>About Posq Core</source>
-        <translation>O Posq Core</translation>
+        <source>About POSQ Core</source>
+        <translation>O POSQ Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1151,16 +1151,16 @@ MultiSend: %1</translation>
         <translation>Vítejte</translation>
     </message>
     <message>
-        <source>Welcome to Posq Core.</source>
-        <translation>Vítejte v Posq Core.</translation>
+        <source>Welcome to POSQ Core.</source>
+        <translation>Vítejte v POSQ Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Posq Core will store its data.</source>
-        <translation>Při prvním spuštění programu si můžete vybrat, kam bude Posq Core ukládat svá data.</translation>
+        <source>As this is the first time the program is launched, you can choose where POSQ Core will store its data.</source>
+        <translation>Při prvním spuštění programu si můžete vybrat, kam bude POSQ Core ukládat svá data.</translation>
     </message>
     <message>
-        <source>Posq Core will download and store a copy of the Posq block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Posq Core stáhne a uloží kopii Posq blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>POSQ Core will download and store a copy of the POSQ block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>POSQ Core stáhne a uloží kopii POSQ blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1171,8 +1171,8 @@ MultiSend: %1</translation>
         <translation>Použít vlastní složku pro data</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Core</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1520,12 +1520,12 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Posq after logging in to the system.</source>
-        <translation>Automaticky spustit Posq po přihlášení do systému</translation>
+        <source>Automatically start POSQ after logging in to the system.</source>
+        <translation>Automaticky spustit POSQ po přihlášení do systému</translation>
     </message>
     <message>
-        <source>&amp;Start Posq on system login</source>
-        <translation>&amp;Spusti Posq při přihlášení do systému</translation>
+        <source>&amp;Start POSQ on system login</source>
+        <translation>&amp;Spusti POSQ při přihlášení do systému</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
@@ -2186,8 +2186,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Posq address to sign the message with</source>
-        <translation>Posq adresa pro podepsání zprávy</translation>
+        <source>The POSQ address to sign the message with</source>
+        <translation>POSQ adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2214,16 +2214,16 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Posq address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Posq adresu</translation>
+        <source>Sign the message to prove you own this POSQ address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto POSQ adresu</translation>
     </message>
     <message>
-        <source>The Posq address the message was signed with</source>
-        <translation>Posq adresa zprávy byla podpsána</translation>
+        <source>The POSQ address the message was signed with</source>
+        <translation>POSQ adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Posq address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Posq adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified POSQ address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou POSQ adresou</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2265,8 +2265,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Core</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Core</translation>
     </message>
     </context>
 <context>

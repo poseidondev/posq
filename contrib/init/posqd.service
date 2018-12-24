@@ -1,5 +1,5 @@
 [Unit]
-Description=Posq's distributed currency daemon
+Description=POSQ's distributed currency daemon
 After=network.target
 
 [Service]

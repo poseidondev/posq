@@ -35,9 +35,9 @@ def check_json_precision():
 def determine_db_dir():
     """Return the default location of the posq data directory"""
     if platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Application Support/Posq/")
+        return os.path.expanduser("~/Library/Application Support/POSQ/")
     elif platform.system() == "Windows":
-        return os.path.join(os.environ['APPDATA'], "Posq")
+        return os.path.join(os.environ['APPDATA'], "POSQ")
     return os.path.expanduser("~/.posq")
 
 def read_bitcoin_config(dbdir):

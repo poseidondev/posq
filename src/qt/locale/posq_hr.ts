@@ -115,8 +115,8 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>The Posq address the message was signed with</source>
-        <translation>Posq adresa s kojom je potpisana poruka</translation>
+        <source>The POSQ address the message was signed with</source>
+        <translation>POSQ adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Allowed: 0-9,a-z,A-Z,</source>
@@ -150,8 +150,8 @@
         <translation>Otvori konfiguracijsku datoteku</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Core</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Core</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -162,8 +162,8 @@
         <translation>&amp;BIP38 alat</translation>
     </message>
     <message>
-        <source>Posq Core client</source>
-        <translation>Posq Core klijent</translation>
+        <source>POSQ Core client</source>
+        <translation>POSQ Core klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -256,15 +256,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Core</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Core</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -597,8 +597,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Posq Core is shutting down...</source>
-        <translation>Posq Core se gasi...</translation>
+        <source>POSQ Core is shutting down...</source>
+        <translation>POSQ Core se gasi...</translation>
     </message>
     </context>
 <context>
@@ -620,8 +620,8 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>The Posq address the message was signed with</source>
-        <translation>Posq adresa s kojom je potpisana poruka</translation>
+        <source>The POSQ address the message was signed with</source>
+        <translation>POSQ adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Message signed.</source>
@@ -635,8 +635,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Core</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Core</translation>
     </message>
     <message>
         <source>Version %1</source>

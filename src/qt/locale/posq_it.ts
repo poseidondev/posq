@@ -62,12 +62,12 @@
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
-        <source>These are your Posq addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono gli indirizzi Posq per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
+        <source>These are your POSQ addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Questi sono gli indirizzi POSQ per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
     </message>
     <message>
-        <source>These are your Posq addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono gli indirizzi Posq per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
+        <source>These are your POSQ addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Questi sono gli indirizzi POSQ per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
-        <source>Posq will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POSQs from being stolen by malware infecting your computer.</source>
-        <translation>Posq verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi POSQ dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>POSQ will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POSQs from being stolen by malware infecting your computer.</source>
+        <translation>POSQ verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi POSQ dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Criptato</translation>
     </message>
     <message>
-        <source>Enter a Posq Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Inserisci un indirizzo Posq che desideri crittografare utilizzando BIP 38. Inserisci una passphrase nella casella centrale. Premi Cripta per calcolare la chiave privata crittografata.</translation>
+        <source>Enter a POSQ Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Inserisci un indirizzo POSQ che desideri crittografare utilizzando BIP 38. Inserisci una passphrase nella casella centrale. Premi Cripta per calcolare la chiave privata crittografata.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Indirizzo:</translation>
     </message>
     <message>
-        <source>The Posq address to sign the message with</source>
-        <translation>L'indirizzo Posq per firmare il messaggio con</translation>
+        <source>The POSQ address to sign the message with</source>
+        <translation>L'indirizzo POSQ per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Posq address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo Posq</translation>
+        <source>Sign the message to prove you own this POSQ address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo POSQ</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Immettere la chiave privata codificata BIP 38. Inserire la passphrase nella casella centrale. Fare clic su Decripta Chiave per calcolare la chiave privata. Dopo che la chiave viene decrittata, cliccando su "Importa indirizzo" verrà aggiunta questa chiave privata al portafoglio.</translation>
     </message>
     <message>
-        <source>The Posq address the message was signed with</source>
-        <translation>L'indirizzo Posq con cui è stato firmato il messaggio</translation>
+        <source>The POSQ address the message was signed with</source>
+        <translation>L'indirizzo POSQ con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Posq address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo Posq specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified POSQ address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo POSQ specificato </translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -590,12 +590,12 @@
         <translation>Schede degli strumenti</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Core</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Core</translation>
     </message>
     <message>
-        <source>Send coins to a Posq address</source>
-        <translation>Invia monete all' indirizzo Posq</translation>
+        <source>Send coins to a POSQ address</source>
+        <translation>Invia monete all' indirizzo POSQ</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and posq: URIs)</source>
@@ -610,24 +610,24 @@
         <translation>Esplora i masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Posq Core</source>
-        <translation>&amp;Informazioni Posq Core</translation>
+        <source>&amp;About POSQ Core</source>
+        <translation>&amp;Informazioni POSQ Core</translation>
     </message>
     <message>
-        <source>Show information about Posq Core</source>
-        <translation>Visualizza informazioni su Posq Core</translation>
+        <source>Show information about POSQ Core</source>
+        <translation>Visualizza informazioni su POSQ Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Posq</source>
-        <translation>Modifica le opzioni di configurazione per Posq</translation>
+        <source>Modify configuration options for POSQ</source>
+        <translation>Modifica le opzioni di configurazione per POSQ</translation>
     </message>
     <message>
-        <source>Sign messages with your Posq addresses to prove you own them</source>
-        <translation>Firma i messaggi con i tuoi indirizzi Posq per dimostrare di essere il proprietario </translation>
+        <source>Sign messages with your POSQ addresses to prove you own them</source>
+        <translation>Firma i messaggi con i tuoi indirizzi POSQ per dimostrare di essere il proprietario </translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Posq addresses</source>
-        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi Posq specifici</translation>
+        <source>Verify messages to ensure they were signed with specified POSQ addresses</source>
+        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi POSQ specifici</translation>
     </message>
     <message>
         <source>Encrypt and decrypt private keys using a passphrase</source>
@@ -638,16 +638,16 @@
         <translation>Impostazioni MultiSend</translation>
     </message>
     <message>
-        <source>Open a Posq: URI or payment request</source>
-        <translation>Apri un Posq: URI o richiesta di pagamento</translation>
+        <source>Open a POSQ: URI or payment request</source>
+        <translation>Apri un POSQ: URI o richiesta di pagamento</translation>
     </message>
     <message>
         <source>Block explorer window</source>
         <translation>Finestra Block Explorer</translation>
     </message>
     <message>
-        <source>Show the Posq Core help message to get a list with possible Posq command-line options</source>
-        <translation>Mostra il messaggio di aiuto Posq Core per ottenere un elenco con le possibili opzioni di riga di comando Posq</translation>
+        <source>Show the POSQ Core help message to get a list with possible POSQ command-line options</source>
+        <translation>Mostra il messaggio di aiuto POSQ Core per ottenere un elenco con le possibili opzioni di riga di comando POSQ</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -888,8 +888,8 @@ MultiSend: %1</translation>
         <translation>versione</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Core</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -915,8 +915,8 @@ MultiSend: %1</translation>
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Core</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1144,8 +1144,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Posq address to sign the message with</source>
-        <translation>L'indirizzo Posq per firmare il messaggio con</translation>
+        <source>The POSQ address to sign the message with</source>
+        <translation>L'indirizzo POSQ per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1168,16 +1168,16 @@ MultiSend: %1</translation>
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Posq address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo Posq</translation>
+        <source>Sign the message to prove you own this POSQ address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo POSQ</translation>
     </message>
     <message>
-        <source>The Posq address the message was signed with</source>
-        <translation>L'indirizzo Posq con cui è stato firmato il messaggio</translation>
+        <source>The POSQ address the message was signed with</source>
+        <translation>L'indirizzo POSQ con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Posq address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo Posq specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified POSQ address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo POSQ specificato </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1215,8 +1215,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Core</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Core</translation>
     </message>
     </context>
 <context>
