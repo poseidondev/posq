@@ -111,11 +111,11 @@ public:
 		* The characters are rarely used upper ASCII, not valid as UTF-8, and produce
 		* a large 4-byte int at any alignment.
 		*/
-		pchMessageStart[0] = 0x1d;
-		pchMessageStart[1] = 0xba;
-		pchMessageStart[2] = 0xc2;
-		pchMessageStart[3] = 0x45;
-		vAlertPubKey = ParseHex("0427032f4aea9ade6b709caa6f302c0850e1ecdc9f4cd2619ef28dcd560afcc65bcd7a97bf58523a450a7c8e6e178c9ced2ed5ff96afd8e88284332a87f18af63f");
+		pchMessageStart[0] = 0x2c;
+		pchMessageStart[1] = 0xad;
+		pchMessageStart[2] = 0xe3;
+		pchMessageStart[3] = 0x12;
+		vAlertPubKey = ParseHex("0421303df706061f443fa153cf057b8c3bfd338f34a0661ce186001c6e7bf8fdbf71553d84d65f8463d74b73c0544ffffdad38658b25ca26bd22e5c9a27eee7583");
 		nDefaultPort = 6978;
 		bnProofOfWorkLimit = ~uint256(0) >> 1;
 		nSubsidyHalvingInterval = 210000;
@@ -196,24 +196,18 @@ public:
 		nPoolMaxTransactions = 3;
 
         strSporkKey = "034eea79b60108d63a9123cab5b708dacdc3ba2cb643466e8543a2e50f271c1ada";
-        strSporkKeyOld = "030262a2a0679d01ab026d375c42b0a4122477123631b870e09665526c322c8899";
 
-		strObfuscationPoolDummyAddress = "XCNAsFGy8k7amqRG26ikKyfVDwK8585Z6b";
+		strObfuscationPoolDummyAddress = "QfKpz2Vrh4XbfJNahntTJSDhSBmCEvUVZ3";
 		nStartMasternodePayments = 1534438799;
 
 		/** Zerocoin */
-		zerocoinModulus = "c247e97631b8249acb00b7f7f7c9cb57825d2a07c6e20d84c4f3c02a0e2e38b7"
-						  "03d24b2204d0363bc2782b1e87e40d90a3c94f93abb1dc4efa8f3ab3d8ca5b83"
-						  "7fbcbe5b465a93543a1ee51ca8bafcccdc8a0f3fd74cee7585d5696040ceac58"
-						  "796ff1e928ce9eb968571e02649c28b3a5ba94a5d2dd74dc1ca85aab0573c4b4"
-						  "35f0327409c91c7819db1799b93d514576dfcabbcea29d4bb27016e554bea035"
-						  "86d3f4264f34c6baf21865cf1564c85c8f7a7cb83d0b94db81367e7ef83310a7"
-						  "0ba80c99b80702721084a7c5eea599f640ce8e6ec44db2c6040b6f8a7449b345"
-						  "ffc730415c64c628c078ef701e1559bc6b965ef2eb1deecc74611fb116fee980"
-						  "c9cea978d8f1f37d66d05ad56f52f520995b7f4e436c365f8f7e44eaf91447f4"
-						  "8d8fc211f8e874fef249076425aa9cfae10fc3a347432028ff9ab29c3a6346ad"
-						  "e6fe21f36254b9dc2609eb03ddf7c9a9da3b44bbe48ca7fe59daac240b384da5"
-						  "b29fb5c522a9c0600f11eb7a45796a6f30c4819b6573ea38e735d9b7c9e95c49";
+        zerocoinModulus = "c247e97631b8249acb00b7f7f7c9cb57825d2a07c6e20d84c4f3c02a0e2e38b703d24b2204d0363bc2782b1e87e40d90a3"
+            "c94f93abb1dc4efa8f3ab3d8ca5b837fbcbe5b465a93543a1ee51ca8bafcccdc8a0f3fd74cee7585d5696040ceac58796ff1e928ce9eb968"
+            "571e02649c28b3a5ba94a5d2dd74dc1ca85aab0573c4b435f0327409c91c7819db1799b93d514576dfcabbcea29d4bb27016e554bea03586"
+            "d3f4264f34c6baf21865cf1564c85c8f7a7cb83d0b94db81367e7ef83310a70ba80c99b80702721084a7c5eea599f640ce8e6ec44db2c604"
+            "0b6f8a7449b345ffc730415c64c628c078ef701e1559bc6b965ef2eb1deecc74611fb116fee980c9cea978d8f1f37d66d05ad56f52f52099"
+            "5b7f4e436c365f8f7e44eaf91447f48d8fc211f8e874fef249076425aa9cfae10fc3a347432028ff9ab29c3a6346ade6fe21f36254b9dc26"
+            "09eb03ddf7c9a9da3b44bbe48ca7fe59daac240b384da5b29fb5c522a9c0600f11eb7a45796a6f30c4819b6573ea38e735d9b7c9e95c49";
 		nMaxZerocoinSpendsPerTransaction = 7; // Assume about 20kb each
 		nMinZerocoinMintFee = 1 * ZCENT;      //high fee required for zerocoin mints
 		nMintRequiredConfirmations = 20;      //the maximum amount of confirmations until accumulated in 19
@@ -264,11 +258,11 @@ public:
 	{
 		networkID = CBaseChainParams::TESTNET;
 		strNetworkID = "test";
-		pchMessageStart[0] = 0x1d;
-		pchMessageStart[1] = 0xba;
-		pchMessageStart[2] = 0xc2;
-		pchMessageStart[3] = 0x45;
-		vAlertPubKey = ParseHex("0427032f4aea9ade6b709caa6f302c0850e1ecdc9f4cd2619ef28dcd560afcc65bcd7a97bf58523a450a7c8e6e178c9ced2ed5ff96afd8e88284332a87f18af63f");
+		pchMessageStart[0] = 0x2a;
+		pchMessageStart[1] = 0x3c;
+		pchMessageStart[2] = 0xb5;
+		pchMessageStart[3] = 0xe1;
+		vAlertPubKey = ParseHex("0470a2eb34175354bd51b62d7080951ab15f360a15a53df8deec17b25bf076e30ddfc924d39c4d0f58ecba3e8676d818bfc6f491c651cc829849a8025d4f2ac9e2");
 		nDefaultPort = 17456;
 		nEnforceBlockUpgradeMajority = 750;
 		nRejectBlockOutdatedMajority = 950;
@@ -344,10 +338,10 @@ public:
 		networkID = CBaseChainParams::REGTEST;
 		strNetworkID = "regtest";
 		strNetworkID = "regtest";
-		pchMessageStart[0] = 0x1d;
-		pchMessageStart[1] = 0xba;
-		pchMessageStart[2] = 0xc2;
-		pchMessageStart[3] = 0x45;
+		pchMessageStart[0] = 0x12;
+		pchMessageStart[1] = 0xc4;
+		pchMessageStart[2] = 0xb3;
+		pchMessageStart[3] = 0x15;
 		nSubsidyHalvingInterval = 150;
 		nEnforceBlockUpgradeMajority = 750;
 		nRejectBlockOutdatedMajority = 950;
