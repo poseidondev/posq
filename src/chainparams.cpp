@@ -104,7 +104,7 @@ public:
 	{
 		networkID = CBaseChainParams::MAIN;
 		vReviveRewardAddress = "";   //This address will be depreicated when spork 18 is turned on and coins will be burned.
-		vTreasuryRewardAddress = ""; //This address is held by Tfinch and will be paying out coins to team and funding of projects.
+		vTreasuryRewardAddress = "QLma47EATaUz6bwoVutjTEdtHSQR7DvjyE"; //This address is held by Tfinch and will be paying out coins to team and funding of projects.
 		strNetworkID = "main";
 		/**
 		* The message start string is designed to be unlikely to occur in normal data.
