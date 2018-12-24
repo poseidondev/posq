@@ -12,7 +12,7 @@
 <tr><td>Max Coin Supply </td><td>100,000,000 POSQ</td></tr>
 <tr><td>Premine</td><td>8,000,000 POSQ</td></tr>
 <tr><td>MN Port</td><td>5520</td></tr>
-<tr><td>RPC Port</td><td>15520</td></tr>
+<tr><td>RPC Port</td><td>5521</td></tr>
 </table>
 
 
