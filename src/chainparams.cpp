@@ -124,8 +124,8 @@ public:
 		nRejectBlockOutdatedMajority = 950;
 		nToCheckBlockUpgradeMajority = 1000;
 		nMinerThreads = 0;
-		nTargetTimespan = 1 * 60;         // Posq: 1 day
-		nTargetSpacing = 1 * 60;          // Posq: 1 minutes
+		nTargetTimespan = 1 * 60;         // POSQ: 1 day
+		nTargetSpacing = 1 * 60;          // POSQ: 1 minutes
 		nMaturity = 25;                   // 5 Conf to mature coins
 		nMasternodeCountDrift = 20;       //Was 20
 		nMasternodeCollateralAmt = 15000; //masternode collateral 25K
@@ -274,8 +274,8 @@ public:
 		nRejectBlockOutdatedMajority = 950;
 		nToCheckBlockUpgradeMajority = 1000;
 		nMinerThreads = 0;
-		nTargetTimespan = 1 * 60; // Posq: 1 day
-		nTargetSpacing = 1 * 60;  // Posq: 1 minute
+		nTargetTimespan = 1 * 60; // POSQ: 1 day
+		nTargetSpacing = 1 * 60;  // POSQ: 1 minute
 		nLastPOWBlock = 200;
 		nMaturity = 10;
 		nMasternodeCountDrift = 4;
@@ -353,8 +353,8 @@ public:
 		nRejectBlockOutdatedMajority = 950;
 		nToCheckBlockUpgradeMajority = 1000;
 		nMinerThreads = 1;
-		nTargetTimespan = 1 * 60; // Posq: 1 day
-		nTargetSpacing = 1 * 60;        // Posq: 1 minutes
+		nTargetTimespan = 1 * 60; // POSQ: 1 day
+		nTargetSpacing = 1 * 60;        // POSQ: 1 minutes
 		bnProofOfWorkLimit = ~uint256(0) >> 1;
 		genesis.nTime = 1534438799;
 		genesis.nBits = 504365040;

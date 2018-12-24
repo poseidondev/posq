@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#  posqd The Posq core server.
+#  posqd The POSQ core server.
 #
 #
 # chkconfig: 345 80 20

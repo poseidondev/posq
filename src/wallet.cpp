@@ -4105,7 +4105,7 @@ bool CWallet::MintToTxIn(CZerocoinMint zerocoinSelected, int nSecurityLevel, con
         serializedCoinSpend << spend;
         std::vector<unsigned char> data(serializedCoinSpend.begin(), serializedCoinSpend.end());
 
-        //Add the coin spend into a Posq transaction
+        //Add the coin spend into a POSQ transaction
         newTxIn.scriptSig = CScript() << OP_ZEROCOINSPEND << data.size();
         newTxIn.scriptSig.insert(newTxIn.scriptSig.end(), data.begin(), data.end());
         newTxIn.prevout.SetNull();
@@ -4167,7 +4167,7 @@ bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, int nSecurityLevel,
     }
 
     if (nValue < 1) {
-        receipt.SetStatus("Value is below the the smallest available denomination (= 1) of zPosq", nStatus);
+        receipt.SetStatus("Value is below the the smallest available denomination (= 1) of zPOSQ", nStatus);
         return false;
     }
 
@@ -4195,7 +4195,7 @@ bool CWallet::CreateZerocoinSpendTransaction(CAmount nValue, int nSecurityLevel,
         if (!fWholeNumber)
             nValueToSelect = static_cast<CAmount>(ceil(dValue) * COIN);
 
-        // Select the zPosq mints to use in this spend
+        // Select the zPOSQ mints to use in this spend
         std::map<libzerocoin::CoinDenomination, CAmount> DenomMap = GetMyZerocoinDistribution();
         vSelectedMints = SelectMintsFromList(nValueToSelect, nValueSelected, nMaxSpends, fMinimizeChange,
             nCoinsReturned, listMints, DenomMap, nNeededSpends);
@@ -4442,7 +4442,7 @@ void CWallet::ReconsiderZerocoins(std::list<CZerocoinMint>& listMintsRestored)
 }
 
 
-void CWallet::ZPosqBackupWallet()
+void CWallet::ZPOSQBackupWallet()
 {
     filesystem::path backupDir = GetDataDir() / "backups";
     filesystem::path backupPath;
@@ -4527,7 +4527,7 @@ string CWallet::MintZerocoin(CAmount nValue, CWalletTx& wtxNew, vector<CZerocoin
 
     //Create a backup of the wallet
     if (fBackupMints)
-        ZPosqBackupWallet();
+        ZPOSQBackupWallet();
 
     return "";
 }
@@ -4549,7 +4549,7 @@ bool CWallet::SpendZerocoin(CAmount nAmount, int nSecurityLevel, CWalletTx& wtxN
     }
 
     if (fMintChange && fBackupMints)
-        ZPosqBackupWallet();
+        ZPOSQBackupWallet();
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
     if (!CommitTransaction(wtxNew, reserveKey)) {

@@ -10,7 +10,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between posq-cli and posqd)
- * of a given instance of the Posq system.
+ * of a given instance of the POSQ system.
  */
 class CBaseChainParams
 {

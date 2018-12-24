@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2015-2017 The POSQ developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -110,7 +110,7 @@ void setupAddressWidget(QValidatedLineEdit* widget, QWidget* parent)
 #if QT_VERSION >= 0x040700
     // We don't want translators to use own addresses in translations
     // and this is the only place, where this address is supplied.
-    widget->setPlaceholderText(QObject::tr("Enter a Posq address (e.g. %1)").arg("PCYiHgGJJ6xGHqivmdZrYjRnhaYf6AJ2Mp"));
+    widget->setPlaceholderText(QObject::tr("Enter a POSQ address (e.g. %1)").arg("ZxpedX7YZ1tFMR84B9rxw2wuG8r7Fv12hZ"));
 #endif
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
     widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
@@ -127,7 +127,7 @@ void setupAmountWidget(QLineEdit* widget, QWidget* parent)
 
 bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out)
 {
-    // return if URI is not valid or is no Posq: URI
+    // return if URI is not valid or is no POSQ: URI
     if (!uri.isValid() || uri.scheme() != QString(URI_SCHEME))
         return false;
 
@@ -581,12 +581,12 @@ bool DHMSTableWidgetItem::operator<(QTableWidgetItem const& item) const
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "Posq.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "POSQ.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for Posq.lnk
+    // check for POSQ.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -699,7 +699,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         // Write a posq.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=Posq\n";
+        optionFile << "Name=POSQ\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";

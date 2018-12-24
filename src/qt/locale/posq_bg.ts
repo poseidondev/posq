@@ -62,12 +62,12 @@
         <translation>Получаващ адрес</translation>
     </message>
     <message>
-        <source>These are your Posq addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Това са вашите Posq адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
+        <source>These are your POSQ addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Това са вашите POSQ адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your Posq addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са вашите Posq адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
+        <source>These are your POSQ addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са вашите POSQ адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Потвърдете шифрирането на портфейла</translation>
     </message>
     <message>
-        <source>Posq will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POSQs from being stolen by malware infecting your computer.</source>
-        <translation>Posq сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия Posq от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
+        <source>POSQ will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your POSQs from being stolen by malware infecting your computer.</source>
+        <translation>POSQ сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия POSQ от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Шифриране</translation>
     </message>
     <message>
-        <source>Enter a Posq Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Въведете Posq адрес, който искате да шифрирате с BIP 38. Въведете парола в средното поле. Натиснете 'шифрирай', за да се изчисли шифррания личен ключ.</translation>
+        <source>Enter a POSQ Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Въведете POSQ адрес, който искате да шифрирате с BIP 38. Въведете парола в средното поле. Натиснете 'шифрирай', за да се изчисли шифррания личен ключ.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>The Posq address to sign the message with</source>
-        <translation>Posq адреса, с който да подпишете съобщението</translation>
+        <source>The POSQ address to sign the message with</source>
+        <translation>POSQ адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Posq address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този Posq адрес</translation>
+        <source>Sign the message to prove you own this POSQ address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този POSQ адрес</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Въведете личният си BIP 38 ключ. Въведете тайната фраза в средното поле. Избери Дешифриращия Ключ за да изчислим личния ключ. След като ключа се дешифрира, за да добаите ключа към портфейла, кликнете "Импортирай адрес".</translation>
     </message>
     <message>
-        <source>The Posq address the message was signed with</source>
-        <translation>Posq адреса, който е подписано съобщението</translation>
+        <source>The POSQ address the message was signed with</source>
+        <translation>POSQ адреса, който е подписано съобщението</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Posq address</source>
-        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения Posq адрес</translation>
+        <source>Verify the message to ensure it was signed with the specified POSQ address</source>
+        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения POSQ адрес</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,16 +602,16 @@
         <translation>Колан с инструменти</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Ядро</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Ядро</translation>
     </message>
     <message>
-        <source>Send coins to a Posq address</source>
-        <translation>Изпратете монети до Posq адрес</translation>
+        <source>Send coins to a POSQ address</source>
+        <translation>Изпратете монети до POSQ адрес</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and posq: URIs)</source>
-        <translation>Поискай плащане (генерира QR кодове и  Posq:URI)</translation>
+        <translation>Поискай плащане (генерира QR кодове и  POSQ:URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -630,24 +630,24 @@
         <translation>Разгледай мастърноудове</translation>
     </message>
     <message>
-        <source>&amp;About Posq Core</source>
-        <translation>&amp;Относно Posq Ядрото</translation>
+        <source>&amp;About POSQ Core</source>
+        <translation>&amp;Относно POSQ Ядрото</translation>
     </message>
     <message>
-        <source>Show information about Posq Core</source>
-        <translation>Информациза за Posq Ядрото</translation>
+        <source>Show information about POSQ Core</source>
+        <translation>Информациза за POSQ Ядрото</translation>
     </message>
     <message>
-        <source>Modify configuration options for Posq</source>
-        <translation>Промени Posq конфигурацията</translation>
+        <source>Modify configuration options for POSQ</source>
+        <translation>Промени POSQ конфигурацията</translation>
     </message>
     <message>
-        <source>Sign messages with your Posq addresses to prove you own them</source>
-        <translation>Подпишете съобщения със своте Posq адреси, за да докажете че са Ваши</translation>
+        <source>Sign messages with your POSQ addresses to prove you own them</source>
+        <translation>Подпишете съобщения със своте POSQ адреси, за да докажете че са Ваши</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Posq addresses</source>
-        <translation>Проеврете съобщения, за да се убедите, че са подписани с указаните Posq адреси</translation>
+        <source>Verify messages to ensure they were signed with specified POSQ addresses</source>
+        <translation>Проеврете съобщения, за да се убедите, че са подписани с указаните POSQ адреси</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -678,8 +678,8 @@
         <translation>Отвори Мастърноуд конфигурационния файл</translation>
     </message>
     <message>
-        <source>Open a Posq: URI or payment request</source>
-        <translation>Отвори Posq:URI платежно нареждане</translation>
+        <source>Open a POSQ: URI or payment request</source>
+        <translation>Отвори POSQ:URI платежно нареждане</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -690,16 +690,16 @@
         <translation>Прозорец на блок сондата</translation>
     </message>
     <message>
-        <source>Show the Posq Core help message to get a list with possible Posq command-line options</source>
-        <translation>Разкрийте Помощ за Posq Ядрото, за да видите списък с възможни писмени команди.</translation>
+        <source>Show the POSQ Core help message to get a list with possible POSQ command-line options</source>
+        <translation>Разкрийте Помощ за POSQ Ядрото, за да видите списък с възможни писмени команди.</translation>
     </message>
     <message>
-        <source>Posq Core client</source>
-        <translation>Клиент Posq Ядро</translation>
+        <source>POSQ Core client</source>
+        <translation>Клиент POSQ Ядро</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Posq network</source>
-        <translation><numerusform>%n активни връзки към Posq мрежата</numerusform><numerusform>%n активни свръзки към Posq мрежата</numerusform></translation>
+        <source>%n active connection(s) to POSQ network</source>
+        <translation><numerusform>%n активни връзки към POSQ мрежата</numerusform><numerusform>%n активни свръзки към POSQ мрежата</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -1142,8 +1142,8 @@ Address: %4
         <translation>Редактирай адрес за изпращане</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Posq address.</source>
-        <translation>Зададения адрес "%1"не е валиден Posq адрес.</translation>
+        <source>The entered address "%1" is not a valid POSQ address.</source>
+        <translation>Зададения адрес "%1"не е валиден POSQ адрес.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1188,16 +1188,16 @@ Address: %4
         <translation>версия</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Ядро</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Ядро</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Posq Core</source>
-        <translation>Относно Posq Ядрото</translation>
+        <source>About POSQ Core</source>
+        <translation>Относно POSQ Ядрото</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1243,16 +1243,16 @@ Address: %4
         <translation>Привет</translation>
     </message>
     <message>
-        <source>Welcome to Posq Core.</source>
-        <translation>Добре Дошли в Posq Ядрото</translation>
+        <source>Welcome to POSQ Core.</source>
+        <translation>Добре Дошли в POSQ Ядрото</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Posq Core will store its data.</source>
-        <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде Posq Ядрото ще съхранява своите данни.</translation>
+        <source>As this is the first time the program is launched, you can choose where POSQ Core will store its data.</source>
+        <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде POSQ Ядрото ще съхранява своите данни.</translation>
     </message>
     <message>
-        <source>Posq Core will download and store a copy of the Posq block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Posq Ядрото ще изтегли и запише копие на целия Posq блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
+        <source>POSQ Core will download and store a copy of the POSQ block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>POSQ Ядрото ще изтегли и запише копие на целия POSQ блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1263,8 +1263,8 @@ Address: %4
         <translation>Задай своя папка за данни:</translation>
     </message>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Ядро</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Ядро</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1405,12 +1405,12 @@ Address: %4
         <translation>Въведете адреса на Получателя</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Posq addresses after it matures.
-To Add: enter percentage to give and Posq address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other POSQ addresses after it matures.
+To Add: enter percentage to give and POSQ address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>МултиИзпращане Ви позволява автоматично да изпращате до 100% от вашите стейк или мастърноуд възнаграждения към списък от други Posq адреси.
-Да Добавите: въведете процент и задайте Posq адрес към вектора за МултиИзпращане
+        <translation>МултиИзпращане Ви позволява автоматично да изпращате до 100% от вашите стейк или мастърноуд възнаграждения към списък от други POSQ адреси.
+Да Добавите: въведете процент и задайте POSQ адрес към вектора за МултиИзпращане
 Да Прамахнете: Въведете адрес за изстриване и натиснете истрий (del).
 МултиИзпращането няма да бъде активирано докато не кликнете "Активирай"</translation>
     </message>
@@ -1580,15 +1580,15 @@ Please check the address and try again.</source>
         <translation>Конфигурация на Обфускацията</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Posq's configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening POSQ's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на елементарно ниво (%1 и 2 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Posq's configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening POSQ's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на високо ниво (%1 и 8 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Posq's configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening POSQ's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на максимално ниво (%1 и 16 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
 </context>
@@ -1650,8 +1650,8 @@ Please check the address and try again.</source>
         <translation>Aко изключите харча на непотвърдено ресто, рестото от превод&lt;br/&gt;не може да се използва, докато превода не получи поне 1 потвърждение. &lt;br/&gt;Това влияе и на начина по който общите Ви средства се преизчисляват.</translation>
     </message>
     <message>
-        <source>Automatically open the Posq client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отвори Posq порта в рутера. Това става само ако рутера Ви подържа UPnP и последния е включен.</translation>
+        <source>Automatically open the POSQ client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отвори POSQ порта в рутера. Това става само ако рутера Ви подържа UPnP и последния е включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1670,12 +1670,12 @@ Please check the address and try again.</source>
         <translation>Експерт</translation>
     </message>
     <message>
-        <source>Automatically start Posq after logging in to the system.</source>
-        <translation>Стартирай Posq автоматично след влизане в системата.</translation>
+        <source>Automatically start POSQ after logging in to the system.</source>
+        <translation>Стартирай POSQ автоматично след влизане в системата.</translation>
     </message>
     <message>
-        <source>&amp;Start Posq on system login</source>
-        <translation>&amp;Стартирай Posq заедно с операционната система</translation>
+        <source>&amp;Start POSQ on system login</source>
+        <translation>&amp;Стартирай POSQ заедно с операционната система</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1702,7 +1702,7 @@ Please check the address and try again.</source>
         <translation>&amp;Мрежа</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Posq.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting POSQ.</source>
         <translation>Промяна на езика. Настройката е активна след рестарт на портфейла.</translation>
     </message>
     <message>
@@ -1728,8 +1728,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Предпочитани деноминации, в които да се сече автоматичен zPOSQ</translation>
     </message>
     <message>
-        <source>Connect to the Posq network through a SOCKS5 proxy.</source>
-        <translation>Свържи се с Posq мрежата със SOCKS5 прокси.</translation>
+        <source>Connect to the POSQ network through a SOCKS5 proxy.</source>
+        <translation>Свържи се с POSQ мрежата със SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1887,8 +1887,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Възнаграждение от стейкване или мастърноуд, които все още не са узрели.</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Posq network after a connection is established, but this process has not completed yet.</source>
-        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с Posq мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the POSQ network after a connection is established, but this process has not completed yet.</source>
+        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с POSQ мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1978,8 +1978,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Провал при стартирането на posq: click-to-pay обработвател</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Posq address or malformed URI parameters.</source>
-        <translation>URI не може да се парсне. Вероятна причина е невалиден Posq адрес или зле-форматирани URI Параметри.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid POSQ address or malformed URI parameters.</source>
+        <translation>URI не може да се парсне. Вероятна причина е невалиден POSQ адрес или зле-форматирани URI Параметри.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2072,8 +2072,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Zerocoin Действия:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Posq network after a connection is established, but this process has not completed yet.</source>
-        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с Posq мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the POSQ network after a connection is established, but this process has not completed yet.</source>
+        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с POSQ мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
         <source>Enter an amount of Phr to convert to zPhr</source>
@@ -2176,7 +2176,7 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Плати На:</translation>
     </message>
     <message>
-        <source>The Posq address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The POSQ address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation>Адреса на който да изпратим плащането. Ако е празно - плащането е до себе си.</translation>
     </message>
     <message>
@@ -2376,8 +2376,8 @@ https://www.transifex.com/posq-project/posq-project-translations</translation>
         <translation>Копирай сумата</translation>
     </message>
     <message>
-        <source>Zerocoin functionality is not enabled on the Posq network yet.</source>
-        <translation>Zerocoin функцията все още не е активирана в Posq мрежата.</translation>
+        <source>Zerocoin functionality is not enabled on the POSQ network yet.</source>
+        <translation>Zerocoin функцията все още не е активирана в POSQ мрежата.</translation>
     </message>
     <message>
         <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
@@ -2430,8 +2430,8 @@ Please be patient...</source>
         <translation>Без 'Плати На' адрес, плащането е локално</translation>
     </message>
     <message>
-        <source>Invalid Posq Address</source>
-        <translation>Невалиден Posq адрес</translation>
+        <source>Invalid POSQ Address</source>
+        <translation>Невалиден POSQ адрес</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2521,8 +2521,8 @@ Please be patient...</source>
         <translation>Сума</translation>
     </message>
     <message>
-        <source>Enter a Posq address (e.g. %1)</source>
-        <translation>Задайте Posq адрес (например %1)</translation>
+        <source>Enter a POSQ address (e.g. %1)</source>
+        <translation>Задайте POSQ адрес (например %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2659,8 +2659,8 @@ Please be patient...</source>
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the Posq debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Отвори Posq дебъг лог файла от сегашната папка. Това може да отнеме известно време за по-дълги файлове.</translation>
+        <source>Open the POSQ debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Отвори POSQ дебъг лог файла от сегашната папка. Това може да отнеме известно време за по-дълги файлове.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2827,8 +2827,8 @@ Please be patient...</source>
         <translation>Изходящи:</translation>
     </message>
     <message>
-        <source>Welcome to the Posq RPC console.</source>
-        <translation>Добре Дошли в RPC конзолата на Posq.</translation>
+        <source>Welcome to the POSQ RPC console.</source>
+        <translation>Добре Дошли в RPC конзолата на POSQ.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2898,12 +2898,12 @@ Please be patient...</source>
         <translation>Незадължителен етикет, който да асоциираме с адреса за получаване.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Posq network.</source>
-        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по Posq мрежата.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the POSQ network.</source>
+        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по POSQ мрежата.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Posq network.</source>
-        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. &lt;br&gt;Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по Posq мрежата.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the POSQ network.</source>
+        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. &lt;br&gt;Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по POSQ мрежата.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3187,7 +3187,7 @@ Please be patient...</source>
         <translation>Ако собствената такса е настроена на 1000 uPOSQ и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uPOSQ входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uPOSQ. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Posq transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for POSQ transactions than the network can process.</source>
         <translation>Няма проблем да платите минималната такса, стига обема преводи да е по-малък от наличното място в блоковете. &lt;br /&gt;Но имайте впредвид, че това може да се окаже в превод, който никога не получава потвърждение ако заявките за преводи са повече от колкото мрежата може да понесе.</translation>
     </message>
     <message>
@@ -3295,7 +3295,7 @@ Please be patient...</source>
         <translation>анонимни средства</translation>
     </message>
     <message>
-        <source>Warning: Invalid Posq address</source>
+        <source>Warning: Invalid POSQ address</source>
         <translation>Предупреждение: Невалиден POSQ адрес</translation>
     </message>
     <message>
@@ -3402,8 +3402,8 @@ Please be patient...</source>
         <translation>Плати На:</translation>
     </message>
     <message>
-        <source>The Posq address to send the payment to</source>
-        <translation>Posq адреса - получател на плащането</translation>
+        <source>The POSQ address to send the payment to</source>
+        <translation>POSQ адреса - получател на плащането</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3442,8 +3442,8 @@ Please be patient...</source>
         <translation>Съобщение:</translation>
     </message>
     <message>
-        <source>A message that was attached to the Posq: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Posq network.</source>
-        <translation>Съобщение, което е било прикачено към Posq:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по Posq мрежата.</translation>
+        <source>A message that was attached to the POSQ: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the POSQ network.</source>
+        <translation>Съобщение, което е било прикачено към POSQ:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по POSQ мрежата.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3469,8 +3469,8 @@ Please be patient...</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Posq Core is shutting down...</source>
-        <translation>Изключване на Posq Ядрото...</translation>
+        <source>POSQ Core is shutting down...</source>
+        <translation>Изключване на POSQ Ядрото...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3492,8 +3492,8 @@ Please be patient...</source>
         <translation>Може да подписвате съобщения с Вашите адреси, за да докажете че сте техен притежател. Внимавайте да не подписвате нищо съмнително, тъй като има хакерски атаки, които целят да придобият вашата самоличност. Само подписвайте пълен и ясен текст, с който сте напълно съгласни.</translation>
     </message>
     <message>
-        <source>The Posq address to sign the message with</source>
-        <translation>Posq адреса, с който да подпишете съобщението</translation>
+        <source>The POSQ address to sign the message with</source>
+        <translation>POSQ адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3524,16 +3524,16 @@ Please be patient...</source>
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Posq address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този Posq адрес</translation>
+        <source>Sign the message to prove you own this POSQ address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този POSQ адрес</translation>
     </message>
     <message>
-        <source>The Posq address the message was signed with</source>
-        <translation>Posq адреса, който е подписано съобщението</translation>
+        <source>The POSQ address the message was signed with</source>
+        <translation>POSQ адреса, който е подписано съобщението</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Posq address</source>
-        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения Posq адрес</translation>
+        <source>Verify the message to ensure it was signed with the specified POSQ address</source>
+        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения POSQ адрес</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3619,8 +3619,8 @@ Please be patient...</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Posq Core</source>
-        <translation>Posq Ядро</translation>
+        <source>POSQ Core</source>
+        <translation>POSQ Ядро</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3635,8 +3635,8 @@ Please be patient...</source>
         <translation>Dash Core разработчици</translation>
     </message>
     <message>
-        <source>The Posq Core developers</source>
-        <translation>Posq Core разработчици</translation>
+        <source>The POSQ Core developers</source>
+        <translation>POSQ Core разработчици</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4304,8 +4304,8 @@ Please be patient...</source>
         <translation>Изтрий всички преводи от портфейла и възстанови само тези части от блокчейна - сканира при стартиране.</translation>
     </message>
     <message>
-        <source>Disable all Posq specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Изключи всякаква Posq функционалност (Мастърноудове, Обфускация, SwiftTX, Бюджетиране) (0-1 default: %u)</translation>
+        <source>Disable all POSQ specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Изключи всякаква POSQ функционалност (Мастърноудове, Обфускация, SwiftTX, Бюджетиране) (0-1 default: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>

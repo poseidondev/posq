@@ -65,7 +65,7 @@ CoinDenomination AmountToZerocoinDenomination(CAmount amount)
 }
 
 // return the highest denomination that is less than or equal to the amount given
-// use case: converting Posq to zPosq without user worrying about denomination math themselves
+// use case: converting POSQ to zPOSQ without user worrying about denomination math themselves
 CoinDenomination AmountToClosestDenomination(CAmount nAmount, CAmount& nRemaining)
 {
     if (nAmount < 1 * COIN)

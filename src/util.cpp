@@ -105,7 +105,7 @@ std::string to_internal(const std::string&);
 
 using namespace std;
 
-// Posq only features
+// POSQ only features
 // Masternode
 bool fMasterNode = false;
 string strMasterNodePrivKey = "";
@@ -120,7 +120,7 @@ int nZeromintPercentage = 10;
 int nPreferredDenom = 0;
 const int64_t AUTOMINT_DELAY = (60 * 5); // Wait at least 5 minutes until Automint starts
 
-int nAnonymizePosqAmount = 1000;
+int nAnonymizePOSQAmount = 1000;
 int nLiquidityProvider = 0;
 /** Spork enforcement enabled time */
 int64_t enforceMasternodePaymentsTime = 4085657524;
@@ -237,7 +237,7 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "posq" is a composite category enabling all Posq-related debug output
+            // "posq" is a composite category enabling all POSQ-related debug output
             if (ptrCategory->count(string("posq"))) {
                 ptrCategory->insert(string("obfuscation"));
                 ptrCategory->insert(string("swiftx"));
@@ -424,13 +424,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\Posq
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\Posq
-// Mac: ~/Library/Application Support/Posq
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\POSQ
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\POSQ
+// Mac: ~/Library/Application Support/POSQ
 // Unix: ~/.posq
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Posq";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "POSQ";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -442,7 +442,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "Posq";
+    return pathRet / "POSQ";
 #else
     // Unix
     return pathRet / ".posq";
