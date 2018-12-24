@@ -28,7 +28,7 @@
       </sizepolicy>
      </property>
      <property name="pixmap">
-      <pixmap resource="../pivx.qrc">:/images/about</pixmap>
+      <pixmap resource="../posq.qrc">:/images/about</pixmap>
      </property>
     </widget>
    </item>
@@ -97,7 +97,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../pivx.qrc"/>
+  <include location="../posq.qrc"/>
  </resources>
  <connections>
   <connection>
