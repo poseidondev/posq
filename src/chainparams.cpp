@@ -116,7 +116,7 @@ public:
 		pchMessageStart[2] = 0xe3;
 		pchMessageStart[3] = 0x12;
 		vAlertPubKey = ParseHex("0421303df706061f443fa153cf057b8c3bfd338f34a0661ce186001c6e7bf8fdbf71553d84d65f8463d74b73c0544ffffdad38658b25ca26bd22e5c9a27eee7583");
-		nDefaultPort = 6978;
+		nDefaultPort = 5510;
 		bnProofOfWorkLimit = ~uint256(0) >> 1;
 		nSubsidyHalvingInterval = 210000;
 		nMaxReorganizationDepth = 100;
