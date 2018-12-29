@@ -23,7 +23,7 @@ border:0px solid #000;
 }
 
 QMenuBar {
-background-color:#466a9b;
+background-color:#fff;
 }
 
 QMenuBar::item {
@@ -36,7 +36,7 @@ background-color:#f2f0f0;
 }
 
 QMenu {
-background-color:#466a9b;
+background-color:#fff;
 }
 
 QMenu::item {
@@ -127,7 +127,7 @@ border:1px solid #c2c2c2;
 }
 
 QTabBar {
-background-color:#466a9b;
+background-color:#f2f2f2;
 color:#333;
 }
 
@@ -142,8 +142,8 @@ outline:0; /* Remove Annoying Focus Rectangle */
 }
 
 QGroupBox {
-background-color:#466a9b;
-color:#466a9b;
+background-color:#fcfcfc;
+color:#333;
 }
 
 QToolTip {
@@ -321,7 +321,7 @@ selection-color:transparent;
 
 QAbstractSpinBox {
 padding: 3px 5px 3px 5px;
-background:#466a9b;
+background:#fcfcfc;
 font-size:12px;
 min-height:25px;
 outline:0;
