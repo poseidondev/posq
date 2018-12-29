@@ -2132,22 +2132,22 @@ int64_t GetBlockValue(int nHeight)
             nSubsidy = 2000000 * COIN;
         }else if (nHeight < 400 && nHeight > 0) {
             nSubsidy = 100 * COIN;
-        }else if (nHeight <= 50000 && nHeight >= 400) {
+        }else if (nHeight <= 50000 && nHeight > 400) {
             nSubsidy = 1 * COIN;
-        }else if (nHeight <= 100000 && nHeight >= 50000) {
+        }else if (nHeight <= 100000 && nHeight > 50000) {
             nSubsidy = 2 * COIN;
             if (nHeight == 50404 || nHeight == 55089 || nHeight == 60387 || nHeight == 65101 || nHeight == 70555 ||
                 nHeight == 75578 || nHeight == 80917 || nHeight == 85876 || nHeight == 90876 || nHeight == 95876 || nHeight == 99123) {
                 nSubsidy = 50 * COIN;
             }
-        }else if (nHeight <= 200000 && nHeight >= 100000) {
+        }else if (nHeight <= 200000 && nHeight > 100000) {
             nSubsidy = 5 * COIN;
             if (nHeight == 105404 || nHeight == 115089 || nHeight == 121387 || nHeight == 126101 || nHeight == 130555 ||
                 nHeight == 140578 || nHeight == 145917 || nHeight == 150876 || nHeight == 156876 || nHeight == 161876 || nHeight == 166123 || nHeight == 171555 ||
                 nHeight == 176420 || nHeight == 181812 || nHeight == 185212 || nHeight == 191331 || nHeight == 196845 || nHeight == 199987) {
                 nSubsidy = 100 * COIN;
             }
-        }else if (nHeight <= 400000 && nHeight >= 200000) {
+        }else if (nHeight <= 400000 && nHeight > 200000) {
             nSubsidy = 2.5 * COIN;
             if (nHeight == 205344 || nHeight == 215183 || nHeight == 221387 || nHeight == 226101 || nHeight == 231525 ||
                 nHeight == 239448 || nHeight == 245917 || nHeight == 250876 || nHeight == 256321 || nHeight == 261313 || nHeight == 271123 || nHeight == 277235 ||
@@ -2155,30 +2155,30 @@ int64_t GetBlockValue(int nHeight)
                 nHeight == 364332 || nHeight == 373111 || nHeight == 382119 || nHeight == 392121 || nHeight == 399678) {
                 nSubsidy = 150 * COIN;
             }
-        }else if (nHeight <= 800000 && nHeight >= 400000) {
+        }else if (nHeight <= 800000 && nHeight > 400000) {
             nSubsidy = 1.25 * COIN;
             if (nHeight == 405344 || nHeight == 415183 || nHeight == 421387 || nHeight == 426101 || nHeight == 431525 ||
                 nHeight == 439448 || nHeight == 445917 || nHeight == 450876 || nHeight == 456321 || nHeight == 461313 || nHeight == 471123 || nHeight == 477235 ||
                 nHeight == 489444 || nHeight == 500820 || nHeight == 510002 || nHeight == 521312 || nHeight == 535353 || nHeight == 545122) {
                 nSubsidy = 200 * COIN;
             }
-        }else if (nHeight <= 1600000 && nHeight >= 800000) {
+        }else if (nHeight <= 1600000 && nHeight > 800000) {
             nSubsidy = 3 * COIN;
             if (nHeight == 804404 || nHeight == 900989 || nHeight == 1010587 || nHeight == 1150101 || nHeight == 1225321 ||
                 nHeight == 1331578 || nHeight == 1437917 || nHeight == 1541554) {
                 nSubsidy = 250 * COIN;
             }
-        }else if (nHeight <= 3200000 && nHeight >= 1600000) {
+        }else if (nHeight <= 3200000 && nHeight > 1600000) {
             nSubsidy = 1 * COIN;
             if (nHeight == 1654404 || nHeight == 1759989 || nHeight == 1853437 || nHeight == 2220101 || nHeight == 2455555 ||
                 nHeight == 2781578 || nHeight == 2817917 || nHeight == 2911321 || nHeight == 3151412) {
                 nSubsidy = 300 * COIN;
             }
-        }else if (nHeight <= 6400000 && nHeight >= 3200000) {
+        }else if (nHeight <= 6400000 && nHeight > 3200000) {
             nSubsidy = 0.5 * COIN;
-        }else if (nHeight <= 12800000 && nHeight >= 6400000) {
+        }else if (nHeight <= 12800000 && nHeight > 6400000) {
             nSubsidy = 0.25 * COIN;
-        }else if (nHeight <= 25600000 && nHeight >= 12800000) {
+        }else if (nHeight <= 25600000 && nHeight > 12800000) {
             nSubsidy = 1 * COIN;
         }else {
             nSubsidy = .5 * COIN;
