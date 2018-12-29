@@ -171,7 +171,7 @@ public:
 		//Teams Seeder
 		vSeeds.push_back(CDNSSeedData("seeder.posqoin.club", "seeder.posqoin.club"));
 		//Seeds	Community Nodes
-		vSeeds.push_back(CDNSSeedData("144.202.16.251", "144.202.16.251"));
+		vSeeds.push_back(CDNSSeedData("207.246.112.156", "207.246.112.156"));
 
 		base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 58); //Q
 		base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
@@ -196,6 +196,7 @@ public:
 		nPoolMaxTransactions = 3;
 
         strSporkKey = "034eea79b60108d63a9123cab5b708dacdc3ba2cb643466e8543a2e50f271c1ada";
+        strSporkKeyOld = "030262a2a0679d01ab026d375c42b0a4122477123631b870e09665526c322c8899";
 
 		strObfuscationPoolDummyAddress = "QfKpz2Vrh4XbfJNahntTJSDhSBmCEvUVZ3";
 		nStartMasternodePayments = 1534438799;
