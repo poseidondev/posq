@@ -561,7 +561,7 @@ void CBudgetManager::FillTreasuryBlockPayee(CMutableTransaction& txNew, CAmount 
     CScript payee;
     CAmount blockValue = GetBlockValue(pindexPrev->nHeight);
     payee = Params().GetTreasuryRewardScriptAtHeight(pindexPrev->nHeight);
-    CAmount treasurePayment = blockValue - 10 * COIN;
+    CAmount treasurePayment = blockValue - 1 * COIN;
     if (fProofOfStake)
     {
         /**For Proof Of Stake vout[0] must be null
