@@ -1,6 +1,7 @@
+POSQ Core integration/staging repository
+=====================================
 
-# POSQ Core integration/staging repository
-
+[![Build Status](https://travis-ci.org/sicXnull/posq.svg?branch=master)](https://travis-ci.org/sicXnull/posq)
 
 ### Coin Specs
 <table>
