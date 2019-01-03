@@ -1,7 +1,7 @@
 POSQ Core integration/staging repository
 =====================================
 
-[![Build Status](https://travis-ci.org/sicXnull/posq.svg?branch=master)](https://travis-ci.org/sicXnull/posq)
+[![Build Status](https://travis-ci.org/sicXnull/posq.svg?branch=master)](https://travis-ci.org/sicXnull/posq) [![GitHub version](https://badge.fury.io/gh/sicXnull%2Fposq.svg)](https://badge.fury.io/gh/sicXnull%2Fposq)
 
 ### Coin Specs
 <table>
@@ -10,8 +10,8 @@ POSQ Core integration/staging repository
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
 <tr><td>Max Coin Supply </td><td>100,000,000 POSQ</td></tr>
 <tr><td>Premine</td><td>8,000,000 POSQ</td></tr>
-<tr><td>MN Port</td><td>5520</td></tr>
-<tr><td>RPC Port</td><td>5521</td></tr>
+<tr><td>MN Port</td><td>5510</td></tr>
+<tr><td>RPC Port</td><td>5511</td></tr>
 </table>
 
 
@@ -36,7 +36,7 @@ POSQ Core integration/staging repository
 </table>
 
 
-### Masternode Rewards Per Block, 25000 POSQ Collateral
+### Masternode Rewards Per Block, 5000 POSQ Collateral
 
 <table>
 <tr><th>Block Height</th><th>MN Reward Amount</th><th>PoS Reward Amount</th><th>Duration (Days)</th><th>Development Fee</th></tr>
@@ -57,6 +57,6 @@ POSQ Core integration/staging repository
 <tr><td>150000-End Supply </td><td>90%</td><td>10%</td><td>17.36 Days</td><td>5%</td></tr>
 </table>
 
-MN Port: 5520
-RPC Port: 5521
+MN Port: 5510
+RPC Port: 5511
 Testnet: 15520
