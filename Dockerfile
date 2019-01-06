@@ -32,7 +32,7 @@ RUN deps="alpine-sdk curl autoconf automake libtool boost-dev openssl-dev libeve
 
 VOLUME ["/home/wallet/.posq"]
 
-EXPOSE 5520/tcp
+EXPOSE 5510/tcp
 
 USER wallet
 CMD posqd -printtoconsole

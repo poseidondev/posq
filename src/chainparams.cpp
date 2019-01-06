@@ -57,11 +57,11 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
 
-    (0, uint256("0xa9f081734c579a25872ce366d5520482755d26ff3db73fbe7bdd4e973bc0e173"));
+    (0, uint256("0x00000afed892c787c80d30221f112c4611013cf366b574cc9cf6149415a93957"));
 
 static const Checkpoints::CCheckpointData data = {
 	&mapCheckpoints,
-	1534438799, // * UNIX timestamp of last checkpoint block
+	1546206065, // * UNIX timestamp of last checkpoint block
 	0,          // * total number of transactions between genesis and last checkpoint
 				//   (the tx=... number in the SetBestChain debug.log lines)
 				2000        // * estimated number of transactions per day after checkpoint, was 2000
@@ -69,20 +69,20 @@ static const Checkpoints::CCheckpointData data = {
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
 boost::assign::map_list_of
-(0, uint256("0xa9f081734c579a25872ce366d5520482755d26ff3db73fbe7bdd4e973bc0e173"));
+(0, uint256("0x5631b0ce092246abb7f7cbf0a6ee315bd7cf41092a714c7ece4c1aed15dd3995"));
 static const Checkpoints::CCheckpointData dataTestnet = {
 	&mapCheckpointsTestnet,
-	1534438799,
+	1546206194,
 	0,
 	250
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
 boost::assign::map_list_of
-(0, uint256("0xa9f081734c579a25872ce366d5520482755d26ff3db73fbe7bdd4e973bc0e173"));
+(0, uint256("0x00000334ad7d19ac18efcc77b3bd54e62e16bb8ad96732cf8d01425557f8d78e"));
 static const Checkpoints::CCheckpointData dataRegtest = {
 	&mapCheckpointsRegtest,
-	1534438799,
+	1546206278,
 	0,
 	100
 };
@@ -104,7 +104,7 @@ public:
 	{
 		networkID = CBaseChainParams::MAIN;
 		vReviveRewardAddress = "";   //This address will be depreicated when spork 18 is turned on and coins will be burned.
-		vTreasuryRewardAddress = "QLma47EATaUz6bwoVutjTEdtHSQR7DvjyE"; //This address is held by Tfinch and will be paying out coins to team and funding of projects.
+		vTreasuryRewardAddress = "QLma47EATaUz6bwoVutjTEdtHSQR7DvjyE";
 		strNetworkID = "main";
 		/**
 		* The message start string is designed to be unlikely to occur in normal data.
@@ -116,7 +116,7 @@ public:
 		pchMessageStart[2] = 0xe3;
 		pchMessageStart[3] = 0x12;
 		vAlertPubKey = ParseHex("0421303df706061f443fa153cf057b8c3bfd338f34a0661ce186001c6e7bf8fdbf71553d84d65f8463d74b73c0544ffffdad38658b25ca26bd22e5c9a27eee7583");
-		nDefaultPort = 6978;
+		nDefaultPort = 5510;
 		bnProofOfWorkLimit = ~uint256(0) >> 1;
 		nSubsidyHalvingInterval = 210000;
 		nMaxReorganizationDepth = 100;
@@ -142,31 +142,33 @@ public:
 		nBlockFirstFraudulent = ~1;         //First block that bad serials emerged
 		nBlockLastGoodCheckpoint = ~1;      //Last valid accumulator checkpoint
 
-		const char* pszTimestamp = "National Suicide Prevention Hotline 1-800-273-8255";
+		const char* pszTimestamp = "12/30/2018 Craig Wright Denied USD 1 Billion Lawsuit Dismissal";
 		CMutableTransaction txNew;
 		txNew.vin.resize(1);
 		txNew.vout.resize(1);
 		txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
 		txNew.vout[0].nValue = 50 * COIN;
-		txNew.vout[0].scriptPubKey = CScript() << ParseHex("0431d81512c537c1e8ca5834732355740830cfe266d97ba8af2c0f72828745014f78931b94abd2383aa8ed2f8a1ec633dd902ed01edfe834f20374be4207843b43") << OP_CHECKSIG;
+		txNew.vout[0].scriptPubKey = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
 		genesis.vtx.push_back(txNew);
 		genesis.hashPrevBlock = 0;
 		genesis.hashMerkleRoot = genesis.BuildMerkleTree();
 		genesis.nVersion = 1;
-		genesis.nTime = 1545442921;
+		genesis.nTime = 1546206065;
 		genesis.nBits = 504365040;
-		genesis.nNonce = 191435;
+		genesis.nNonce = 514578;
+
 
 		nEnforceNewSporkKey = 1546300800; //!> Sporks signed after (GMT): Tuesday, Jan 1, 2018 12:00:00 AM GMT must use the new spork key
-        nRejectOldSporkKey = 1548979200;  //!> Fully reject old spork key after (GMT): Friday, Feb 1, 2018 12:00:00 AM
+        	nRejectOldSporkKey = 1548979200;  //!> Fully reject old spork key after (GMT): Friday, Feb 1, 2018 12:00:00 AM
 
 
 		hashGenesisBlock = genesis.GetHash();
 
 		//printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
 		//printf("genesis.hashMerkleRoot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
-		assert(hashGenesisBlock == uint256("0xe6cfdfac2355b12069552ab170cda9cc9d11cb7bdbeec21fc23500c797a65f38"));
-		assert(genesis.hashMerkleRoot == uint256("0x598ffdff99e67551b7a05dc08dfafcf2e7a6ecea89f9b369bf830f4b21ff160f"));
+
+		assert(hashGenesisBlock == uint256("0x00000afed892c787c80d30221f112c4611013cf366b574cc9cf6149415a93957"));
+		assert(genesis.hashMerkleRoot == uint256("0x5631b0ce092246abb7f7cbf0a6ee315bd7cf41092a714c7ece4c1aed15dd3995"));
 
 		//Teams Seeder
 		vSeeds.push_back(CDNSSeedData("seeder.posqoin.club", "seeder.posqoin.club"));
@@ -264,7 +266,7 @@ public:
 		pchMessageStart[2] = 0xb5;
 		pchMessageStart[3] = 0xe1;
 		vAlertPubKey = ParseHex("0470a2eb34175354bd51b62d7080951ab15f360a15a53df8deec17b25bf076e30ddfc924d39c4d0f58ecba3e8676d818bfc6f491c651cc829849a8025d4f2ac9e2");
-		nDefaultPort = 17456;
+		nDefaultPort = 15510;
 		nEnforceBlockUpgradeMajority = 750;
 		nRejectBlockOutdatedMajority = 950;
 		nToCheckBlockUpgradeMajority = 1000;
@@ -283,14 +285,16 @@ public:
 		nBlockFirstFraudulent = 9891737; //First block that bad serials emerged
 		nBlockLastGoodCheckpoint = 9891730; //Last valid accumulator checkpoint
 
-											//! Modify the testnet genesis block so the timestamp is valid for a later start.
-		genesis.nTime = 1534438799;
-		genesis.nNonce = 647688;
+		//! Modify the testnet genesis block so the timestamp is valid for a later start.
+		genesis.nTime = 1546206194;
+		genesis.nNonce = 773271;
+
+
 
 		hashGenesisBlock = genesis.GetHash();
 		//printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
-		assert(hashGenesisBlock == uint256("0xa9f081734c579a25872ce366d5520482755d26ff3db73fbe7bdd4e973bc0e173"));
-		assert(genesis.hashMerkleRoot == uint256("0x598ffdff99e67551b7a05dc08dfafcf2e7a6ecea89f9b369bf830f4b21ff160f"));
+		assert(hashGenesisBlock == uint256("0x0000073f1de9d1268731bff93d98a357572d1665aed31e5893961dc3d96a8032"));
+		assert(genesis.hashMerkleRoot == uint256("0x5631b0ce092246abb7f7cbf0a6ee315bd7cf41092a714c7ece4c1aed15dd3995"));
 
 		vFixedSeeds.clear();
 		vSeeds.clear();
@@ -351,16 +355,17 @@ public:
 		nTargetTimespan = 1 * 60; // POSQ: 1 day
 		nTargetSpacing = 1 * 60;        // POSQ: 1 minutes
 		bnProofOfWorkLimit = ~uint256(0) >> 1;
-		genesis.nTime = 1534438799;
+		genesis.nTime = 1546206278;
 		genesis.nBits = 504365040;
-		genesis.nNonce = 647688;
+		genesis.nNonce = 348846;
+
 
 		hashGenesisBlock = genesis.GetHash();
-		nDefaultPort = 15222;
+		nDefaultPort = 15110;
 		//printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
 		//printf("%s\n", hashGenesisBlock.ToString().c_str());
-		assert(hashGenesisBlock == uint256("0xa9f081734c579a25872ce366d5520482755d26ff3db73fbe7bdd4e973bc0e173"));
-		assert(genesis.hashMerkleRoot == uint256("0x598ffdff99e67551b7a05dc08dfafcf2e7a6ecea89f9b369bf830f4b21ff160f"));
+		assert(hashGenesisBlock == uint256("0x00000334ad7d19ac18efcc77b3bd54e62e16bb8ad96732cf8d01425557f8d78e"));
+		assert(genesis.hashMerkleRoot == uint256("0x5631b0ce092246abb7f7cbf0a6ee315bd7cf41092a714c7ece4c1aed15dd3995"));
 
 		vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
 		vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
