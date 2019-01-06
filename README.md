@@ -48,4 +48,4 @@ POSQ Core integration/staging repository
 
 MN Port: 5510
 RPC Port: 5511
-Testnet: 15520
+Testnet: 15510
