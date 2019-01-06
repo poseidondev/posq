@@ -21,7 +21,7 @@ POSQ Core integration/staging repository
 <table>
 <th colspan=4>PoW Phase</th>
 <tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th><th>Duration (Days)</th></tr>
-<tr><td>0</td><td>2,000,000 POSQ</td><td>Initial Premine 2,000,000 POSQ</td><td>0 Days</td></tr>
+<tr><td>0</td><td>2,000,000 POSQ</td><td>Redistribution Premine 2,000,000 POSQ</td><td>0 Days</td></tr>
 <tr><td>1-400</td><td>100 POSQ</td><td rowspan=1>Closed Mining</td><td>0 Days</td></tr>
 <tr><th colspan=4>PoS / MN Phase</th></tr>
 <tr><td>401-50,000</td><td>1 POSQ</td><td rowspan=1>PHASE 1</td><td>34.4 Days</td></tr>
