@@ -925,8 +925,8 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
         }
 
         if (Params().NetworkID() == CBaseChainParams::MAIN) {
-            if (addr.GetPort() != 5520) return;
-        } else if (addr.GetPort() == 5520)
+            if (addr.GetPort() != 5510) return;
+        } else if (addr.GetPort() == 5510)
             return;
 
         //search existing Masternode list, this is where we update existing Masternodes with new dsee broadcasts
@@ -987,7 +987,7 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
         CValidationState state;
         CMutableTransaction tx = CMutableTransaction();
         //CTxOut vout = CTxOut(4999.99 * COIN, obfuScationPool.collateralPubKey);
-		CTxOut vout = CTxOut(14999.99 * COIN, obfuScationPool.collateralPubKey);
+		CTxOut vout = CTxOut(4999.99 * COIN, obfuScationPool.collateralPubKey);
         tx.vin.push_back(vin);
         tx.vout.push_back(vout);
 
