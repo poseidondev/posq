@@ -88,7 +88,7 @@ BOOST_AUTO_TEST_CASE(netbase_lookupnumeric)
     BOOST_CHECK(TestParse("127.0.0.1:5510", "127.0.0.1:5510"));
     BOOST_CHECK(TestParse("::ffff:127.0.0.1", "127.0.0.1:65535"));
     BOOST_CHECK(TestParse("::", "[::]:65535"));
-    BOOST_CHECK(TestParse("[::]:5510", "[::]:5"));
+    BOOST_CHECK(TestParse("[::]:5510", "[::]:5510"));
     BOOST_CHECK(TestParse("[127.0.0.1]", "127.0.0.1:65535"));
     BOOST_CHECK(TestParse(":::", ""));
 }

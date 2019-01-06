@@ -126,9 +126,9 @@ public:
 		nMinerThreads = 0;
 		nTargetTimespan = 1 * 60;         // POSQ: 1 day
 		nTargetSpacing = 1 * 60;          // POSQ: 1 minutes
-		nMaturity = 25;                   // 5 Conf to mature coins
+		nMaturity = 25;                   // 25 Conf to mature coins
 		nMasternodeCountDrift = 20;       //Was 20
-		nMasternodeCollateralAmt = 15000; //masternode collateral 25K
+		nMasternodeCollateralAmt = 5000; //masternode collateral 25K
 		nMaxMoneyOut = 23500000 * COIN;  //100m coins minted
 
 										  /** Height or Time Based Activations **/
