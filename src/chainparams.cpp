@@ -104,7 +104,7 @@ public:
 	{
 		networkID = CBaseChainParams::MAIN;
 		vReviveRewardAddress = "";   //This address will be depreicated when spork 18 is turned on and coins will be burned.
-		vTreasuryRewardAddress = "QLma47EATaUz6bwoVutjTEdtHSQR7DvjyE"; //This address is held by Tfinch and will be paying out coins to team and funding of projects.
+		vTreasuryRewardAddress = "QLma47EATaUz6bwoVutjTEdtHSQR7DvjyE";
 		strNetworkID = "main";
 		/**
 		* The message start string is designed to be unlikely to occur in normal data.
@@ -116,7 +116,7 @@ public:
 		pchMessageStart[2] = 0xe3;
 		pchMessageStart[3] = 0x12;
 		vAlertPubKey = ParseHex("0421303df706061f443fa153cf057b8c3bfd338f34a0661ce186001c6e7bf8fdbf71553d84d65f8463d74b73c0544ffffdad38658b25ca26bd22e5c9a27eee7583");
-		nDefaultPort = 6978;
+		nDefaultPort = 5510;
 		bnProofOfWorkLimit = ~uint256(0) >> 1;
 		nSubsidyHalvingInterval = 210000;
 		nMaxReorganizationDepth = 100;
@@ -129,7 +129,7 @@ public:
 		nMaturity = 25;                   // 25 Conf to mature coins
 		nMasternodeCountDrift = 20;       //Was 20
 		nMasternodeCollateralAmt = 5000; //masternode collateral 25K
-		nMaxMoneyOut = 23500000 * COIN;  //100m coins minted
+		nMaxMoneyOut = 25000000 * COIN;  //25m coins minted
 
 										  /** Height or Time Based Activations **/
 		nLastPOWBlock = 400;
@@ -266,7 +266,7 @@ public:
 		pchMessageStart[2] = 0xb5;
 		pchMessageStart[3] = 0xe1;
 		vAlertPubKey = ParseHex("0470a2eb34175354bd51b62d7080951ab15f360a15a53df8deec17b25bf076e30ddfc924d39c4d0f58ecba3e8676d818bfc6f491c651cc829849a8025d4f2ac9e2");
-		nDefaultPort = 17456;
+		nDefaultPort = 15510;
 		nEnforceBlockUpgradeMajority = 750;
 		nRejectBlockOutdatedMajority = 950;
 		nToCheckBlockUpgradeMajority = 1000;
@@ -361,7 +361,7 @@ public:
 
 
 		hashGenesisBlock = genesis.GetHash();
-		nDefaultPort = 15222;
+		nDefaultPort = 15110;
 		//printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
 		//printf("%s\n", hashGenesisBlock.ToString().c_str());
 		assert(hashGenesisBlock == uint256("0x00000334ad7d19ac18efcc77b3bd54e62e16bb8ad96732cf8d01425557f8d78e"));
