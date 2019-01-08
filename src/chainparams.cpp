@@ -104,7 +104,7 @@ public:
 	{
 		networkID = CBaseChainParams::MAIN;
 		vReviveRewardAddress = "";   //This address will be depreicated when spork 18 is turned on and coins will be burned.
-		vTreasuryRewardAddress = "QLma47EATaUz6bwoVutjTEdtHSQR7DvjyE";
+		vTreasuryRewardAddress = "Qdev17b5f11FoYwDvLKNDAjN3yBmRSLLzn";
 		strNetworkID = "main";
 		/**
 		* The message start string is designed to be unlikely to occur in normal data.
@@ -171,9 +171,10 @@ public:
 		assert(genesis.hashMerkleRoot == uint256("0x5631b0ce092246abb7f7cbf0a6ee315bd7cf41092a714c7ece4c1aed15dd3995"));
 
 		//Teams Seeder
-		vSeeds.push_back(CDNSSeedData("seeder.posqoin.club", "seeder.posqoin.club"));
+		vSeeds.push_back(CDNSSeedData("173.255.231.7", "173.255.231.7"));
 		//Seeds	Community Nodes
 		vSeeds.push_back(CDNSSeedData("207.246.112.156", "207.246.112.156"));
+
 
 		base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 58); //Q
 		base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
@@ -285,7 +286,7 @@ public:
 		nBlockFirstFraudulent = 9891737; //First block that bad serials emerged
 		nBlockLastGoodCheckpoint = 9891730; //Last valid accumulator checkpoint
 
-		//! Modify the testnet genesis block so the timestamp is valid for a later start.
+		// Modify the testnet genesis block so the timestamp is valid for a later start.
 		genesis.nTime = 1546206194;
 		genesis.nNonce = 773271;
 
