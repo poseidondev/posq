@@ -1,7 +1,7 @@
 POSQ Core integration/staging repository
 =====================================
 
-[![Build Status](https://travis-ci.org/sicXnull/POSQ.svg?branch=master)](https://travis-ci.org/sicXnull/POSQ) [![GitHub version](https://badge.fury.io/gh/sicXnull%2Fposq.svg)](https://badge.fury.io/gh/sicXnull%2Fposq)
+[![Build Status](https://travis-ci.org/Poseidon-POSQ/POSQ.svg?branch=master)](https://travis-ci.org/Poseidon-POSQ/POSQ) [![GitHub version](https://badge.fury.io/gh/sicXnull%2Fposq.svg)](https://badge.fury.io/gh/sicXnull%2Fposq)
 
 ### Coin Specs
 <table>
