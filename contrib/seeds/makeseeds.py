@@ -15,7 +15,7 @@ MIN_BLOCKS = 615801
 # These are hosts that have been observed to be behaving strangely (e.g.
 # aggressively connecting to every node).
 SUSPICIOUS_HOSTS = {
-    ""
+    
 }
 
 import re
@@ -23,10 +23,10 @@ import sys
 import dns.resolver
 import collections
 
-PATTERN_IPV4 = re.compile(r"^((\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})):(\d+)$")
+PATTERN_IPV4 = re.compile(r"^((\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})):5510$")
 PATTERN_IPV6 = re.compile(r"^\[([0-9a-z:]+)\]:(\d+)$")
 PATTERN_ONION = re.compile(r"^([abcdefghijklmnopqrstuvwxyz234567]{16}\.onion):(\d+)$")
-PATTERN_AGENT = re.compile(r"^(/PoseidonCore:2.2.(0|1|99)/)$")
+PATTERN_AGENT = re.compile(r"^(/POSQCore:2.2.(0|1|99)/)$")
 
 def parseline(line):
     sline = line.split()
@@ -50,7 +50,7 @@ def parseline(line):
             if m.group(1) in ['::']: # Not interested in localhost
                 return None
             ipstr = m.group(1)
-            sortkey = ipstr # XXX parse IPv6 into number, could use name_to_ipv6 from generate-seeds
+            sortkey = ipstr # POSQ parse IPv6 into number, could use name_to_ipv6 from generate-seeds
             port = int(m.group(2))
     else:
         # Do IPv4 sanity check

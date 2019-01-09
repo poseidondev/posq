@@ -1,0 +1,26 @@
+[Unit]
+Description=POSQ's distributed currency daemon
+After=network.target
+
+[Service]
+User=posq
+Group=posq
+
+Type=forking
+PIDFile=/var/lib/posqd/posqd.pid
+
+ExecStart=/usr/bin/posqd -daemon -pid=/var/lib/posqd/posqd.pid \
+          -conf=/etc/posq/posq.conf -datadir=/var/lib/posqd
+
+ExecStop=-/usr/bin/posq-cli -conf=/etc/posq/posq.conf \
+         -datadir=/var/lib/posqd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

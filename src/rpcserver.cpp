@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017 The Poseidon developers
+// Copyright (c) 2018 The POSQ developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -238,10 +238,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop Poseidon server.");
+            "\nStop POSQ server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "Poseidon server stopping";
+    return "POSQ server stopping";
 }
 
 
@@ -260,11 +260,15 @@ static const CRPCCommand vRPCCommands[] =
         /* P2P networking */
         {"network", "getnetworkinfo", &getnetworkinfo, true, false, false},
         {"network", "addnode", &addnode, true, true, false},
+        {"network", "disconnectnode", &disconnectnode, true, true, false},
         {"network", "getaddednodeinfo", &getaddednodeinfo, true, true, false},
         {"network", "getconnectioncount", &getconnectioncount, true, false, false},
         {"network", "getnettotals", &getnettotals, true, true, false},
         {"network", "getpeerinfo", &getpeerinfo, true, false, false},
         {"network", "ping", &ping, true, false, false},
+        {"network", "setban", &setban, true, false, false},
+        {"network", "listbanned", &listbanned, true, false, false},
+        {"network", "clearbanned", &clearbanned, true, false, false},
 
         /* Block chain and UTXO */
         {"blockchain", "getblockchaininfo", &getblockchaininfo, true, false, false},
@@ -318,36 +322,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* Poseidon features */
-        {"poseidon", "masternode", &masternode, true, true, false},
-        {"poseidon", "listmasternodes", &listmasternodes, true, true, false},
-        {"poseidon", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"poseidon", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"poseidon", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"poseidon", "masternodedebug", &masternodedebug, true, true, false},
-        {"poseidon", "startmasternode", &startmasternode, true, true, false},
-        {"poseidon", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"poseidon", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"poseidon", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"poseidon", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"poseidon", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"poseidon", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"poseidon", "mnbudget", &mnbudget, true, true, false},
-        {"poseidon", "preparebudget", &preparebudget, true, true, false},
-        {"poseidon", "submitbudget", &submitbudget, true, true, false},
-        {"poseidon", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"poseidon", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"poseidon", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"poseidon", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"poseidon", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"poseidon", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"poseidon", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"poseidon", "checkbudgets", &checkbudgets, true, true, false},
-        {"poseidon", "mnsync", &mnsync, true, true, false},
-        {"poseidon", "spork", &spork, true, true, false},
-        {"poseidon", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* POSQ features */
+        {"posq", "masternode", &masternode, true, true, false},
+        {"posq", "listmasternodes", &listmasternodes, true, true, false},
+        {"posq", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"posq", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"posq", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"posq", "masternodedebug", &masternodedebug, true, true, false},
+        {"posq", "startmasternode", &startmasternode, true, true, false},
+        {"posq", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"posq", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"posq", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"posq", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"posq", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"posq", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"posq", "mnbudget", &mnbudget, true, true, false},
+        {"posq", "preparebudget", &preparebudget, true, true, false},
+        {"posq", "submitbudget", &submitbudget, true, true, false},
+        {"posq", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"posq", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"posq", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"posq", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"posq", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"posq", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"posq", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"posq", "checkbudgets", &checkbudgets, true, true, false},
+        {"posq", "mnsync", &mnsync, true, true, false},
+        {"posq", "spork", &spork, true, true, false},
+        {"posq", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"poseidon", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"posq", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -626,16 +630,16 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use poseidond, or the -server option to poseidon-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use posqd, or the -server option to posq-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=poseidonrpc\n"
+                                               "rpcuser=posqrpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"Poseidon Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"POSQ Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1086,14 +1090,14 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> poseidon-cli " + methodname + " " + args + "\n";
+    return "> posq-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)
 {
     return "> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", "
            "\"method\": \"" +
-           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:5501/\n";
+           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:15510/\n";
 }
 
 const CRPCTable tableRPC;

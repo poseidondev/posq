@@ -271,7 +271,7 @@ private:
 
     int64_t lastTimeChanged; // last time the 'state' changed, in UTC milliseconds
 
-    unsigned int state; // should be one of the POOL_STATUS_XXX values
+    unsigned int state; // should be one of the POOL_STATUS_POSQ values
     unsigned int entriesCount;
     unsigned int lastEntryAccepted;
     unsigned int countEntriesAccepted;
@@ -493,7 +493,7 @@ public:
 
     void GetDenominationsToString(int nDenom, std::string& strDenom);
 
-    /// Get the denominations for a specific amount of poseidon.
+    /// Get the denominations for a specific amount of posq.
     int GetDenominationsByAmount(CAmount nAmount, int nDenomTarget = 0); // is not used anymore?
     int GetDenominationsByAmounts(std::vector<CAmount>& vecAmount);
 

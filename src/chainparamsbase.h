@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between poseidon-cli and poseidond)
- * of a given instance of the Poseidon system.
+ * CBaseChainParams defines the base parameters (shared between posq-cli and posqd)
+ * of a given instance of the POSQ system.
  */
 class CBaseChainParams
 {

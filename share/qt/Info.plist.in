@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Dash Core developers, 2015-@COPYRIGHT_YEAR@ The Poseidon Core developers</string>
+  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Dash Core developers, 2015-@COPYRIGHT_YEAR@ The POSQ Core developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@</string>
@@ -29,10 +29,10 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Poseidon-Qt</string>
+  <string>POSQ-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>io.poseidon.Poseidon-Qt</string>
+  <string>io.posq.POSQ-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,10 +40,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.poseidon.PoseidonPayment</string>
+      <string>io.posq.POSQPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>poseidon</string>
+        <string>posq</string>
       </array>
     </dict>
   </array>
@@ -52,9 +52,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.poseidon.paymentrequest</string>
+      <string>io.posq.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Poseidon payment request</string>
+      <string>POSQ payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -62,10 +62,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-poseidon-payment-request</string>
+        <string>application/x-posq-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>poseidonpaymentrequest</string>
+          <string>posqpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -78,7 +78,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.poseidon.paymentrequest</string>
+        <string>io.posq.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

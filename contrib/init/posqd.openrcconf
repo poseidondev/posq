@@ -1,0 +1,26 @@
+# /etc/conf.d/posqd: config file for /etc/init.d/posqd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/posq/posq.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/posqd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/posqd.pid"
+
+# Where to write posqd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/posqd"
+
+# User and group to own posqd process
+#BITCOIND_USER="posq"
+#BITCOIND_GROUP="posq"
+
+# Path to posqd executable
+#BITCOIND_BIN="/usr/bin/posqd"
+
+# Nice value to run posqd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

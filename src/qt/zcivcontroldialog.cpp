@@ -1,22 +1,22 @@
-// Copyright (c) 2017 The PIVX developers
-// Copyright (c) 2017-2018 The Poseidon developers
+// Copyright (c) 2017 The POSQ developers
+// Copyright (c) 2017-2018 The POSQ developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zbrkcontroldialog.h"
-#include "ui_zbrkcontroldialog.h"
+#include "zposqcontroldialog.h"
+#include "ui_zposqcontroldialog.h"
 
 #include "main.h"
 #include "walletmodel.h"
 
 using namespace std;
 
-std::list<std::string> ZPosqControlDialog::listSelectedMints;
-std::list<CZerocoinMint> ZPosqControlDialog::listMints;
+std::list<std::string> ZPOSQControlDialog::listSelectedMints;
+std::list<CZerocoinMint> ZPOSQControlDialog::listMints;
 
-ZPosqControlDialog::ZPosqControlDialog(QWidget *parent) :
+ZPOSQControlDialog::ZPOSQControlDialog(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::ZPosqControlDialog),
+    ui(new Ui::ZPOSQControlDialog),
     model(0)
 {
     ui->setupUi(this);
@@ -30,19 +30,19 @@ ZPosqControlDialog::ZPosqControlDialog(QWidget *parent) :
     connect(ui->pushButtonAll, SIGNAL(clicked()), this, SLOT(ButtonAllClicked()));
 }
 
-ZPosqControlDialog::~ZPosqControlDialog()
+ZPOSQControlDialog::~ZPOSQControlDialog()
 {
     delete ui;
 }
 
-void ZPosqControlDialog::setModel(WalletModel *model)
+void ZPOSQControlDialog::setModel(WalletModel *model)
 {
     this->model = model;
     updateList();
 }
 
 //Update the tree widget
-void ZPosqControlDialog::updateList()
+void ZPOSQControlDialog::updateList()
 {
     // need to prevent the slot from being called each time something is changed
     ui->treeWidget->blockSignals(true);
@@ -134,7 +134,7 @@ void ZPosqControlDialog::updateList()
 }
 
 // Update the list when a checkbox is clicked
-void ZPosqControlDialog::updateSelection(QTreeWidgetItem* item, int column)
+void ZPOSQControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 {
     // only want updates from non top level items that are available to spend
     if (item->parent() && column == COLUMN_CHECKBOX && !item->isDisabled()){
@@ -157,7 +157,7 @@ void ZPosqControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 }
 
 // Update the Quantity and Amount display
-void ZPosqControlDialog::updateLabels()
+void ZPOSQControlDialog::updateLabels()
 {
     int64_t nAmount = 0;
     for (const CZerocoinMint mint : listMints) {
@@ -167,14 +167,14 @@ void ZPosqControlDialog::updateLabels()
     }
 
     //update this dialog's labels
-    ui->labelZPosq_int->setText(QString::number(nAmount));
+    ui->labelZPOSQ_int->setText(QString::number(nAmount));
     ui->labelQuantity_int->setText(QString::number(listSelectedMints.size()));
 
     //update PrivacyDialog labels
-    privacyDialog->setZPosqControlLabels(nAmount, listSelectedMints.size());
+    privacyDialog->setZPOSQControlLabels(nAmount, listSelectedMints.size());
 }
 
-std::vector<CZerocoinMint> ZPosqControlDialog::GetSelectedMints()
+std::vector<CZerocoinMint> ZPOSQControlDialog::GetSelectedMints()
 {
     std::vector<CZerocoinMint> listReturn;
     for (const CZerocoinMint mint : listMints) {
@@ -187,7 +187,7 @@ std::vector<CZerocoinMint> ZPosqControlDialog::GetSelectedMints()
 }
 
 // select or deselect all of the mints
-void ZPosqControlDialog::ButtonAllClicked()
+void ZPOSQControlDialog::ButtonAllClicked()
 {
     ui->treeWidget->blockSignals(true);
     Qt::CheckState state = Qt::Checked;

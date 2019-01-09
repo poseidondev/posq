@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2015-2017 The POSQ developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -41,11 +41,11 @@ QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
     case POSQ:
-        return QString("poseidon");
+        return QString("posq");
     case mPOSQ:
-        return QString("mposeidon");
+        return QString("mposq");
     case uPOSQ:
-        return QString::fromUtf8("uposeidon");
+        return QString::fromUtf8("uposq");
     default:
         return QString("???");
     }

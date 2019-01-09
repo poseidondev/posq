@@ -1,4 +1,4 @@
-Source: poseidon
+Source: posq
 Section: utils
 Priority: optional
 Maintainer: Jonas Smedegaard <dr@jones.dk> ***TODO***
@@ -22,15 +22,15 @@ Build-Depends: debhelper,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
-Homepage: http://www.poseidon.org
-Vcs-Git: git://github.com/poseidonproject/Poseidon.git
-Vcs-Browser: http://github.com/poseidonproject/Poseidon
+Homepage: http://www.posq.org
+Vcs-Git: git://github.com/SMRT2/posq.git
+Vcs-Browser: http://github.com/Poseidon-POSQ/posq
 
-Package: poseidond
+Package: posqd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- Poseidon is a free open source peer-to-peer electronic cash system that
+ POSQ is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -39,14 +39,14 @@ Description: peer-to-peer network based digital currency - daemon
  Full transaction history is stored locally at each client.  This
  requires 1+ GB of space, slowly growing.
  .
- This package provides the daemon, poseidond, and the CLI tool
- poseidon-cli to interact with the daemon.
+ This package provides the daemon, posqd, and the CLI tool
+ posq-cli to interact with the daemon.
 
-Package: poseidon-qt
+Package: posq-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- Poseidon is a free open source peer-to-peer electronic cash system that
+ POSQ is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -55,4 +55,4 @@ Description: peer-to-peer network based digital currency - Qt GUI
  Full transaction history is stored locally at each client.  This
  requires 1+ GB of space, slowly growing.
  .
- This package provides Poseidon-Qt, a GUI for Poseidon based on Qt.
+ This package provides POSQ-Qt, a GUI for POSQ based on Qt.

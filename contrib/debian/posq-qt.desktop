@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=POSQ
+Comment=POSQ P2P Cryptocurrency
+Comment[fr]=POSQ, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=POSQ, eşten eşe kriptografik sanal para birimi
+Exec=posq-qt %u
+Terminal=false
+Type=Application
+Icon=posq128
+MimeType=x-scheme-handler/posq;
+Categories=Office;Finance;

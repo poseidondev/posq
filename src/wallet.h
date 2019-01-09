@@ -81,27 +81,27 @@ enum AvailableCoinsType {
     ONLY_DENOMINATED = 2,
     ONLY_NOT10000IFMN = 3,
     ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 POSQ at the same time
-    ONLY_10000 = 5,                        // find masternode outputs including locked ones (use with caution)
-    STAKABLE_COINS = 6                          // UTXO's that are valid for staking
+    ONLY_10000 = 5,                       // find masternode outputs including locked ones (use with caution)
+    STAKABLE_COINS = 6                    // UTXO's that are valid for staking
 };
 
 // Possible states for zPOSQ send
 enum ZerocoinSpendStatus {
-    ZPOSQ_SPEND_OKAY = 0,                            // No error
-    ZPOSQ_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
-    ZPOSQ_WALLET_LOCKED = 2,                         // Wallet was locked
-    ZPOSQ_COMMIT_FAILED = 3,                         // Commit failed, reset status
-    ZPOSQ_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
-    ZPOSQ_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
-    ZPOSQ_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
-    ZPOSQ_TRX_CREATE = 7,                            // Everything related to create the transaction
-    ZPOSQ_TRX_CHANGE = 8,                            // Everything related to transaction change
-    ZPOSQ_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
-    ZPOSQ_INVALID_COIN = 10,                         // Selected mint coin is not valid
-    ZPOSQ_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
-    ZPOSQ_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
-    ZPOSQ_BAD_SERIALIZATION = 13,                    // Transaction verification failed
-    ZPOSQ_SPENT_USED_ZPOSQ = 14                       // Coin has already been spend
+    ZPOSQ_SPEND_OKAY = 0,                         // No error
+    ZPOSQ_SPEND_ERROR = 1,                        // Unspecified class of errors, more details are (hopefully) in the returning text
+    ZPOSQ_WALLET_LOCKED = 2,                      // Wallet was locked
+    ZPOSQ_COMMIT_FAILED = 3,                      // Commit failed, reset status
+    ZPOSQ_ERASE_SPENDS_FAILED = 4,                // Erasing spends during reset failed
+    ZPOSQ_ERASE_NEW_MINTS_FAILED = 5,             // Erasing new mints during reset failed
+    ZPOSQ_TRX_FUNDS_PROBLEMS = 6,                 // Everything related to available funds
+    ZPOSQ_TRX_CREATE = 7,                         // Everything related to create the transaction
+    ZPOSQ_TRX_CHANGE = 8,                         // Everything related to transaction change
+    ZPOSQ_TXMINT_GENERAL = 9,                     // General errors in MintToTxIn
+    ZPOSQ_INVALID_COIN = 10,                      // Selected mint coin is not valid
+    ZPOSQ_FAILED_ACCUMULATOR_INITIALIZATION = 11, // Failed to initialize witness
+    ZPOSQ_INVALID_WITNESS = 12,                   // Spend coin transaction did not verify
+    ZPOSQ_BAD_SERIALIZATION = 13,                 // Transaction verification failed
+    ZPOSQ_SPENT_USED_ZPOSQ = 14                   // Coin has already been spend
 };
 
 struct CompactTallyItem {
@@ -199,7 +199,7 @@ public:
 
     // Zerocoin additions
     bool CreateZerocoinMintTransaction(const CAmount nValue, CMutableTransaction& txNew, vector<CZerocoinMint>& vMints, CReserveKey* reservekey, int64_t& nFeeRet, std::string& strFailReason, const CCoinControl* coinControl = NULL, const bool isZCSpendChange = false);
-    bool CreateZerocoinSpendTransaction(CAmount nValue, int nSecurityLevel, CWalletTx& wtxNew, CReserveKey& reserveKey, CZerocoinSpendReceipt& receipt, vector<CZerocoinMint>& vSelectedMints, vector<CZerocoinMint>& vNewMints, bool fMintChange,  bool fMinimizeChange, CBitcoinAddress* address = NULL);
+    bool CreateZerocoinSpendTransaction(CAmount nValue, int nSecurityLevel, CWalletTx& wtxNew, CReserveKey& reserveKey, CZerocoinSpendReceipt& receipt, vector<CZerocoinMint>& vSelectedMints, vector<CZerocoinMint>& vNewMints, bool fMintChange, bool fMinimizeChange, CBitcoinAddress* address = NULL);
     bool MintToTxIn(CZerocoinMint zerocoinSelected, int nSecurityLevel, const uint256& hashTxOut, CTxIn& newTxIn, CZerocoinSpendReceipt& receipt);
     std::string MintZerocoin(CAmount nValue, CWalletTx& wtxNew, vector<CZerocoinMint>& vMints, const CCoinControl* coinControl = NULL);
     bool SpendZerocoin(CAmount nValue, int nSecurityLevel, CWalletTx& wtxNew, CZerocoinSpendReceipt& receipt, vector<CZerocoinMint>& vMintsSelected, bool fMintChange, bool fMinimizeChange, CBitcoinAddress* addressTo = NULL);
@@ -304,6 +304,11 @@ public:
         nAutoCombineThreshold = 0;
     }
 
+    int getZeromintPercentage()
+    {
+        return nZeromintPercentage;
+    }
+
     bool isZeromintEnabled()
     {
         return fEnableZeromint;
@@ -313,7 +318,7 @@ public:
     {
         fBackupMints = fEnabled;
     }
-    
+
     bool isMultiSendEnabled()
     {
         return fMultiSendMasternodeReward || fMultiSendStake;
@@ -1125,7 +1130,7 @@ public:
         return nCredit;
     }
 
-        // Return sum of unlocked coins
+    // Return sum of unlocked coins
     CAmount GetLockedCredit() const
     {
         if (pwallet == 0)
@@ -1326,7 +1331,7 @@ public:
     {
         BOOST_FOREACH (CAmount d, obfuScationDenominations)
             if (tx->vout[i].nValue == d) return 10000;
-        if (tx->vout[i].nValue < 1 * COIN) return 20000;
+        if (tx->vout[i].nValue < 1 * COIN) return 20000; //Was 20000
 
         //nondenom return largest first
         return -(tx->vout[i].nValue / COIN);

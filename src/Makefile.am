@@ -66,15 +66,15 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += poseidond
+  bin_PROGRAMS += posqd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += poseidon-cli poseidon-tx
+  bin_PROGRAMS += posq-cli posq-tx
 endif
 
 .PHONY: FORCE
-# poseidon core #
+# posq core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
@@ -134,10 +134,12 @@ BITCOIN_CORE_H = \
   protocol.h \
   pubkey.h \
   random.h \
+  reverselock.h \
   reverse_iterate.h \
   rpcclient.h \
   rpcprotocol.h \
   rpcserver.h \
+  scheduler.h \
   script/interpreter.h \
   script/script.h \
   script/sigcache.h \
@@ -190,7 +192,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between poseidond and poseidon-qt
+# server: shared between posqd and posq-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -236,7 +238,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between poseidond and poseidon-qt, but only linked
+# wallet: shared between posqd and posq-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -356,7 +358,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between poseidond, and poseidon-qt and non-server tools
+# common: shared between posqd, and posq-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   accumulators.cpp \
@@ -381,6 +383,7 @@ libbitcoin_common_a_SOURCES = \
   netbase.cpp \
   protocol.cpp \
   pubkey.cpp \
+  scheduler.cpp \
   script/interpreter.cpp \
   script/script.cpp \
   script/sign.cpp \
@@ -416,7 +419,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between poseidon-cli and poseidon-qt
+# cli: shared between posq-cli and posq-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -426,7 +429,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-poseidond_LDADD = \
+posqd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -438,26 +441,26 @@ poseidond_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-poseidond_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+posqd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-poseidond_LDADD += libbitcoin_wallet.a
+posqd_LDADD += libbitcoin_wallet.a
 endif
-poseidond_SOURCES = poseidond.cpp
+posqd_SOURCES = posqd.cpp
 #
 
 if TARGET_WINDOWS
-poseidond_SOURCES += poseidond-res.rc
+posqd_SOURCES += posqd-res.rc
 endif
 
-poseidond_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-poseidond_CPPFLAGS = $(BITCOIN_INCLUDES)
-poseidond_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+posqd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+posqd_CPPFLAGS = $(BITCOIN_INCLUDES)
+posqd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# poseidon-cli binary #
-poseidon_cli_LDADD = \
+# posq-cli binary #
+posq_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
@@ -465,14 +468,14 @@ poseidon_cli_LDADD = \
   $(CRYPTO_LIBS) \
   $(EVENT_LIBS)
 
-poseidon_cli_SOURCES = \
-  poseidon-cli.cpp
+posq_cli_SOURCES = \
+  posq-cli.cpp
 
-poseidon_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+posq_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 #
 
-# poseidon-tx binary #
-poseidon_tx_LDADD = \
+# posq-tx binary #
+posq_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -482,15 +485,15 @@ poseidon_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-poseidon_tx_SOURCES = poseidon-tx.cpp
-poseidon_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+posq_tx_SOURCES = posq-tx.cpp
+posq_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-poseidon_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+posq_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-poseidon_cli_SOURCES += poseidon-cli-res.rc
+posq_cli_SOURCES += posq-cli-res.rc
 endif
-poseidon_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+posq_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h

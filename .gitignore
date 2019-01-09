@@ -128,3 +128,11 @@ CMakeLists.txt
 cmake-build-debug
 config.log
 config.status
+.vs/posq/v15/.suo
+.vs/posq/v15/Browse.VC.db
+.vs/posq/v15/Browse.VC.opendb
+.vs/posq/v15/ipch/AutoPCH/6128fda3004a16a7/HISTOGRAM.ipch
+.vs/posq/v15/ipch/AutoPCH/867168a137692ac6/MASTERNODEMAN.ipch
+.vs/ProjectSettings.json
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json

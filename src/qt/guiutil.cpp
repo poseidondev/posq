@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2015-2017 The POSQ developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -77,7 +77,7 @@ extern double NSAppKitVersionNumber;
 #endif
 #endif
 
-#define URI_SCHEME "poseidon"
+#define URI_SCHEME "posq"
 
 namespace GUIUtil
 {
@@ -110,7 +110,7 @@ void setupAddressWidget(QValidatedLineEdit* widget, QWidget* parent)
 #if QT_VERSION >= 0x040700
     // We don't want translators to use own addresses in translations
     // and this is the only place, where this address is supplied.
-    widget->setPlaceholderText(QObject::tr("Enter a Poseidon address (e.g. %1)").arg("Qi6YkGQfwiLB5f1LijP5B1y7SbXzyMY5vL"));
+    widget->setPlaceholderText(QObject::tr("Enter a POSQ address (e.g. %1)").arg("QcR7QdUfWnxvycuG9eHDP2BUjPVsVRfDCJ"));
 #endif
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
     widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
@@ -127,7 +127,7 @@ void setupAmountWidget(QLineEdit* widget, QWidget* parent)
 
 bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out)
 {
-    // return if URI is not valid or is no Poseidon: URI
+    // return if URI is not valid or is no POSQ: URI
     if (!uri.isValid() || uri.scheme() != QString(URI_SCHEME))
         return false;
 
@@ -179,9 +179,9 @@ bool parseBitcoinURI(const QUrl& uri, SendCoinsRecipient* out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient* out)
 {
-    // Convert poseidon:// to poseidon:
+    // Convert posq:// to posq:
     //
-    //    Cannot handle this later, because poseidon:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because posq:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
     if (uri.startsWith(URI_SCHEME "://", Qt::CaseInsensitive)) {
         uri.replace(0, std::strlen(URI_SCHEME) + 3, URI_SCHEME ":");
@@ -253,6 +253,20 @@ void copyEntryData(QAbstractItemView* view, int column, int role)
         setClipboard(selection.at(0).data(role).toString());
     }
 }
+
+ QString getEntryData(QAbstractItemView *view, int column, int role)
+ {
+     if(!view || !view->selectionModel())
+         return QString();
+     QModelIndexList selection = view->selectionModel()->selectedRows(column);
+ 
+      if(!selection.isEmpty()) {
+         // Return first item
+         return (selection.at(0).data(role).toString());
+     }
+     return QString();
+ }
+ 
 
 QString getSaveFileName(QWidget* parent, const QString& caption, const QString& dir, const QString& filter, QString* selectedSuffixOut)
 {
@@ -359,7 +373,7 @@ void openConfigfile()
 {
     boost::filesystem::path pathConfig = GetConfigFile();
 
-    /* Open poseidon.conf with the associated application */
+    /* Open posq.conf with the associated application */
     if (boost::filesystem::exists(pathConfig))
         QDesktopServices::openUrl(QUrl::fromLocalFile(boostPathToQString(pathConfig)));
 }
@@ -581,12 +595,12 @@ bool DHMSTableWidgetItem::operator<(QTableWidgetItem const& item) const
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "Poseidon.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "POSQ.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for Poseidon.lnk
+    // check for POSQ.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -660,7 +674,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "poseidon.desktop";
+    return GetAutostartDir() / "posq.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -696,10 +710,10 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         boost::filesystem::ofstream optionFile(GetAutostartFilePath(), std::ios_base::out | std::ios_base::trunc);
         if (!optionFile.good())
             return false;
-        // Write a poseidon.desktop file to the autostart directory:
+        // Write a posq.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=Poseidon\n";
+        optionFile << "Name=POSQ\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";
@@ -720,7 +734,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
 LSSharedFileListItemRef findStartupItemInList(LSSharedFileListRef list, CFURLRef findUrl);
 LSSharedFileListItemRef findStartupItemInList(LSSharedFileListRef list, CFURLRef findUrl)
 {
-    // loop through the list of startup items and try to find the poseidon app
+    // loop through the list of startup items and try to find the posq app
     CFArrayRef listSnapshot = LSSharedFileListCopySnapshot(list, NULL);
     for (int i = 0; i < CFArrayGetCount(listSnapshot); i++) {
         LSSharedFileListItemRef item = (LSSharedFileListItemRef)CFArrayGetValueAtIndex(listSnapshot, i);
@@ -765,7 +779,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
     LSSharedFileListItemRef foundItem = findStartupItemInList(loginItems, bitcoinAppUrl);
 
     if (fAutoStart && !foundItem) {
-        // add poseidon app to startup item list
+        // add posq app to startup item list
         LSSharedFileListInsertItemURL(loginItems, kLSSharedFileListItemBeforeFirst, NULL, NULL, bitcoinAppUrl, NULL, NULL);
     } else if (!fAutoStart && foundItem) {
         // remove item
@@ -929,5 +943,11 @@ QString formatPingTime(double dPingTime)
 {
     return dPingTime == 0 ? QObject::tr("N/A") : QString(QObject::tr("%1 ms")).arg(QString::number((int)(dPingTime * 1000), 10));
 }
+
+ QString formatTimeOffset(int64_t nTimeOffset)
+ {
+   return QString(QObject::tr("%1 s")).arg(QString::number((int)nTimeOffset, 10));
+ }
+ 
 
 } // namespace GUIUtil
